@@ -13,8 +13,6 @@
 5. Evaluation (user evaluation):
     Three students will act as test users of your system and help you in evaluating your system from the point of view of the user experience. System evaluation (i.e. recall and precision) is not required.
 
-
-
 ## Submition
 1. One-page progress report (27 Nov)
 2. Project report (16 Dic):
