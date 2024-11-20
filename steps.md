@@ -9,7 +9,8 @@
 4. Additional features:
     4.1 Filtering: in addition to being able to search by title, an user should be able to filter the results based on at least 3 relevant attributes for your project.
     4.2 User Relevance Feedback: after presenting the search results to a user, the user may provide a positive or negative feedback on the results (i.e. mark relevant and irrelevant documents). Based on this feedback the search results have to be updated and presented again.
-    4.3 TBD
+    4.3 Results Snippets: present result snippets of each retrieved result (maximum 2-3 lines) in a
+    kind of “Google style”, with query terms highlighted.
 5. Evaluation (user evaluation):
     Three students will act as test users of your system and help you in evaluating your system from the point of view of the user experience. System evaluation (i.e. recall and precision) is not required.
 
