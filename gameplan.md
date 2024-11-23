@@ -10,7 +10,6 @@
      - Additional features plan (filtering, feedback, snippets) and evaluation strategy (Person 3).
 
 2. **Final Report and Code (16 Dec):**
-   - Each person submits their finalized contributions for the project report and integrates their code into a unified repository.
 
 ---
 
@@ -103,7 +102,6 @@ Each person will contribute a paragraph or two to a single **progress report** s
      - Evaluation results.
 
 2. **Code:**
-   - Use a shared repository to ensure integration of all components.
-   - Submit a working prototype with clear documentation for deployment and usage.
+
 
 ---
