@@ -1,8 +1,11 @@
 # INFORMATION RETRIEVAL PROJECT 
 
+## Goal: Implement a working prototype of an information retrieval system for a specific task and user needs. You need to build a system that gathers a large collection of samples associated with the topic and enable the search over this collection. To build the collections, you need to crawl multiple sources (websites), similar in content and topic to the website suggested.
+The system must provide an interface for searching, browsing, and presentation of the data to the user.
+
 ### Step 1. Design
 
-With justification on the design choices
+Design the interface. Justify the design choices
 
 #### Main Features
 
