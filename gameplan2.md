@@ -2,7 +2,7 @@
 
 ## Person 1: Frontend & UI Implementation
 
-### Week 1
+### Week 1 (Nov 25 - Dec 1)
 1. **Initial Design Research**
    - Research modern search interfaces (Google, Bing, specialized search engines)
    - Document key UI patterns for search interfaces
@@ -26,7 +26,7 @@
    - Include mockup screenshots
    - Explain technology choices
 
-### Week 2-3
+### Week 2-3 (Dec 2 - Dec 12)
 1. **Basic Structure**
    ```
    - Set up project with chosen framework
@@ -66,7 +66,7 @@
    - Test responsive design
    ```
 
-### Final Documentation
+### Final Documentation (Dec 13 - Dec 16)
 1. Create comprehensive documentation including:
    - Setup instructions
    - Component hierarchy
@@ -75,7 +75,7 @@
    - User interaction flows
 
 ## Costanza: Data Collection & Processing
-### Week 1
+### Week 1 (Nov 25 - Dec 1)
 1. **Website Analysis**
    ```
    - Identify 5-10 suitable websites for crawling
@@ -104,7 +104,7 @@
    - Explain crawler design
    - Outline storage approach
 
-### Week 2-3
+### Week 2-3 (Dec 2 - Dec 12)
 1. **Crawler Implementation**
    ```
    - Implement basic crawler
@@ -137,7 +137,7 @@
    - Create data update mechanism
    ```
 
-### Final Documentation
+### Final Documentation (Dec 13 - Dec 16)
 1. Create technical documentation including:
    - Crawler architecture
    - Data schema
@@ -145,7 +145,7 @@
    - Dataset statistics
 
 ## Agnese: Search Engine & Core Features
-### Week 1
+### Week 1 (Nov 25 - Dec 1)
 1. **Architecture Planning**
    ```
    - Choose search engine (Solr/Elasticsearch)
@@ -174,7 +174,7 @@
    - Explain feature plans
    - Outline implementation strategy
 
-### Week 2-3
+### Week 2-3 (Dec 2 - Dec 12)
 1. **Core Search Implementation**
    ```
    - Set up search index
@@ -207,7 +207,7 @@
    - Fine-tune ranking
    ```
 
-### Final Documentation
+### Final Documentation (Dec 13 - Dec 16)
 1. Create technical documentation including:
    - System architecture
    - API documentation
@@ -215,15 +215,15 @@
    - Performance metrics
 
 ## Integration Schedule
-### Week 2
+### Week 2 (Dec 2 - Dec 8)
 - Davide ↔ Agnese: API contract definition
 - Costanza ↔ Agnese: Data schema finalization
 
-### Week 3
+### Week 3 (Dec 9 - Dec 12)
 - Davide ↔ Agnese: Frontend-API integration
 - Costanza ↔ Agnese: Data pipeline integration
 
-### Final Week
+### Final Week (Dec 13 - Dec 16)
 - All: System integration testing
 - All: Performance optimization
 - All: Documentation review
