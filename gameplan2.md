@@ -1,127 +1,228 @@
-## Roles
+# Detailed Information Retrieval Project Instructions
 
-### **General Milestones**
+## Person 1: Frontend & UI Implementation
+### Week 1 (Until Nov 27)
+1. **Initial Design Research (2 days)**
+   - Research modern search interfaces (Google, Bing, specialized search engines)
+   - Document key UI patterns for search interfaces
+   - List required components (search box, results display, filters)
 
-1. **Progress Report (27 Nov):**
-   - Interface design and features in progress (Person 1).
-   - Data collection and backend search engine progress (Person 2).
-   - Additional features plan (filtering, feedback, snippets) and evaluation strategy (Person 3).
+2. **UI Mockup Creation (2 days)**
+   ```
+   Use Figma/Adobe XD to create:
+   - Main search page mockup
+   - Search results page mockup
+   - Mobile responsive versions
+   ```
 
-2. **Final Report and Code (16 Dec)**
+3. **Technology Selection (1 day)**
+   - Select frontend framework (recommended: React)
+   - Choose UI component library
+   - Plan state management approach
 
----
+4. **Progress Report Writing (1 day)**
+   - Document design decisions
+   - Include mockup screenshots
+   - Explain technology choices
 
-### Person 1: Frontend & UI Implementation
-**Focus**: User Interface, Design, and Frontend Implementation
+### Week 2-3 (Nov 28 - Dec 15)
+1. **Basic Structure (3 days)**
+   ```
+   - Set up project with chosen framework
+   - Create component structure
+   - Implement basic routing
+   ```
 
-#### Tasks and Deadlines:
-1. **Progress Report (27 Nov):**
-   - Create and present UI mockups showing:
-     - Search box design and placement
-     - Results display layout
-     - Navigation and filtering interfaces
-   - Document design choices and justification
-   - Frontend technology stack selection
+2. **Search Interface (4 days)**
+   ```
+   - Create search box component
+   - Implement auto-complete UI
+   - Add spell-check suggestions display
+   - Style search results container
+   ```
 
-2. **Implementation Phase (by 15 Dec):**
-   - Implement complete frontend interface:
-     - Search box with auto-complete UI
-     - Results display with snippets
-     - Filtering interface
-     - User feedback buttons
-     - Search statistics display
-   - Ensure responsive design
-   - Implement frontend validation
+3. **Results Display (3 days)**
+   ```
+   - Create result card component
+   - Implement snippet display
+   - Add highlighting for matched terms
+   - Create pagination/infinite scroll
+   ```
 
-3. **Final Documentation (16 Dec):**
-   - Document all UI/UX decisions
-   - Provide interface screenshots
-   - Explain design choices in final report
+4. **Additional Features (4 days)**
+   ```
+   - Implement filter components
+   - Add user feedback buttons
+   - Create search statistics display
+   - Add loading states and error handling
+   ```
 
----
+5. **Integration & Testing (3 days)**
+   ```
+   - Connect with API endpoints
+   - Implement data fetching
+   - Add error handling
+   - Test responsive design
+   ```
 
-### Person 2: Data Collection & Processing
-**Focus**: Web Crawling, Data Management, and Dataset Creation
+### Final Documentation (Dec 16)
+1. Create comprehensive documentation including:
+   - Setup instructions
+   - Component hierarchy
+   - Design system documentation
+   - Screenshots of final implementation
+   - User interaction flows
 
-#### Tasks and Deadlines:
-1. **Progress Report (27 Nov):**
-   - Define web crawling strategy
-   - Select and justify crawling tools
-   - Present initial data collection results
-   - Outline data storage structure
+## Person 2: Data Collection & Processing
+### Week 1 (Until Nov 27)
+1. **Website Analysis (2 days)**
+   ```
+   - Identify 5-10 suitable websites for crawling
+   - Analyze website structures
+   - Document URL patterns
+   - Check robots.txt files
+   ```
 
-2. **Implementation Phase (by 15 Dec):**
-   - Build and run web crawlers
-   - Implement data cleaning pipeline
-   - Create and maintain dataset structure
-   - Implement data preprocessing
-   - Build data indexing system
-   - Create data access API
-   - Implement data update mechanisms
+2. **Crawler Design (2 days)**
+   ```
+   - Select crawling library (Scrapy recommended)
+   - Design data extraction patterns
+   - Plan crawling strategy
+   - Define data storage schema
+   ```
 
-3. **Final Documentation (16 Dec):**
-   - Document data collection methodology
-   - Describe dataset characteristics
-   - Detail preprocessing steps
-   - Provide data statistics
+3. **Initial Setup (1 day)**
+   ```
+   - Set up development environment
+   - Install required libraries
+   - Create initial project structure
+   ```
 
-### Person 3: Search Engine & Core Features
-**Focus**: Search Implementation, Query Processing, and Feature Integration
+4. **Progress Report Writing (1 day)**
+   - Document selected websites
+   - Explain crawler design
+   - Outline storage approach
 
-#### Tasks and Deadlines:
-1. **Progress Report (27 Nov):**
-   - Define search engine architecture
-   - Plan core search features
-   - Outline query processing approach
-   - Describe planned ranking mechanisms
+### Week 2-3 (Nov 28 - Dec 15)
+1. **Crawler Implementation (4 days)**
+   ```
+   - Implement basic crawler
+   - Add URL filtering
+   - Implement rate limiting
+   - Add error handling
+   ```
 
-2. **Implementation Phase (by 15 Dec):**
-   - Implement core search functionality:
-     - Query processing
-     - Search algorithm
-     - Relevance ranking
-     - Spell-check system
-     - Auto-complete backend
-   - Build API endpoints for frontend
-   - Implement result snippet generation
-   - Create user feedback processing system
+2. **Data Storage (3 days)**
+   ```
+   - Set up database (MongoDB recommended)
+   - Implement data storage pipeline
+   - Add deduplication logic
+   - Create backup strategy
+   ```
 
-3. **Final Documentation (16 Dec):**
-   - Document search engine architecture
-   - Explain ranking algorithms
-   - Detail feature implementations
-   - Write evaluation results
+3. **Data Processing (4 days)**
+   ```
+   - Implement text extraction
+   - Add HTML cleaning
+   - Create tokenization pipeline
+   - Implement metadata extraction
+   ```
 
-## Shared Responsibilities
+4. **Data Quality & Optimization (3 days)**
+   ```
+   - Add data validation
+   - Implement error logging
+   - Optimize storage
+   - Create data update mechanism
+   ```
 
-### Progress Report (27 Nov):
-Each person contributes their section:
-- Person 1: Interface design and frontend progress
-- Person 2: Data collection status and structure
-- Person 3: Search engine architecture and features
+### Final Documentation (Dec 16)
+1. Create technical documentation including:
+   - Crawler architecture
+   - Data schema
+   - Processing pipeline
+   - Dataset statistics
 
-### Evaluation Phase (10-15 Dec):
-All team members participate in:
-- Testing system functionality
-- Gathering user feedback
-- Documenting issues and improvements
-- Supporting test users
+## Person 3: Search Engine & Core Features
+### Week 1 (Until Nov 27)
+1. **Architecture Planning (2 days)**
+   ```
+   - Choose search engine (Solr/Elasticsearch)
+   - Design system architecture
+   - Plan API structure
+   - Define ranking approach
+   ```
 
-### Final Report (16 Dec):
-Collaborative effort on:
-- Technical documentation
-- Implementation details
-- User experience findings
-- Future improvements
+2. **Feature Planning (2 days)**
+   ```
+   - Design query processing pipeline
+   - Plan ranking algorithms
+   - Design feedback integration
+   - Plan snippet generation
+   ```
 
-## Integration Points
+3. **Initial Setup (1 day)**
+   ```
+   - Set up search engine
+   - Create basic index structure
+   - Plan API endpoints
+   ```
 
-1. **Person 1 ↔ Person 3:**
-   - API integration for search requests
-   - Auto-complete implementation
-   - Results display format
+4. **Progress Report Writing (1 day)**
+   - Document architecture decisions
+   - Explain feature plans
+   - Outline implementation strategy
 
-2. **Person 2 ↔ Person 3:**
-   - Data format for search indexing
-   - Dataset access methods
-   - Update mechanisms
+### Week 2-3 (Nov 28 - Dec 15)
+1. **Core Search Implementation (4 days)**
+   ```
+   - Set up search index
+   - Implement basic search
+   - Add ranking algorithms
+   - Create query processing
+   ```
+
+2. **API Development (3 days)**
+   ```
+   - Create REST API
+   - Implement search endpoints
+   - Add filtering endpoints
+   - Create feedback endpoints
+   ```
+
+3. **Feature Implementation (4 days)**
+   ```
+   - Add snippet generation
+   - Implement spell-checking
+   - Add auto-complete
+   - Create feedback processing
+   ```
+
+4. **Integration & Optimization (3 days)**
+   ```
+   - Optimize search performance
+   - Add caching
+   - Implement monitoring
+   - Fine-tune ranking
+   ```
+
+### Final Documentation (Dec 16)
+1. Create technical documentation including:
+   - System architecture
+   - API documentation
+   - Search algorithms
+   - Performance metrics
+
+## Integration Schedule
+### Week 2
+- Person 1 ↔ Person 3: API contract definition
+- Person 2 ↔ Person 3: Data schema finalization
+
+### Week 3
+- Person 1 ↔ Person 3: Frontend-API integration
+- Person 2 ↔ Person 3: Data pipeline integration
+
+### Final Week
+- All: System integration testing
+- All: Performance optimization
+- All: Documentation review

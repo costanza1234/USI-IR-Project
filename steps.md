@@ -41,7 +41,7 @@ For searching, browsing, and presentation of the data to the user
 
 ### Step 4. Additional Features
 
-1. **filtering**: in addition to being able to search by title, an user should be able to filter the results based on at least 3 relevant attributes for your project.
+1. **Filtering**: in addition to being able to search by title, an user should be able to filter the results based on at least 3 relevant attributes for your project.
 2. **User Relevance Feedback**: after presenting the search results to a user, the user may provide a positive or negative feedback on the results (i.e. mark relevant and irrelevant documents). Based on this feedback the search results have to be updated and presented again.
 3. **Results snippets**: present result snippets of each retrieved result (maximum 2-3 lines) in a kind of “Google style”, with query terms highlighted.
 
@@ -55,8 +55,7 @@ Three students will act as test users of your system and help you in evaluating 
 1. One-page progress report (27 Nov)
 2. Project report (16 Dic):
 • A concise explanation (max 10 pages) of how you tackled the design, implementation and evaluation
-• Explaindesignchoices,implementationchoices,evaluationdesign,evaluationresults
-• Just imagine this is a report for a client who does not know much about IR, but
-wants to know what you are delivering him/her The code:
+• Explain design choices, implementation choices, evaluation design, evaluation results
+• Just imagine this is a report for a client who does not know much about IR, but wants to know what you are delivering him/her
 3. Code (16 Dic)
 4. Slides (?) (16 Dic)
