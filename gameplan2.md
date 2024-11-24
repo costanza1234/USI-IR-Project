@@ -1,13 +1,14 @@
 # Detailed Information Retrieval Project Instructions
 
 ## Person 1: Frontend & UI Implementation
-### Week 1 (Until Nov 27)
-1. **Initial Design Research (2 days)**
+
+### Week 1
+1. **Initial Design Research**
    - Research modern search interfaces (Google, Bing, specialized search engines)
    - Document key UI patterns for search interfaces
    - List required components (search box, results display, filters)
 
-2. **UI Mockup Creation (2 days)**
+2. **UI Mockup Creation**
    ```
    Use Figma/Adobe XD to create:
    - Main search page mockup
@@ -15,25 +16,25 @@
    - Mobile responsive versions
    ```
 
-3. **Technology Selection (1 day)**
+3. **Technology Selection**
    - Select frontend framework (recommended: React)
    - Choose UI component library
    - Plan state management approach
 
-4. **Progress Report Writing (1 day)**
+4. **Progress Report Writing**
    - Document design decisions
    - Include mockup screenshots
    - Explain technology choices
 
-### Week 2-3 (Nov 28 - Dec 15)
-1. **Basic Structure (3 days)**
+### Week 2-3
+1. **Basic Structure**
    ```
    - Set up project with chosen framework
    - Create component structure
    - Implement basic routing
    ```
 
-2. **Search Interface (4 days)**
+2. **Search Interface**
    ```
    - Create search box component
    - Implement auto-complete UI
@@ -41,7 +42,7 @@
    - Style search results container
    ```
 
-3. **Results Display (3 days)**
+3. **Results Display**
    ```
    - Create result card component
    - Implement snippet display
@@ -49,7 +50,7 @@
    - Create pagination/infinite scroll
    ```
 
-4. **Additional Features (4 days)**
+4. **Additional Features**
    ```
    - Implement filter components
    - Add user feedback buttons
@@ -57,7 +58,7 @@
    - Add loading states and error handling
    ```
 
-5. **Integration & Testing (3 days)**
+5. **Integration & Testing**
    ```
    - Connect with API endpoints
    - Implement data fetching
@@ -65,7 +66,7 @@
    - Test responsive design
    ```
 
-### Final Documentation (Dec 16)
+### Final Documentation
 1. Create comprehensive documentation including:
    - Setup instructions
    - Component hierarchy
@@ -73,9 +74,9 @@
    - Screenshots of final implementation
    - User interaction flows
 
-## Person 2: Data Collection & Processing
-### Week 1 (Until Nov 27)
-1. **Website Analysis (2 days)**
+## Costanza: Data Collection & Processing
+### Week 1
+1. **Website Analysis**
    ```
    - Identify 5-10 suitable websites for crawling
    - Analyze website structures
@@ -83,7 +84,7 @@
    - Check robots.txt files
    ```
 
-2. **Crawler Design (2 days)**
+2. **Crawler Design**
    ```
    - Select crawling library (Scrapy recommended)
    - Design data extraction patterns
@@ -91,20 +92,20 @@
    - Define data storage schema
    ```
 
-3. **Initial Setup (1 day)**
+3. **Initial Setup**
    ```
    - Set up development environment
    - Install required libraries
    - Create initial project structure
    ```
 
-4. **Progress Report Writing (1 day)**
+4. **Progress Report Writing**
    - Document selected websites
    - Explain crawler design
    - Outline storage approach
 
-### Week 2-3 (Nov 28 - Dec 15)
-1. **Crawler Implementation (4 days)**
+### Week 2-3
+1. **Crawler Implementation**
    ```
    - Implement basic crawler
    - Add URL filtering
@@ -112,7 +113,7 @@
    - Add error handling
    ```
 
-2. **Data Storage (3 days)**
+2. **Data Storage**
    ```
    - Set up database (MongoDB recommended)
    - Implement data storage pipeline
@@ -120,7 +121,7 @@
    - Create backup strategy
    ```
 
-3. **Data Processing (4 days)**
+3. **Data Processing**
    ```
    - Implement text extraction
    - Add HTML cleaning
@@ -128,7 +129,7 @@
    - Implement metadata extraction
    ```
 
-4. **Data Quality & Optimization (3 days)**
+4. **Data Quality & Optimization**
    ```
    - Add data validation
    - Implement error logging
@@ -136,16 +137,16 @@
    - Create data update mechanism
    ```
 
-### Final Documentation (Dec 16)
+### Final Documentation
 1. Create technical documentation including:
    - Crawler architecture
    - Data schema
    - Processing pipeline
    - Dataset statistics
 
-## Person 3: Search Engine & Core Features
-### Week 1 (Until Nov 27)
-1. **Architecture Planning (2 days)**
+## Agnese: Search Engine & Core Features
+### Week 1
+1. **Architecture Planning**
    ```
    - Choose search engine (Solr/Elasticsearch)
    - Design system architecture
@@ -153,7 +154,7 @@
    - Define ranking approach
    ```
 
-2. **Feature Planning (2 days)**
+2. **Feature Planning**
    ```
    - Design query processing pipeline
    - Plan ranking algorithms
@@ -161,20 +162,20 @@
    - Plan snippet generation
    ```
 
-3. **Initial Setup (1 day)**
+3. **Initial Setup**
    ```
    - Set up search engine
    - Create basic index structure
    - Plan API endpoints
    ```
 
-4. **Progress Report Writing (1 day)**
+4. **Progress Report Writing**
    - Document architecture decisions
    - Explain feature plans
    - Outline implementation strategy
 
-### Week 2-3 (Nov 28 - Dec 15)
-1. **Core Search Implementation (4 days)**
+### Week 2-3
+1. **Core Search Implementation**
    ```
    - Set up search index
    - Implement basic search
@@ -182,7 +183,7 @@
    - Create query processing
    ```
 
-2. **API Development (3 days)**
+2. **API Development**
    ```
    - Create REST API
    - Implement search endpoints
@@ -190,7 +191,7 @@
    - Create feedback endpoints
    ```
 
-3. **Feature Implementation (4 days)**
+3. **Feature Implementation**
    ```
    - Add snippet generation
    - Implement spell-checking
@@ -198,7 +199,7 @@
    - Create feedback processing
    ```
 
-4. **Integration & Optimization (3 days)**
+4. **Integration & Optimization**
    ```
    - Optimize search performance
    - Add caching
@@ -206,7 +207,7 @@
    - Fine-tune ranking
    ```
 
-### Final Documentation (Dec 16)
+### Final Documentation
 1. Create technical documentation including:
    - System architecture
    - API documentation
@@ -215,12 +216,12 @@
 
 ## Integration Schedule
 ### Week 2
-- Person 1 ↔ Person 3: API contract definition
-- Person 2 ↔ Person 3: Data schema finalization
+- Davide ↔ Agnese: API contract definition
+- Costanza ↔ Agnese: Data schema finalization
 
 ### Week 3
-- Person 1 ↔ Person 3: Frontend-API integration
-- Person 2 ↔ Person 3: Data pipeline integration
+- Davide ↔ Agnese: Frontend-API integration
+- Costanza ↔ Agnese: Data pipeline integration
 
 ### Final Week
 - All: System integration testing
