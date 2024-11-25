@@ -148,7 +148,7 @@
 ### Week 1 (Nov 25 - Dec 1)
 1. **Architecture Planning**
    ```
-   - Choose search engine (Solr/Elasticsearch)
+   - Choose search engine (Solr/Elasticsearch/PyTerrier!!!)
    - Design system architecture
    - Plan API structure
    - Define ranking approach
