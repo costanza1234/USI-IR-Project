@@ -1,6 +1,6 @@
 # Detailed Information Retrieval Project Instructions
 
-## Person 1: Frontend & UI Implementation
+## Davide: Frontend & UI Implementation
 
 ### Week 1 (Nov 25 - Dec 1)
 1. **Initial Design Research**
