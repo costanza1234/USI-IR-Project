@@ -11,11 +11,8 @@ const TestComponent: React.FC = () => {
     const fetchData = async () => {
       try {
         console.log('fetching data');
-        const res = await fetch('http://localhost:8000/items/6');
-        console.log('fetched data');
-        console.log(res);
+        const res = await fetch('http://localhost:8000/items/8?test=5');
         const data = await res.json();
-        console.log(data);
         setData(data);
       } catch (error) {
         console.error(error);
