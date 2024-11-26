@@ -1,3 +1,13 @@
 .DStore
 .venv
 backend/__pycache__/
+
+# Ignore all latex compilation files
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.synctex.gz
+
