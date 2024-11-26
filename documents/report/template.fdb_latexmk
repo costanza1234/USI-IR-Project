@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1732646166.94732 "/Users/davide/USI/5thSemester/InfRetrv/USI-IR-Project/documents/report/template.tex" "template.pdf" "template" 1732646168.57588 0
-  "/Users/davide/USI/5thSemester/InfRetrv/USI-IR-Project/documents/report/template.tex" 1732646166.67728 3193 2abe8da7031941e1c33e940c5db8012e ""
+["pdflatex"] 1732647869.62744 "/Users/davide/USI/5thSemester/InfRetrv/USI-IR-Project/documents/report/template.tex" "template.pdf" "template" 1732647870.98828 0
+  "/Users/davide/USI/5thSemester/InfRetrv/USI-IR-Project/documents/report/template.tex" 1732647867.98021 3267 5b8ad2321a6a596949ee89d8df36bc6b ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm" 1246382020 996 a18840b13b499c08ac2de96a99eda4bc ""
@@ -91,9 +91,9 @@
   "assignment.sty" 1732644820.93615 1731 ddad2b286c8f09bbe91a92a1e6959594 ""
   "fig/mockup1.png" 1732643780.45673 22920 2135e12bdb3ee6a83892432b663d130e ""
   "fig/mockup2.png" 1732644376.8593 312491 562cca1b2493791f406463f887680326 ""
-  "template.aux" 1732646168.51875 2832 78e80e9cda59cb99c1364e2e7c77311a "pdflatex"
-  "template.out" 1732646168.04788 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "template.tex" 1732646166.67728 3193 2abe8da7031941e1c33e940c5db8012e ""
+  "template.aux" 1732647870.93983 2832 bf1b7dcc0b4e69628e01062a0cd3806f "pdflatex"
+  "template.out" 1732647870.5084 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "template.tex" 1732647867.98021 3267 5b8ad2321a6a596949ee89d8df36bc6b ""
   (generated)
   "template.aux"
   "template.log"
