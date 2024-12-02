@@ -1,14 +1,20 @@
-'use client';
-
-import styles from './page.module.css';
-import TestComponent from '@/components/testComponent';
+import SearchBar from '@/components/SearchBar';
+import SearchFilters from '@/components/SearchFilters';
+import { Box } from '@mui/material';
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <TestComponent />
-      </main>
-    </div>
+    <Box
+      sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100vh',
+      }}
+    >
+      <SearchBar />
+      <SearchFilters />
+    </Box>
   );
 }
