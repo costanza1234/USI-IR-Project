@@ -1,9 +1,11 @@
-import Paper from '@mui/material/Paper';
-import InputBase from '@mui/material/InputBase';
-import IconButton from '@mui/material/IconButton';
+import { Paper, InputBase, IconButton } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 
-export default function SearchBar() {
+interface SearchBarProps {
+  onSearch: () => void;
+}
+
+export default function SearchBar({ onSearch }: SearchBarProps) {
   return (
     <Paper
       component="form"
@@ -14,13 +16,17 @@ export default function SearchBar() {
         width: 400,
         borderRadius: '9999px',
       }}
+      onSubmit={(e) => {
+        e.preventDefault();
+        onSearch();
+      }}
     >
       <InputBase
         sx={{ ml: 1, flex: 1 }}
-        placeholder="Charity about animals"
-        // inputProps={{ 'aria-label': 'search google maps' }}
+        placeholder="Search"
+        inputProps={{ 'aria-label': 'search' }}
       />
-      <IconButton type="button" sx={{ p: '10px' }} aria-label="search">
+      <IconButton type="submit" sx={{ p: '10px' }} aria-label="search">
         <SearchIcon />
       </IconButton>
     </Paper>
