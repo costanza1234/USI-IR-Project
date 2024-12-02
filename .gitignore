@@ -1,6 +1,7 @@
 .DStore
 .venv
 backend/__pycache__/
+.env
 
 # Ignore all latex compilation files
 *.aux
