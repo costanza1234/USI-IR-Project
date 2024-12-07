@@ -1,5 +1,4 @@
-from typing import Union
-from typing import Optional
+from typing import Union, Optional
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -16,16 +15,13 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Load documents and initialize index once
+documents = load_documents()
+index = initialize_index(documents)
 
 @app.get("/")
 def read_root():
     return {"Hello": "World"}
-
-
-@app.get("/items/{item_id}")
-def read_item(item_id: int, q: Union[str, None] = None):
-    return {"item_id": item_id, "q": q}
-
 
 # search the index for the query.
 # only include results with specified cause, location, and number of total projects bigger than given projects
@@ -33,12 +29,12 @@ def read_item(item_id: int, q: Union[str, None] = None):
 # country: the country of operation of the charity
 # projects: the minimum number of total projects done by the charity
 @app.get("/search")
-async def search(query: str, cause: Optional[str]=None, country: Optional[str]=None, projects: Optional[int]=None):
-    documents = load_documents()  # load scraped documents
-    index = initialize_index(documents)
+async def search(query: str, cause: Optional[str] = None, country: Optional[str] = None, projects: Optional[int] = None):
     results = search_index(index, documents, query)
-    print(results)
+    # print found number of results
+    print(f"Found {len(results)} results for query '{query}'")
     charities = get_charities(results)
     charities = filter_charities(charities, cause, country, projects)
-    print(charities)
+    # print found number of charities after filtering
+    print(f"Found {len(charities)} charities for query '{query}' after filtering")
     return {"query": query, "charities": charities}

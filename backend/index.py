@@ -3,13 +3,9 @@ import pandas as pd
 import numpy as np
 import json
 
-# Initialize python terrier
-if not pt.started():
-    pt.init()
-
 def load_data():
     # Load data
-    with open('global_giving.json', 'r') as file:
+    with open('./global_giving.json', 'r', encoding='utf-8') as file:
         data = json.load(file)
     return data
 
