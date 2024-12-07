@@ -13,9 +13,72 @@ import { Charity } from '@/app/types/charity';
 
 interface CharityListProps {
   charities: Charity[];
+  query: string;
 }
 
-export default function CharityList({ charities }: CharityListProps) {
+const stopWords = new Set([
+  'a',
+  'an',
+  'and',
+  'are',
+  'as',
+  'at',
+  'be',
+  'but',
+  'by',
+  'for',
+  'if',
+  'in',
+  'into',
+  'is',
+  'it',
+  'no',
+  'not',
+  'of',
+  'on',
+  'or',
+  'such',
+  'that',
+  'the',
+  'their',
+  'then',
+  'there',
+  'these',
+  'they',
+  'this',
+  'to',
+  'was',
+  'will',
+  'with',
+]);
+
+export default function CharityList({ charities, query }: CharityListProps) {
+  const highlightQuery = (text: string, query: string) => {
+    if (!query) return text;
+
+    const queryWords = query
+      .split(' ')
+      .filter((word) => word && !stopWords.has(word.toLowerCase()));
+
+    const regex = new RegExp(`(${queryWords.join('|')})`, 'gi');
+    const parts = text.split(regex);
+
+    return parts.map((part, index) =>
+      queryWords.includes(part.toLowerCase()) ? (
+        <span key={index} style={{ fontWeight: 'bold' }}>
+          {part}
+        </span>
+      ) : (
+        part
+      )
+    );
+  };
+
+  const cutMission = (mission: string, length: number = 500) => {
+    if (mission.length <= length) return mission;
+    return mission.slice(0, length) + '...';
+  };
+
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
       {charities.map((charity, index) => (
@@ -49,9 +112,7 @@ export default function CharityList({ charities }: CharityListProps) {
                   </Link>
                 </Typography>
                 <Typography variant="body2">
-                  {charity.mission.length > 500
-                    ? `${charity.mission.substring(0, 500)}...`
-                    : charity.mission}
+                  {highlightQuery(cutMission(charity.mission), query)}
                 </Typography>
                 <Box sx={{ display: 'flex', gap: 1, mt: 1 }}>
                   <IconButton aria-label="thumb up">

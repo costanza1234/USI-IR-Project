@@ -9,9 +9,11 @@ import { Charity, CharityResponse, SearchResponse } from '@/app/types/charity';
 export default function Home() {
   const [searchActive, setSearchActive] = useState(false);
   const [charities, setCharities] = useState<Charity[]>([]);
+  const [query, setQuery] = useState('');
 
   const handleSearch = async (query: string) => {
     setSearchActive(true);
+    setQuery(query);
     const response = await fetch(`http://127.0.0.1:8000/search?query=${query}`);
     const data: SearchResponse = await response.json();
     const sortedCharities = data.charities
@@ -51,7 +53,7 @@ export default function Home() {
             padding: '1rem',
           }}
         >
-          <CharityList charities={charities} />
+          <CharityList charities={charities} query={query} />
         </Box>
       )}
     </Box>
