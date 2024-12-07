@@ -2,6 +2,11 @@ from typing import Union
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+from index import load_documents, initialize_index, search_index
+
+documents = load_documents()  # load scraped documents
+index = initialize_index(documents)
+
 app = FastAPI()
 
 # Add CORS middleware
@@ -22,3 +27,8 @@ def read_root():
 @app.get("/items/{item_id}")
 def read_item(item_id: int, q: Union[str, None] = None):
     return {"item_id": item_id, "q": q}
+
+@app.get("/search")
+async def search(query: str):
+    results = search_index(index, documents, query)
+    return {"query": query, "results": results}
