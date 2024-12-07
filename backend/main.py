@@ -3,7 +3,7 @@ from typing import Optional
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from index import load_documents, initialize_index, search_index
+from index import load_documents, initialize_index, search_index, get_charities, filter_charities
 
 app = FastAPI()
 
@@ -34,8 +34,11 @@ def read_item(item_id: int, q: Union[str, None] = None):
 # projects: the minimum number of total projects done by the charity
 @app.get("/search")
 async def search(query: str, cause: Optional[str]=None, country: Optional[str]=None, projects: Optional[int]=None):
-    documents = load_documents(cause, country, projects)  # load scraped documents
+    documents = load_documents()  # load scraped documents
     index = initialize_index(documents)
     results = search_index(index, documents, query)
     print(results)
-    return {"query": query, "results": results}
+    charities = get_charities(results)
+    charities = filter_charities(charities, cause, country, projects)
+    print(charities)
+    return {"query": query, "charities": charities}

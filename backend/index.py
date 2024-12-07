@@ -7,30 +7,18 @@ import json
 if not pt.started():
     pt.init()
 
-def load_documents(cause: str, country: str, projects: int):
+def load_data():
     # Load data
     with open('global_giving.json', 'r') as file:
         data = json.load(file)
-    
-    filtered_data = []
-    for item in data:
-        countries_of_operation = item.get("countries_of_operation", [])
-        causes = item.get("cause", [])
-        total_projects = item.get("total_projects")
-        if total_projects is not None:
-            total_projects = int(total_projects)
-        
-        if total_projects is not None and total_projects < projects:
-            continue
-        if cause is not None and not any(c.get("name") == cause for c in causes):
-            continue
-        if country is not None and not any(c.get("name") == country for c in countries_of_operation):
-            continue
+    return data
 
-        # If all conditions passed, append item to filtered_data
-        filtered_data.append(item)
+# the documents are returned in format idx, text
+# idx: d1, d2, ...
+# mission: the text included in the mission field in the data
+def load_documents():  
+    filtered_data = load_data()
 
-    
     # Get mission field
     missions = [item['mission'] for item in filtered_data]
 
@@ -70,3 +58,40 @@ def print_lexicon(index):
 
 # Saving the results in trec_format
 # pt.io.write_results(joined, "backend/results.txt", format='trec')
+
+# convert from terrier results (pandas data frame) to charities with rank
+def get_charities(results):
+    data = load_data()
+    charities = []
+    for idx, row in results.iterrows():
+        docid = row['docid']
+        score = row['score'] # HKCF
+        
+        charity = data[docid]
+        
+        charities.append({
+            "score": score,
+            "charity": charity
+        })
+    return charities
+
+def filter_charities(charities, cause: str, country: str, projects: int):
+    filtered_charities = []
+    for item in charities:
+        charity = item.get("charity")
+        countries_of_operation = charity.get("countries_of_operation", [])
+        causes = charity.get("cause", [])
+        total_projects = charity.get("total_projects")
+        if total_projects is not None:
+            total_projects = int(total_projects)
+        
+        if total_projects is not None and total_projects < projects:
+            continue
+        if cause is not None and not any(c.get("name") == cause for c in causes):
+            continue
+        if country is not None and not any(c.get("name") == country for c in countries_of_operation):
+            continue
+        
+        # If all conditions passed, append item to filtered_data
+        filtered_charities.append(item)
+    return filtered_charities
