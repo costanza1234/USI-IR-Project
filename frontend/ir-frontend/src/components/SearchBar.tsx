@@ -2,10 +2,16 @@ import { Paper, InputBase, IconButton } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 
 interface SearchBarProps {
+  query: string;
+  setQuery: (query: string) => void;
   onSearch: () => void;
 }
 
-export default function SearchBar({ onSearch }: SearchBarProps) {
+export default function SearchBar({
+  query,
+  setQuery,
+  onSearch,
+}: SearchBarProps) {
   return (
     <Paper
       component="form"
@@ -25,6 +31,8 @@ export default function SearchBar({ onSearch }: SearchBarProps) {
         sx={{ ml: 1, flex: 1 }}
         placeholder="Search"
         inputProps={{ 'aria-label': 'search' }}
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
       />
       <IconButton type="submit" sx={{ p: '10px' }} aria-label="search">
         <SearchIcon />

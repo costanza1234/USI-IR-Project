@@ -1,12 +1,19 @@
+import { useState } from 'react';
 import Box from '@mui/material/Box';
 import SearchBar from '@/components/SearchBar';
 import SearchFilters from '@/components/SearchFilters';
 
 interface SearchComponentProps {
-  onSearch: () => void;
+  onSearch: (query: string) => void;
 }
 
 export default function SearchComponent({ onSearch }: SearchComponentProps) {
+  const [query, setQuery] = useState('');
+
+  const handleSearch = () => {
+    onSearch(query);
+  };
+
   return (
     <Box
       sx={{
@@ -17,7 +24,7 @@ export default function SearchComponent({ onSearch }: SearchComponentProps) {
         width: '100%',
       }}
     >
-      <SearchBar onSearch={onSearch} />
+      <SearchBar query={query} setQuery={setQuery} onSearch={handleSearch} />
       <SearchFilters />
     </Box>
   );

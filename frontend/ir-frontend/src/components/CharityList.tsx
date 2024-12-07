@@ -3,59 +3,19 @@ import {
   Card,
   CardContent,
   Typography,
-  Grid2 as Grid,
   Link,
+  Grid2 as Grid,
   IconButton,
 } from '@mui/material';
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 import ThumbDownIcon from '@mui/icons-material/ThumbDown';
+import { Charity } from '@/app/types/charity';
 
-const charities = [
-  {
-    name: 'Charity 1',
-    description: 'Description 1',
-    logo: 'https://cataas.com/cat',
-    website: 'https://charity1.org',
-  },
-  {
-    name: 'Charity 2',
-    description: 'Description 2',
-    logo: 'https://cataas.com/cat',
-    website: 'https://charity2.org',
-  },
-  {
-    name: 'Charity 3',
-    description: 'Description 3',
-    logo: 'https://cataas.com/cat',
-    website: 'https://charity3.org',
-  },
-  {
-    name: 'Charity 4',
-    description: 'Description 4',
-    logo: 'https://cataas.com/cat',
-    website: 'https://charity4.org',
-  },
-  {
-    name: 'Charity 5',
-    description: 'Description 5',
-    logo: 'https://cataas.com/cat',
-    website: 'https://charity5.org',
-  },
-  {
-    name: 'Charity 6',
-    description: 'Description 6',
-    logo: 'https://cataas.com/cat',
-    website: 'https://charity6.org',
-  },
-  {
-    name: 'Charity 7',
-    description: 'Description 7',
-    logo: 'https://cataas.com/cat',
-    website: 'https://charity7.org',
-  },
-];
+interface CharityListProps {
+  charities: Charity[];
+}
 
-export default function CharityList() {
+export default function CharityList({ charities }: CharityListProps) {
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
       {charities.map((charity, index) => (
@@ -69,7 +29,7 @@ export default function CharityList() {
               >
                 <Box
                   component="img"
-                  src={charity.logo}
+                  src={charity.logoUrl}
                   alt={`${charity.name} logo`}
                   sx={{ width: '100%', height: 'auto', aspectRatio: '1 / 1' }}
                 />
@@ -80,11 +40,19 @@ export default function CharityList() {
                 }}
               >
                 <Typography variant="h5">
-                  <Link href={charity.website} underline="none" color="inherit">
+                  <Link
+                    href={charity.organization_url}
+                    underline="none"
+                    color="inherit"
+                  >
                     {charity.name}
                   </Link>
                 </Typography>
-                <Typography variant="body2">{charity.description}</Typography>
+                <Typography variant="body2">
+                  {charity.mission.length > 500
+                    ? `${charity.mission.substring(0, 500)}...`
+                    : charity.mission}
+                </Typography>
                 <Box sx={{ display: 'flex', gap: 1, mt: 1 }}>
                   <IconButton aria-label="thumb up">
                     <ThumbUpIcon />
