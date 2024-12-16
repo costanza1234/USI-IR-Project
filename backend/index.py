@@ -1,3 +1,4 @@
+from typing import List, Optional
 import pyterrier as pt
 import pandas as pd
 import numpy as np
@@ -81,23 +82,41 @@ def get_charities(results):
         })
     return charities
 
-def filter_charities(charities, cause: str, country: str, projects: int):
+def filter_charities(
+        charities, 
+        q_causes: Optional[List[str]] = None,
+        q_countries: Optional[List[str]] = None,
+        q_continents: Optional[List[str]] = None
+):
+    i = 0
     filtered_charities = []
     for item in charities:
+        i = i + 1
         charity = item.get("charity")
-        countries_of_operation = charity.get("countries_of_operation", [])
+        # get the cause
         causes = charity.get("cause", [])
-        total_projects = charity.get("total_projects")
-        if total_projects is not None:
-            total_projects = int(total_projects)
-        
-        if total_projects is not None and total_projects < projects:
-            continue
-        if cause is not None and not any(c.get("name") == cause for c in causes):
-            continue
-        if country is not None and not any(c.get("name") == country for c in countries_of_operation):
+        if isinstance(causes, str):
+            causes = [{"name": causes}]  # if it's only one cause transform into a list
+        # get countries of operation
+        countries = charity.get("country", [])
+        if isinstance(countries, str):
+            countries = [{"name": countries}]  # if it's only one transform into a list
+        # get the continent
+        continent = charity.get("continent")
+
+        if q_causes is not None:
+            matches = [q for q in q_causes if any(q == cause['name'] for cause in causes)]
+            if len(matches) == 0:
+                continue
+        if q_countries is not None:
+            matches = [q for q in q_countries if any(q == country['name'] for country in countries)]
+            if len(matches) == 0:
+                continue
+        if q_continents is not None and not any(q == continent for q in q_continents):
             continue
         
         # If all conditions passed, append item to filtered_data
         filtered_charities.append(item)
+
+
     return filtered_charities

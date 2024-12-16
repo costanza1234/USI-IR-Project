@@ -1,4 +1,4 @@
-from typing import Union, Optional
+from typing import List, Optional
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -24,17 +24,21 @@ def read_root():
     return {"Hello": "World"}
 
 # search the index for the query.
-# only include results with specified cause, location, and number of total projects bigger than given projects
-# cause: string defining a cause
-# country: the country of operation of the charity
-# projects: the minimum number of total projects done by the charity
+# only include results with specified causes, countries, and continents
+# causes: a list of string defining a causes
+# countries: the countries of operation of the charities
+# continents: the continents of operation of the charities
+
+# example : /search?query=help&causes=health&causes=education&countries=USA&countries=Canada&continents=North America
+
 @app.get("/search")
-async def search(query: str, cause: Optional[str] = None, country: Optional[str] = None, projects: Optional[int] = None):
+async def search(
+    query: str,
+    causes: Optional[List[str]] = None,
+    countries: Optional[List[str]] = None,
+    continents: Optional[List[str]] = None
+):
     results = search_index(index, documents, query)
-    # print found number of results
-    print(f"Found {len(results)} results for query '{query}'")
     charities = get_charities(results)
-    charities = filter_charities(charities, cause, country, projects)
-    # print found number of charities after filtering
-    print(f"Found {len(charities)} charities for query '{query}' after filtering")
+    charities = filter_charities(charities, causes, countries, continents)
     return {"query": query, "charities": charities}
