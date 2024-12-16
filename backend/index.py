@@ -3,28 +3,38 @@ import pandas as pd
 import numpy as np
 import json
 
+# only keep the charities that have a name and a mission
+def remove_incomplete(data):
+    return [item for item in data if item["name"] and item["mission"]]
+
+
 def load_data():
     # Load data
-    with open('./global_giving.json', 'r', encoding='utf-8') as file:
-        data = json.load(file)
-    return data
+    with open('./global_giving.json', 'r', encoding='utf-8') as file1:
+        data1 = json.load(file1)
+    with open('./charity_navigator.json', 'r', encoding='utf-8') as file2:
+        data2 = json.load(file2)
+    return remove_incomplete(data1 + data2)
 
 # the documents are returned in format idx, text
 # idx: d1, d2, ...
-# mission: the text included in the mission field in the data
+# text: the text included in the mission field in the data AND the name field
 def load_documents():  
-    filtered_data = load_data()
+    data = load_data()
 
-    # Get mission field
-    missions = [item['mission'] for item in filtered_data]
+    texts = []
+    for i in range(len(data)):
+        mission = data[i]['mission']
+        name = data[i]['name']
+        texts.append(name + " " + mission)
 
     # Format doucuments
-    idx = ['d' + str(i + 1) for i in range(len(missions))]
-    return pd.DataFrame(np.column_stack((idx, missions)), columns = ['docno', 'text'])
+    idx = ['d' + str(i + 1) for i in range(len(texts))]
+    return pd.DataFrame(np.column_stack((idx, texts)), columns = ['docno', 'text'])
 
 def initialize_index(documents):
     # Initialize the index
-    indexer = pt.terrier.IterDictIndexer("./backend/index_docs", overwrite=True)
+    indexer = pt.terrier.IterDictIndexer("./index_docs", overwrite=True)
     index_ref = indexer.index(documents.to_dict(orient="records"))
     index = pt.IndexFactory.of(index_ref)  # of type jnius.reflect.org.terrier.structures.Index
     return index
