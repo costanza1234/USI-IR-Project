@@ -11,4 +11,6 @@ backend/__pycache__/
 *.out
 *.toc
 *.synctex.gz
+*.fls 
+*.fdb_latexmk
 
