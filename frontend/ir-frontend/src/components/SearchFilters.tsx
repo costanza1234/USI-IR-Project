@@ -1,81 +1,72 @@
 'use client';
 
 import Box from '@mui/material/Box';
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import Select, { SelectChangeEvent } from '@mui/material/Select';
-import { useState } from 'react';
+import TextField from '@mui/material/TextField';
+import Autocomplete from '@mui/material/Autocomplete';
+import { causes } from '@/app/constants/causes';
+import { continents } from '@/app/constants/continents';
+import { countries } from '@/app/constants/countries';
 
-export default function SearchFilters() {
-  const [theme, setTheme] = useState(' ');
-  const [location, setLocation] = useState(' ');
-  const [yearsActive, setYearsActive] = useState(' ');
+interface SearchFiltersProps {
+  selectedCauses: string[];
+  setSelectedCauses: (causes: string[]) => void;
+  selectedContinents: string[];
+  setSelectedContinents: (continents: string[]) => void;
+  selectedCountries: string[];
+  setSelectedCountries: (countries: string[]) => void;
+}
 
-  const handleThemeChange = (event: SelectChangeEvent) => {
-    setTheme(event.target.value as string);
-  };
-
-  const handleLocationChange = (event: SelectChangeEvent) => {
-    setLocation(event.target.value as string);
-  };
-
-  const handleYearsActiveChange = (event: SelectChangeEvent) => {
-    setYearsActive(event.target.value as string);
-  };
-
+export default function SearchFilters({
+  selectedCauses,
+  setSelectedCauses,
+  selectedContinents,
+  setSelectedContinents,
+  selectedCountries,
+  setSelectedCountries,
+}: SearchFiltersProps) {
   return (
-    <Box sx={{ display: 'flex', gap: 2, mt: '0.8rem' }}>
-      <FormControl sx={{ minWidth: 100, height: '40px' }}>
-        <InputLabel id="theme-select-label">Theme</InputLabel>
-        <Select
-          labelId="theme-select-label"
-          id="theme-select"
-          value={theme}
-          label="Theme"
-          onChange={handleThemeChange}
-          sx={{ height: '40px', padding: '8px' }}
-        >
-          <MenuItem value="animals">Animals</MenuItem>
-          <MenuItem value="environment">Environment</MenuItem>
-          <MenuItem value="education">Education</MenuItem>
-          <MenuItem value="health">Health</MenuItem>
-          <MenuItem value="human-rights">Human Rights</MenuItem>
-        </Select>
-      </FormControl>
-      <FormControl sx={{ minWidth: 100, height: '40px' }}>
-        <InputLabel id="location-select-label">Location</InputLabel>
-        <Select
-          labelId="location-select-label"
-          id="location-select"
-          value={location}
-          label="Location"
-          onChange={handleLocationChange}
-          sx={{ height: '40px', padding: '8px' }}
-        >
-          <MenuItem value="eu">Europe</MenuItem>
-          <MenuItem value="na">North America</MenuItem>
-          <MenuItem value="sa">South America</MenuItem>
-          <MenuItem value="as">Asia</MenuItem>
-        </Select>
-      </FormControl>
-      <FormControl sx={{ minWidth: 100, height: '40px' }}>
-        <InputLabel id="years-active-select-label">Years Active</InputLabel>
-        <Select
-          labelId="years-active-select-label"
-          id="years-active-select"
-          value={yearsActive}
-          label="Years Active"
-          onChange={handleYearsActiveChange}
-          sx={{ height: '40px', padding: '8px' }}
-        >
-          <MenuItem value="1">1 Year</MenuItem>
-          <MenuItem value="2">2 Years</MenuItem>
-          <MenuItem value="3">3 Years</MenuItem>
-          <MenuItem value="5">5 Years</MenuItem>
-          <MenuItem value="10">10+ Years</MenuItem>
-        </Select>
-      </FormControl>
+    <Box sx={{ display: 'flex', gap: 2, mt: '0.8rem', flexWrap: 'wrap' }}>
+      <Autocomplete
+        multiple
+        options={causes}
+        getOptionLabel={(option) => option}
+        value={selectedCauses}
+        onChange={(event, newValue) => setSelectedCauses(newValue)}
+        renderInput={(params) => (
+          <TextField {...params} label="Causes" placeholder="Select causes" />
+        )}
+        sx={{ minWidth: 200, flex: 1 }}
+      />
+      <Autocomplete
+        multiple
+        options={continents}
+        getOptionLabel={(option) => option}
+        value={selectedContinents}
+        onChange={(event, newValue) => setSelectedContinents(newValue)}
+        renderInput={(params) => (
+          <TextField
+            {...params}
+            label="Continents"
+            placeholder="Select continents"
+          />
+        )}
+        sx={{ minWidth: 200, flex: 1 }}
+      />
+      <Autocomplete
+        multiple
+        options={countries}
+        getOptionLabel={(option) => option}
+        value={selectedCountries}
+        onChange={(event, newValue) => setSelectedCountries(newValue)}
+        renderInput={(params) => (
+          <TextField
+            {...params}
+            label="Countries"
+            placeholder="Select countries"
+          />
+        )}
+        sx={{ minWidth: 200, flex: 1 }}
+      />
     </Box>
   );
 }

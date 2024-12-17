@@ -13,13 +13,32 @@ export default function Home() {
   const [query, setQuery] = useState('');
   const [sessionId, setSessionId] = useState('');
 
-  const handleSearch = async (query: string) => {
+  const handleSearch = async (
+    query: string,
+    selectedCauses: string[],
+    selectedContinents: string[],
+    selectedCountries: string[]
+  ) => {
     setSearchActive(true);
     setQuery(query);
     const newSessionId = uuidv4();
     setSessionId(newSessionId);
+
+    const queryParams = new URLSearchParams({
+      query,
+      session_id: newSessionId,
+    });
+
+    selectedCauses.forEach((cause) => queryParams.append('causes', cause));
+    selectedContinents.forEach((continent) =>
+      queryParams.append('continents', continent)
+    );
+    selectedCountries.forEach((country) =>
+      queryParams.append('countries', country)
+    );
+
     const response = await fetch(
-      `http://127.0.0.1:8000/search?query=${query}&session_id=${newSessionId}`
+      `http://127.0.0.1:8000/search?${queryParams.toString()}`
     );
     const data: SearchResponse = await response.json();
 
