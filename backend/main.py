@@ -1,5 +1,5 @@
 from typing import List, Optional, Dict
-from fastapi import FastAPI
+from fastapi import FastAPI, Query
 from fastapi.middleware.cors import CORSMiddleware
 from index import load_data, load_documents, initialize_index, search_index, get_charities, filter_charities, update_query
 
@@ -21,14 +21,13 @@ index = initialize_index(documents)
 
 # Store relevance feedback in memory
 feedback = {}
-
 @app.get("/search")
 async def search(
     query: str,
     session_id: str,
-    causes: Optional[List[str]] = None,
-    countries: Optional[List[str]] = None,
-    continents: Optional[List[str]] = None
+    causes: Optional[List[str]] = Query(None),
+    countries: Optional[List[str]] = Query(None),
+    continents: Optional[List[str]] = Query(None)
 ):
     # Check if there is existing feedback for this session
     if session_id in feedback and feedback[session_id]["updated_query"]:
@@ -43,8 +42,6 @@ async def search(
     feedback[session_id]["results"] = charities
     
     return {"query": query, "charities": charities}
-
-search("cancer", "1", None, ["Hong Kong SAR"])
 
 @app.post("/feedback/{session_id}/{docid}/{relevant}")
 async def give_feedback(
