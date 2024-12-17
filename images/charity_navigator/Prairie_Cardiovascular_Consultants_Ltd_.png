@@ -1,0 +1,755 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    
+
+<meta charset="UTF-8">
+
+<title>Prairie Cardiovascular: Illinois Cardiologists &amp; Heart Health Organization</title>
+<meta name="description" content="Prairie Cardiovascular is a pioneering organization. James T. Dove, M.D. envisioned a great practice based on Quality, Compassionate and Personal Care."/>
+<meta name="keywords" content="" />
+
+<meta property="og:title" content="Prairie Cardiovascular: Illinois Cardiologists &amp; Heart Health Organization" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.hshs.org/prairie-heart" />
+<meta property="og:image" content="https://www.hshs.org/getmedia/2c4bc16c-720f-4372-93b2-12376dc72559/PCC_FC_bigheart.png?width=1563&amp;height=473&amp;ext=.png"/>
+<meta property="og:description" content="Prairie Cardiovascular is a pioneering organization. James T. Dove, M.D. envisioned a great practice based on Quality, Compassionate and Personal Care."/>
+
+<meta property="twitter:title" content="Prairie Cardiovascular: Illinois Cardiologists &amp; Heart Health Organization"/>
+<meta property="twitter:card" content="website"/>
+<meta property="twitter:image" content="https://www.hshs.org/getmedia/2c4bc16c-720f-4372-93b2-12376dc72559/PCC_FC_bigheart.png?width=1563&amp;height=473&amp;ext=.png"/>
+<meta property="twitter:description" content="Prairie Cardiovascular is a pioneering organization. James T. Dove, M.D. envisioned a great practice based on Quality, Compassionate and Personal Care."/>
+
+    
+
+<link href="/dist/prairie-index.css?v=3zjIxim0_CZ6noh6IlRUElLzCp1J12hHFIi-0razRHQ" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/png" href="/getmedia/7dc4149c-242d-4e84-8c78-d18e4c4df798/Prairie-Favicon.png?width=32&amp;height=27&amp;ext=.png" />
+
+
+
+    <link href="/dist/vendor.css?v=HSKEMOESAJRrDhjy_L0KnAj53z5tFB-teHxO7tEpBKo" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    
+    <link href="/_content/Kentico.Content.Web.Rcl/Content/Bundles/Public/systemPageComponents.min.css" rel="stylesheet" />
+
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-M2R9LSZ');
+    </script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body class="theme-PRCRD">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M2R9LSZ"
+                height="0"
+                width="0"
+                style="display:none;visibility:hidden">
+        </iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="body-container">
+        
+
+<header id="stickyHeader">
+    <div class="logo-header-icon-container">
+        <div class="logo-wrapper">
+            <a href="/prairie-heart">
+                <img src="/getmedia/0d015ac3-f951-422c-8e9d-b8de00c25211/Prairie-Cardio-logo-header.jpg?width=200&amp;height=50&amp;ext=.jpg" alt="hshs logo" />
+            </a>
+        </div>
+        <div class="button-container tablet">
+                    <div class="menu-cta">
+                        
+
+    <a href="https://providers.hshs.org/" class="btn-small btn btn-primary" target="_blank">Find Care</a>
+
+                    </div>
+                    <div class="menu-cta">
+                        
+
+    <a href="https://www.mychartportal.org/prairie/Authentication/Login" class="btn-small btn btn-hollow" target="_blank">MyPrairie</a>
+
+                    </div>
+        </div>
+        <div class="mobile-nav-icon-wrapper">
+            <button class="toggle-mobile-menu" aria-expanded="false" aria-controls="navigation" aria-label="Toggle mobile navigation">
+                <i class="fa-sharp fa-solid fa-bars"></i>
+                <i class="fa-sharp fa-solid fa-close"></i>
+            </button>
+        </div>
+
+    </div>
+    <div class="button-container mobile">
+                <div class="menu-cta">
+                    
+
+    <a href="https://providers.hshs.org/" class="btn-small btn btn-primary" target="_blank">Find Care</a>
+
+                </div>
+                <div class="menu-cta">
+                    
+
+    <a href="https://www.mychartportal.org/prairie/Authentication/Login" class="btn-small btn btn-hollow" target="_blank">MyPrairie</a>
+
+                </div>
+    </div>
+    <nav id="navigation">
+        <div class="nav-wrapper">
+            <div class="utility-selections">
+                <div class="mobile-search-bar-container">
+                    <form action="https://www.hshs.org/prairie-heart/search-results" method="get">
+                        <hshs-general-search-results>
+                            <div class="mobile-search-container">
+                                <input type="text" class="mobile-search-input search-input" name="search" placeholder="How can we help you?" />
+                                <button type="submit" class="search-button" aria-label="Search">
+                                    <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </div>
+                        </hshs-general-search-results>
+                    </form>
+                </div>
+            </div>
+            <div class="main-nav">
+                <ul class="main-menu-list">
+                            <li class="menu-link">
+                                
+
+    <a href="/prairie-heart/services" class=" link main-menu-item  link main-menu-item" target="_self">Services</a>
+
+                            </li>
+                            <li class="menu-link">
+                                
+
+    <a href="/prairie-heart/patient-resources" class=" link main-menu-item  link main-menu-item" target="_self">Patient Resources</a>
+
+                            </li>
+                            <li class="menu-link">
+                                
+
+    <a href="/prairie-heart/about-us" class=" link main-menu-item  link main-menu-item" target="_self">About Us</a>
+
+                            </li>
+                            <li class="menu-link">
+                                
+
+    <a href="/prairie-heart/giving" class=" link main-menu-item  link main-menu-item" target="_self">Giving</a>
+
+                            </li>
+
+                    <li class="cta-container">
+                                <div class="menu-cta">
+                                    
+
+    <a href="https://providers.hshs.org/" class="btn-small btn btn-primary" target="_blank">Find Care</a>
+
+                                </div>
+                                <div class="menu-cta">
+                                    
+
+    <a href="https://www.mychartportal.org/prairie/Authentication/Login" class="btn-small btn btn-hollow" target="_blank">MyPrairie</a>
+
+                                </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="utility-nav">
+                <ul>
+                        <li>
+                            
+<a href="/prairie-heart/locations" class=" link" target="_self">Locations</a>
+
+                        </li>
+                        <li>
+                            
+<a href="/prairie-heart/contact-us" class=" link" target="_self">Contact Us</a>
+
+                        </li>
+                        <li>
+                            
+<a href="https://payments.hshs.org/" class=" link" target="_blank">Bill Pay</a>
+
+                        </li>
+                        <li>
+                            
+<a href="https://careers.hshs.org/jobs?keywords=Prairie " class=" link" target="_self">Careers</a>
+
+                        </li>
+                        <li>
+                            
+<a href="/prairie-heart/perc" class=" link" target="_self">PERC</a>
+
+                        </li>
+                </ul>
+                <div class="utility-buttons">
+                    <button class="search-open" aria-expanded="false" aria-controls="desktop-search" aria-label="Search">
+                        <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="mobile-address-nav">
+                <ul>
+                    <li>
+                        <address class="link">Prairie Corporate Services<br/>3051 Hollis Drive,<br/>Springfield, IL 62704</address>
+                    </li>
+                        <li>
+                            <a class="link" href="https://www.google.com/maps" target="_blank">Get Directions</a>
+                        </li>
+
+                        <li>
+                            <button class="link sub-menu-toggle" aria-expanded="false" aria-controls="sub-menu-987bfbe9-2587-4078-a44f-2ea4411e6c55" aria-label="Show System Links sub menu">
+                                System Links
+                                <i class="fa-sharp fa-solid fa-caret-down"></i>
+                            </button>
+                            <ul id="sub-menu-987bfbe9-2587-4078-a44f-2ea4411e6c55" class="sub-menu">
+                                    <li>
+                                        
+<a href="/" class=" link" target="_self">Hospital Sisters Health System</a>
+
+                                    </li>
+                                    <li>
+                                        
+<a href="/prairie-heart/partners" class=" link" target="_self">Partners</a>
+
+                                    </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button class="link sub-menu-toggle" aria-expanded="false" aria-controls="sub-menu-56a25a0a-f7c2-4b6c-82c1-2cbe05102d42" aria-label="Show Website Support sub menu">
+                                Website Support
+                                <i class="fa-sharp fa-solid fa-caret-down"></i>
+                            </button>
+                            <ul id="sub-menu-56a25a0a-f7c2-4b6c-82c1-2cbe05102d42" class="sub-menu">
+                                    <li>
+                                        
+<a href="https://hshs.service-now.com/$pwd_reset.do?sysparm_url=password_reset" class=" link" target="_self">Contact Colleague Password Reset</a>
+
+                                    </li>
+                                    <li>
+                                        
+<a href="/colleague-remote-access" class=" link" target="_self">Colleague Remote Access</a>
+
+                                    </li>
+                            </ul>
+                        </li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="desktop-search" class="desktop-search">
+        <form action="https://www.hshs.org/prairie-heart/search-results" method="get">
+            <hshs-general-search-results>
+                <div class="desktop-search-container">
+                    <input type="text" class="mobile-search-input search-input" name="search" placeholder="How can we help you?" />
+                    <button type="submit" class="main-desktop-search-button search-button" aria-label="Search">
+                        <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </hshs-general-search-results>
+        </form>
+        <button class="search-close" aria-expanded="false" aria-controls="desktop-search" aria-label="Close desktop search">
+            <i class="fa-sharp fa-solid fa-close"></i>
+        </button>
+        <div class="search-overlay"></div>
+    </div>
+
+</header>
+
+        
+
+    <hshs-alert id="e8d8d0d4-7e12-407d-9304-a4fcc6bd2c15" class="alert alert-bg-primary sticky visible">
+        <div class="alert-content copy copy-small">
+            <span class="alert-title">Update</span>
+            <span class="alert-detail">August 2023 Data Incident Update</span>
+
+
+<a href="/august-2023-data-incident-update" class="link-small link link-reverse" target="_self">Learn More</a>
+
+            <button class="alert-close" aria-label="close-alert">
+                <i class="fa-sharp fa-solid fa-close"></i>
+            </button>
+        </div>
+    </hshs-alert>
+    <hshs-alert id="0854504e-fa4e-42ff-ae0c-4508651af28e" class="alert alert-bg-high sticky visible">
+        <div class="alert-content copy copy-small">
+            <span class="alert-title">Attention</span>
+            <span class="alert-detail">Seasonal Visitor Guidelines Now in Effect</span>
+
+
+<a href="/about-us/seasonal-visitor-guidelines" class="link-small link link-reverse" target="_self">Learn More</a>
+
+            <button class="alert-close" aria-label="close-alert">
+                <i class="fa-sharp fa-solid fa-close"></i>
+            </button>
+        </div>
+    </hshs-alert>
+
+        <main>
+            
+
+
+
+
+
+<div class="home-banner">
+    <div class="home-banner-image-container">
+            <img src="/getmedia/f31b4bac-a6d8-474f-a1c2-7be2275cdad3/Prairie-Home-Page_Hero_1440x400.jpg?width=1440&amp;height=400&amp;ext=.jpg" alt="Doctor sanding outside of ED room" />
+
+<svg class="swoop-horiz" viewBox="0 0 375 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_1727_31135)">
+        <path class="under-swoop mobile-swoop widget-background-blue" d="M0 72H375V1.07288C375 1.07288 258.594 58.625 122.656 64.875C39.8265 68.6832 0 54.1979 0 54.1979V72Z" fill="#004b8d"/>
+        <path d="M0 56.6208C60.2556 75.6107 186.514 87.1424 375 22.7717V-0.489746C168.567 89.6406 33.63 62.1754 0 52.7561V56.6208Z" fill="#55BCEB" />
+    </g>
+    <defs>
+        <clipPath id="clip0_1727_31135">
+            <rect width="375" height="72" fill="white" />
+        </clipPath>
+    </defs>
+</svg>
+<svg class="swoop-horiz" viewBox="0 0 375 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_1727_31135)">
+        <path class="under-swoop desktop-swoop widget-background-gray" d="M0 72H375V1.07288C375 1.07288 258.594 58.625 122.656 64.875C39.8265 68.6832 0 54.1979 0 54.1979V72Z" fill="#004b8d"/>
+        <path d="M0 56.6208C60.2556 75.6107 186.514 87.1424 375 22.7717V-0.489746C168.567 89.6406 33.63 62.1754 0 52.7561V56.6208Z" fill="#55BCEB" />
+    </g>
+    <defs>
+        <clipPath id="clip0_1727_31135">
+            <rect width="375" height="72" fill="white" />
+        </clipPath>
+    </defs>
+</svg>    </div>
+    <div class="home-banner-container">
+        <div class="home-banner-card-container banner-cards-6">
+                <a class="banner-card" href="https://www.mychartportal.org/prairie/Authentication/Login" target="_blank">
+                    <img class="banner-card-image" src="/getmedia/0d08b66c-230f-4bc7-b84d-4cfd68f12c21/Login.jpg?width=700&amp;height=700&amp;ext=.jpg" alt="Illistration of Login to Patient Portal" />
+                    <div class="banner-card-divider"></div>
+                    <h6 class="banner-card-heading">Login to Patient Portal</h6>
+                </a>
+                <a class="banner-card" href="/prairie-heart/services/unique-treatments-4e69513c7957a3956b6aca3b6b26a0d5" target="_self">
+                    <img class="banner-card-image" src="/getmedia/fe8d3675-9a0b-4a10-a10c-cd602bb1359d/PHI-treatments.jpg?width=700&amp;height=700&amp;ext=.jpg" alt="Illistration of Learn About Treatments" />
+                    <div class="banner-card-divider"></div>
+                    <h6 class="banner-card-heading">Learn About Treatments</h6>
+                </a>
+                <a class="banner-card" href="https://payments.hshs.org/" target="_blank">
+                    <img class="banner-card-image" src="/getmedia/e57546df-07d3-43b3-9aeb-0431b51e04be/BillPay.jpg?width=700&amp;height=700&amp;ext=.jpg" alt="Illistration of Pay My Bill" />
+                    <div class="banner-card-divider"></div>
+                    <h6 class="banner-card-heading">Pay My Bill</h6>
+                </a>
+                <a class="banner-card" href="https://careers.hshs.org/" target="_blank">
+                    <img class="banner-card-image" src="/getmedia/cd6913be-5c64-4dbc-98c8-10b8b530118c/FindJob.jpg?width=700&amp;height=700&amp;ext=.jpg" alt="Illistration of Find a Job" />
+                    <div class="banner-card-divider"></div>
+                    <h6 class="banner-card-heading">Find a Job</h6>
+                </a>
+                <a class="banner-card" href="https://providers.hshs.org/" target="_blank">
+                    <img class="banner-card-image" src="/getmedia/3c4a104b-a38b-4580-9fb3-c5bb27c2b1d7/FindDoc.jpg?width=700&amp;height=700&amp;ext=.jpg" alt="Illistration of Find Care Near Me" />
+                    <div class="banner-card-divider"></div>
+                    <h6 class="banner-card-heading">Find Care Near Me</h6>
+                </a>
+                <a class="banner-card" href="/prairie-heart/giving" target="_self">
+                    <img class="banner-card-image" src="/getmedia/0cfceb60-f141-4cf2-a9c4-b31a845b8a5e/Give.jpg?width=700&amp;height=700&amp;ext=.jpg" alt="Illistration of Donate Now" />
+                    <div class="banner-card-divider"></div>
+                    <h6 class="banner-card-heading">Donate Now</h6>
+                </a>
+        </div>
+
+        <div class="home-banner-search-container">
+            <form action="https://www.hshs.org/prairie-heart/search-results" method="get">
+                <hshs-general-search-results>
+                    <input type="text" class="mobile-search-input search-input" name="search" placeholder="How can we help you?" />
+                    <button type="submit" class="search-button" aria-label="Search">
+                        <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </hshs-general-search-results>
+            </form>
+        </div>
+
+        <div class="home-banner-motto-container">
+            <h1 class="hidden-h1">Prairie Cardiovascular: Illinois Cardiologists &amp; Heart Health Organization</h1>
+                    <img class="motto" src="/getmedia/7005f0e1-52cd-4806-82ac-bfac9ecf1958/PCC_Motto_160x40.png?width=240&amp;height=60&amp;ext=.png" alt="" />
+
+        </div>
+    </div>
+</div>
+
+
+<div>
+    
+    <div>
+        
+
+
+
+
+
+
+<section class="partners-widget widget-background-white">
+    <div class="partners-widget-container">
+            <div class="partners-heading-container">
+                <div class="heading-decoration-line-left"></div>
+                    <h2 class="partners-heading">PARTNERS</h2>
+                <div class="heading-decoration-line-right"></div>
+            </div>
+
+        <div class="partners-logo-container">
+                    <img alt="" src="/getmedia/d0044057-206a-42cf-94c0-8625359076a0/HSHS-System-Logo.png?width=207&amp;height=70&amp;ext=.png" />
+                    <img alt="HSHS Medical Group" src="/getmedia/5b0a8bca-59d8-4a0b-b858-06616ffeb0d7/HSHSMedGroup_FullColor_H_v2_A_1.png?width=529&amp;height=141&amp;ext=.png" />
+                    <img alt="Prairie Education &amp; Research Cooperative" src="/getmedia/7cb7bb42-0469-4e55-93ac-6db15bb3e162/NewPERCLogo011513-1.png?width=201&amp;height=83&amp;ext=.png" />
+                    <img alt="Prairie Heart Foundation" src="/getmedia/b925d883-c034-4306-9338-90d92a95cf6c/PHI-Foundation-logo-web-01.png?width=201&amp;height=83&amp;ext=.png" />
+        </div>
+
+            <div class="partner-button-container">
+                <a class="btn btn-primary btn-small partners-button" href="/prairie-heart/partners" target="_blank" aria-label="Learn More about PARTNERS">
+                    Learn More
+                </a>
+            </div>
+    </div>
+</section>
+    
+
+
+
+
+
+
+
+
+<section class="image-with-text-widget">
+    <div class="media-with-text-background widget-background-dark-red">
+        <div class="image-with-text-wrapper flex-reverse image-layout-circle">
+                <div class="split-content-image">
+                    <div class="image-container">
+                        <img class="sc-img  " src="/HSHS/media/HSHS/HFG_Events.jpg" alt="Career" />
+                        
+<svg class="swoop-horiz" viewBox="0 0 375 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_1727_31135)">
+        <path class="under-swoop widget-background-dark-red" d="M0 72H375V1.07288C375 1.07288 258.594 58.625 122.656 64.875C39.8265 68.6832 0 54.1979 0 54.1979V72Z" fill="#004b8d"/>
+        <path d="M0 56.6208C60.2556 75.6107 186.514 87.1424 375 22.7717V-0.489746C168.567 89.6406 33.63 62.1754 0 52.7561V56.6208Z" fill="#55BCEB" />
+    </g>
+    <defs>
+        <clipPath id="clip0_1727_31135">
+            <rect width="375" height="72" fill="white" />
+        </clipPath>
+    </defs>
+</svg>
+                    </div>
+                </div>
+
+            
+
+<div class="split-content-text">
+        <h2 class="split-content-heading">Careers that Change Lives</h2>
+        <svg width="100" height="4" viewBox="0 0 100 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line y1="2" x2="100" y2="2" stroke="#8FB935" stroke-width="4" />
+        </svg>
+        <div class="split-content-body">
+            <div class="rich-text">
+                <p id="isPasted">Prairie is hiring! Click the button to see all open positions.</p><p>As part of Prairie, you'll join a team that is focused on improving, excelling and building a better tomorrow. Whether it is a clinical, technical, professional or support position you're seeking, this is your chance to launch a rewarding career.</p>
+            </div>
+                <div class="split-content-cta-button">
+                    <a class="btn btn-small btn-primary-reverse btn" href="/prairie-heart/careers" target="_blank">Learn More</a>
+                </div>
+        </div>
+</div>
+
+        </div>
+    </div>
+
+
+</section>
+    
+
+
+
+
+
+
+
+
+<section class="featured-set-widget">
+    <div class="featured-set-widget-container">
+
+        <div class="featured-set-heading-container">
+                <div class="heading-decoration-line-left"></div>
+            <h2 class="featured-set-heading">Prairie Cardiovascular News</h2>
+                <div class="heading-decoration-line-right"></div>
+        </div>
+
+    <div class="featured-set-container">
+
+            <div class="featured-set-item-container">
+                    <div class="featured-set-item-card card-layout-3">
+                    
+    <a class="listing-card" href="https://www.hshs.org/prairie-heart/news/prairie-cardiovascular-welcomes-shelly-baldwin,-dnp-to-decatur" aria-label="Learn more about Prairie Cardiovascular Welcomes Shelly Baldwin, DNP to Decatur" target="_self" data-listing-date="12/3/2024 2:40:19 PM">
+            <div class="image-container listing-card-image-container">
+                <img class="image listing-card-image" src="/getmedia/bc04d8b6-9011-4874-8df5-b9e00db68201/Baldwin_Shelly_APRN_PRAIRIE-Decatur_5x7.jpg?width=700&amp;height=394&amp;ext=.jpg" alt="Shelly Baldwin, DNP" />
+            </div>
+        <div class="text-container listing-card-text-container">
+
+            <h3 class="header listing-card-heading">Prairie Cardiovascular Welcomes Shelly Baldwin, DNP to Decatur</h3>
+
+                <div class="date copy copy-small bold">December 03, 2024</div>
+
+
+                <div class="copy copy-small description">
+                    Baldwin is no scheduling patients in Decatur
+                </div>
+
+            <div class="link-container">
+                <span class=" link link-primary-default link-sm">Read More</span>
+            </div>
+        </div>
+    </a>
+
+                </div>
+            </div>
+            <div class="featured-set-item-container">
+                    <div class="featured-set-item-card card-layout-3">
+                    
+    <a class="listing-card" href="https://www.hshs.org/prairie-heart/news/megan-lanter,-pa-c-joins-prairie-cardiovascular" aria-label="Learn more about Megan Lanter, PA-C Joins Prairie Cardiovascular" target="_self" data-listing-date="11/15/2024 11:14:54 AM">
+            <div class="image-container listing-card-image-container">
+                <img class="image listing-card-image" src="/getmedia/f3c37492-5489-4596-8d91-fd87ffed9dcd/Megan-Lanter.jpg?width=700&amp;height=394&amp;ext=.jpg" alt="Megan Lanter, PA-C" />
+            </div>
+        <div class="text-container listing-card-text-container">
+
+            <h3 class="header listing-card-heading">Megan Lanter, PA-C Joins Prairie Cardiovascular</h3>
+
+                <div class="date copy copy-small bold">November 15, 2024</div>
+
+
+                <div class="copy copy-small description">
+                    Prairie Cardiovascular welcomes Lanter to O&#x27;Fallon location
+                </div>
+
+            <div class="link-container">
+                <span class=" link link-primary-default link-sm">Read More</span>
+            </div>
+        </div>
+    </a>
+
+                </div>
+            </div>
+            <div class="featured-set-item-container">
+                    <div class="featured-set-item-card card-layout-3">
+                    
+    <a class="listing-card" href="https://www.hshs.org/prairie-heart/news/joanne-philpot,-aprn-joins-prairie-cardiovascular" aria-label="Learn more about Joanne Philpot, APRN Joins Prairie Cardiovascular" target="_self" data-listing-date="11/6/2024 3:39:05 PM">
+            <div class="image-container listing-card-image-container">
+                <img class="image listing-card-image" src="/getmedia/06e2a924-fcc9-4495-ba58-064ed11ce12e/Joanne-Philpot_APRN.jpg?width=700&amp;height=394&amp;ext=.jpg" alt="Joanne Philpot, APRN" />
+            </div>
+        <div class="text-container listing-card-text-container">
+
+            <h3 class="header listing-card-heading">Joanne Philpot, APRN Joins Prairie Cardiovascular</h3>
+
+                <div class="date copy copy-small bold">November 06, 2024</div>
+
+
+                <div class="copy copy-small description">
+                    Prairie Cardiovascular is pleased to welcome Joanne to the Carbondale team
+                </div>
+
+            <div class="link-container">
+                <span class=" link link-primary-default link-sm">Read More</span>
+            </div>
+        </div>
+    </a>
+
+                </div>
+            </div>
+    </div>
+
+        <div class="btn-container">
+                <a class="btn btn-primary" href="/prairie-heart/news" target="_self" aria-label="More about Prairie Cardiovascular News">Read More</a>
+        </div>
+    </div>
+</section>
+    
+
+
+    </div>
+</div>
+
+
+        </main>
+        
+
+<footer>
+    <div class="footer-content-wrapper">
+        <div class="main-links-wrapper">
+
+            <div class="logo-wrapper main-link-container">
+                <a href="/prairie-heart">
+                    <img src="/getmedia/247f4825-e96b-43d2-b629-6b7ba677a0ad/Prairie-Cardio-logo-footer.png?width=200&amp;height=50&amp;ext=.png" alt="hshs logo" />
+                </a>
+                <figcaption></figcaption>
+
+            </div>
+
+            <div class="address-wrapper main-link-container">
+                <p class="footer-header">Address</p>
+                <div class="footer-content">
+                    <p>Prairie Corporate Services
+3051 Hollis Drive,
+Springfield, IL 62704</p>
+                </div>
+                    <a class="link" target="_blank" href="https://www.google.com/maps">Get Directions</a>
+
+            </div>
+
+                <div class="system-links-wrapper main-link-container">
+                    <p class="footer-header">System Links</p>
+                    <ul>
+
+                            <li footer-content>
+                                
+<a href="/" class=" link" target="_self">Hospital Sisters Health System</a>
+
+                            </li>
+                            <li footer-content>
+                                
+<a href="/prairie-heart/partners" class=" link" target="_self">Partners</a>
+
+                            </li>
+
+                    </ul>
+                </div>
+                <div class="system-links-wrapper main-link-container">
+                    <p class="footer-header">Website Support</p>
+                    <ul>
+
+                            <li footer-content>
+                                
+<a href="https://hshs.service-now.com/$pwd_reset.do?sysparm_url=password_reset" class=" link" target="_self">Contact Colleague Password Reset</a>
+
+                            </li>
+                            <li footer-content>
+                                
+<a href="/colleague-remote-access" class=" link" target="_self">Colleague Remote Access</a>
+
+                            </li>
+
+                    </ul>
+                </div>
+        </div>
+
+        <div class="desktop-divider"></div>
+
+        <div class="sub-links-wrapper">
+                <div class="social-links-wrapper">
+                    <ul>
+                            <li>
+                                <a href="https://www.facebook.com/thedoctorsofprairie/" target="_blank" aria-label="facebook"><i class="fa-brands fa-facebook"></i></a>
+                            </li>
+
+
+
+
+                    </ul>
+                </div>
+            <div class="legal-links-wrapper">
+                <ul>
+                        <li class="legal-divider"></li>
+                        <li class="legal-links footer-content">
+                            
+<a href="/patient-rights-and-responsibilities/illinois" class=" link" target="_blank">Patient Rights</a>
+
+                        </li>
+                        <li class="legal-divider"></li>
+                        <li class="legal-links footer-content">
+                            
+<a href="/about-us/patient-financial-services/price-transparency/hshs-hospital-price-tools" class=" link" target="_blank">Price Transparency</a>
+
+                        </li>
+                        <li class="legal-divider"></li>
+                        <li class="legal-links footer-content">
+                            
+<a href="/privacy-policy" class=" link" target="_self">Privacy Policy</a>
+
+                        </li>
+                        <li class="legal-divider"></li>
+                        <li class="legal-links footer-content">
+                            
+<a href="/website-privacy-policy" class=" link" target="_self">Website Cookie &amp; Privacy Policy</a>
+
+                        </li>
+                        <li class="legal-divider"></li>
+                        <li class="legal-links footer-content">
+                            
+<a href="/website-terms-of-use" class=" link" target="_self">Website Terms of Use</a>
+
+                        </li>
+                    <li class="legal-divider"></li>
+                    <li class="legal-links footer-content copy-right-text">
+                        &#xA9; 2024 HSHS Hospital Sisters Health System
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    </div>
+    
+    <script src="/_content/Kentico.Content.Web.Rcl/Scripts/jquery-3.5.1.js"></script>
+<script src="/_content/Kentico.Content.Web.Rcl/Scripts/jquery.unobtrusive-ajax.js"></script>
+<script type="text/javascript">
+window.kentico = window.kentico || {};
+window.kentico.builder = {}; 
+window.kentico.builder.useJQuery = true;</script><script src="/_content/Kentico.Content.Web.Rcl/Content/Bundles/Public/systemFormComponents.min.js"></script>
+
+    <script src="/dist/home.bundle.js" asp-append-version="true"></script>
+
+
+    <script src="/dist/vendor.bundle.js?v=2F46KEabhkBZUKi4n7t3X1uVRx47TA_5y-qddJxNjMo"></script>
+    <script src="/dist/master.bundle.js?v=YMjrn9GNZ-38-BwKsegMFUM5qWBPXlv5SueqTsvSAtQ"></script>
+    <script type="text/javascript" src="/WebsiteClient/gsight.js" async></script>
+
+    
+
+    <script>
+        let lastScrollTop = 0;
+        const header = document.getElementById('stickyHeader');
+        const alertBanner = document.getElementsByClassName('alert');
+        const alertHeight = alertBanner[0]?.offsetTop;
+
+        window.addEventListener(
+            'scroll',
+            function () {
+                let currentScroll = window.scrollY || document.documentElement.scrollTop;
+
+                if (window.innerWidth < 992) {
+                    if (currentScroll > lastScrollTop) {
+                        if (alertBanner.length > 0) {
+                            header.style.top = -alertHeight + 'px'
+                        } else {
+                            if (header.classList.contains('show-mobile')) {
+                                header.style.top = '0';
+                            } else {
+                                header.style.top = '-300px';
+                            }
+                        }
+                    } else {
+                        header.style.top = '0';
+                    }
+                    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+                }
+            },
+            false
+        );
+    </script>
+
+</body>
+</html>

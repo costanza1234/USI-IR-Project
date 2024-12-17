@@ -1,0 +1,1216 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US" class="no-js">
+<head>
+    <meta charset="utf-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/Performance/dns-prefetch -->
+    <link rel="dns-prefetch" href="https://ajax.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+    <link rel="dns-prefetch" href="https://api.tiles.mapbox.com" />
+    <link rel="dns-prefetch" href="https://fast.wistia.com" />
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+    <link rel="dns-prefetch" href="https://d31y97ze264gaa.cloudfront.net" />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <link rel="dns-prefetch" href="https://ajax.aspnetcdn.com" />
+    <link rel="dns-prefetch" href="https://s3.amazonaws.com" />
+
+    <!-- Hotjar Tracking Code for https://www.nm.org -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 1968954, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+    <!-- End Hotjar Tracking Code -->
+
+        <!-- P Pro Tag Manager -->
+        <script type="text/javascript">
+            if (window.location.hostname === "uat.nm.org") {
+                window.PiwikPROappID = 'a6dc63e3-eb9a-4640-bedc-ab0733b4c928';
+            } else if (window.location.hostname === "www.nm.org" || window.location.hostname === "nm.org") {
+                window.PiwikPROappID = '4abb1e4c-f063-4207-8488-64f5e44dc7cf';
+            }
+
+            (function (window, document, dataLayerName, id) {
+                window[dataLayerName] = window[dataLayerName] || [], window[dataLayerName].push({ start: (new Date).getTime(), event: "stg.start" }); var scripts = document.getElementsByTagName('script')[0], tags = document.createElement('script');
+                function stgCreateCookie(a, b, c) { var d = ""; if (c) { var e = new Date; e.setTime(e.getTime() + 24 * c * 60 * 60 * 1e3), d = "; expires=" + e.toUTCString(); f = "; SameSite=Strict" } document.cookie = a + "=" + b + d + f + "; path=/" }
+                var isStgDebug = (window.location.href.match("stg_debug") || document.cookie.match("stg_debug")) && !window.location.href.match("stg_disable_debug"); stgCreateCookie("stg_debug", isStgDebug ? 1 : "", isStgDebug ? 14 : -1);
+                var qP = []; dataLayerName !== "dataLayer" && qP.push("data_layer_name=" + dataLayerName), isStgDebug && qP.push("stg_debug"); var qPString = qP.length > 0 ? ("?" + qP.join("&")) : "";
+                tags.async = !0, tags.src = "https://nm.containers.piwik.pro/" + id + ".js" + qPString, scripts.parentNode.insertBefore(tags, scripts);
+                !function (a, n, i) { a[n] = a[n] || {}; for (var c = 0; c < i.length; c++)!function (i) { a[n][i] = a[n][i] || {}, a[n][i].api = a[n][i].api || function () { var a = [].slice.call(arguments, 0); "string" == typeof a[0] && window[dataLayerName].push({ event: n + "." + i + ":" + a[0], parameters: [].slice.call(arguments, 1) }) } }(i[c]) }(window, "ppms", ["tm", "cm"]);
+            })(window, document, 'dataLayer', window.PiwikPROappID);
+        </script>
+        <!-- End P Pro Tag Manager -->
+        <!-- Google Tag Manager -->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push(
+                    { 'gtm.start': new Date().getTime(), event: 'gtm.js' }
+                );
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-NQF59F');
+        </script>
+        <!-- End Google Tag Manager -->
+    
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0" />
+<meta name="referrer" content="unsafe-url">
+
+
+<title>Northwestern Medicine | Northwestern Medicine</title>
+
+
+
+<meta name="author" content="Northwestern Medicine" />
+<meta name="description" content="Northwestern Medicine is a leader in quality healthcare and service, bringing together faculty, physicians and researchers to support and advance that care through leading-edge treatments and breakthrough discoveries." />
+
+<!-- Bookmark Icons -->
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" href="/Content/Northwestern/img/apple-touch-icon.png" />
+
+<!-- Facebook Open Graph -->
+<meta property="og:title" content="Northwestern Medicine" />
+<meta property="og:description" content="Northwestern Medicine is a leader in quality healthcare and service, bringing together faculty, physicians and researchers to support and advance that care through leading-edge treatments and breakthrough discoveries." />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Northwestern Medicine" />
+<meta name="twitter:description" content="Northwestern Medicine is a leader in quality healthcare and service, bringing together faculty, physicians and researchers to support and advance that care through leading-edge treatments and breakthrough discoveries." />
+
+  <meta name="twitter:image" content="https://www.nm.org/Content/Northwestern/img/northwestern-medicine-share-sm_v10202016.jpg" />
+
+  <meta property="og:image" content="https://www.nm.org/Content/Northwestern/img/northwestern-medicine-share_v10202016.jpg" />
+  <meta property="og:image:width" content="600" />
+  <meta property="og:image:height" content="314" />
+<meta property="og:url" content="https://www.nm.org/?utm_source=paloshealth.com&amp;utm_medium=301re&amp;utm_campaign=palos" />
+<meta property="og:site_name" content="Northwestern Medicine" />
+<meta property="og:type" content="website" />
+
+
+
+
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        (function () {
+            WebFont.load({
+                google: {
+                    families: [
+                        'Open Sans:300,300i,400,400i,600,600i,700,700i,800,800i',
+                        'Overpass:100,100i,200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i',
+                        'Droid Serif:400,400italic,700,700italic',
+                        'Noto Serif:400italic,700'
+                    ]
+                }
+            });
+        })()
+    </script>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css' rel='stylesheet' />
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://fast.wistia.com/assets/external/E-v1.js' async></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    
+    <link href="/content/northwestern/dist/css/site.css?version=ba8b023388" rel="stylesheet" />
+    
+    
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+</head>
+
+
+<body class="page-base home">
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe title="Google Tag Manager" src="https://www.googletagmanager.com/ns.html?id=GTM-NQF59F"
+            height="0" width="0" style="display:none;visibility:hidden" aria-hidden="true"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <div id="siteAlert">
+                <div class="site-alert py-3 px-2 px-sm-3 px-md-4 no-print  info-message" style="display:flex;" id="16">
+                    <h1 class="heading m-0"><span class="info material-icons d-inline" aria-hidden="true"></span> <a href="/about-us/nm-alerts/ChangeHealthcareIncident" class="alert-title d-inline pl-1">Notice of a Change Healthcare Third-Party Incident</a></h1>
+                    <a class="site-notification-close" href="javascript:void(0);" title="close" data-track="header" data-track-category="Header" data-track-action="site notification" data-track-label="close"><span class="material-icons close-x" aria-hidden="true"></span></a>
+                </div>
+                <div class="site-alert py-3 px-2 px-sm-3 px-md-4 no-print  info-message" style="display:flex;" id="15">
+                    <h1 class="heading m-0"><span class="info material-icons d-inline" aria-hidden="true"></span> <a href="/about-us/nm-alerts/DatavantPrivacyIncident" class="alert-title d-inline pl-1">Notice of a Datavant Third-Party Incident</a></h1>
+                    <a class="site-notification-close" href="javascript:void(0);" title="close" data-track="header" data-track-category="Header" data-track-action="site notification" data-track-label="close"><span class="material-icons close-x" aria-hidden="true"></span></a>
+                </div>
+                <div class="site-alert py-3 px-2 px-sm-3 px-md-4 no-print  info-message" style="display:flex;" id="14">
+                    <h1 class="heading m-0"><span class="info material-icons d-inline" aria-hidden="true"></span> <a href="/about-us/nm-alerts/vaccines" class="alert-title d-inline pl-1">COVID-19 and flu vaccines are now available. Find out how to get them at a location near you. </a></h1>
+                    <a class="site-notification-close" href="javascript:void(0);" title="close" data-track="header" data-track-category="Header" data-track-action="site notification" data-track-label="close"><span class="material-icons close-x" aria-hidden="true"></span></a>
+                </div>
+    </div>
+    <header id="site-header" class="container">
+
+
+
+        <a href="#content" class="skip-link assistive-text">Skip to content</a>
+        <nav class="utility-bar header-hide-for-md" aria-label="Utility">
+            <div class="row">
+                <ul class="utility-nav col list-inline piped">
+                    <li class="utility-nav-item"><a class="utility-nav-link" href="/patients-and-visitors/appointments" data-track="header" data-track-category="Header" data-track-action="top menu" data-track-label="Appointments">Appointments</a></li>
+                    <li class="utility-nav-item"><a class="utility-nav-link" href="https://mynm.nm.org/MyChart/Authentication/Login" target="_blank" data-track="header" data-track-category="Header" data-track-action="top menu" data-track-label="MyNM MyChart">MyNM Patient Portal</a></li>
+                    <li class="utility-nav-item"><a class="utility-nav-link" href="/patients-and-visitors/billing-and-insurance/pay-a-bill" data-track="header" data-track-category="Header" data-track-action="top menu" data-track-label="Pay a Bill">Pay a Bill</a></li>
+                    <li class="utility-nav-item"><a class="utility-nav-link" href="/patients-and-visitors/billing-and-insurance/financial-assistance" data-track="header" data-track-category="Header" data-track-action="top menu" data-track-label="Financial Assistance">Financial Assistance</a></li>
+                    <li class="utility-nav-item"><a class="utility-nav-link" href="https://jobs.nm.org/" target="_blank" data-track="header" data-track-category="Header" data-track-action="top menu" data-track-label="Careers">Careers</a></li>
+                    <li class="utility-nav-item"><a class="utility-nav-link" href="https://www.feinberg.northwestern.edu/" target="_blank" data-track="header" data-track-category="Header" data-track-action="top menu" data-track-label="Feinberg School of Medicine">Feinberg School of Medicine</a></li>
+                    <li class="utility-nav-item"><a class="utility-nav-link" href="https://nmgive.donordrive.com/index.cfm?fuseaction=donate.event&eventID=619" data-track="header" data-track-category="Header" data-track-action="top menu" data-track-label="Give Now" target="_blank" rel="noopener noreferrer">Give Now</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="site-header-wrapper row">
+            <img class="print print-logo" alt="Northwestern Medicine" src="/Content/Northwestern/img/logo-northwestern-medicine-print.jpg" />
+            <div id="site-title" class="no-print">
+                <a href="/" class="link-home">
+                    <span class="assistive-text">Northwestern Medicine</span>
+                    <span class="logo-full"></span>
+                    <span class="logo-shortened"></span>
+                </a>
+            </div>
+            <div class="app-bar header-show-for-md">
+                <div role="button" class="btn header-show-for-md btn-no-shadow" id="nav-toggle" data-toggle="off-canvas"><span class="material-icons" aria-hidden="true">menu</span></div>
+                <div role="button" class="btn btn-site-search btn-no-shadow header-show-for-md" id="mobile-search-open">
+                    <span class="icon material-icons search" aria-hidden="true"></span>
+                    <span class="assistive-text">Search</span>
+                </div>
+            </div>
+
+            <div class="search-bar" itemscope itemtype=" http://schema.org/WebSite">
+                <div class="row">
+                    <meta itemprop="url" content="https://www.nm.org/" />
+                    <form action="/search" method="GET" id="site-search-global-form" itemprop=" potentialAction" itemscope itemtype="http://schema.org/SearchAction">
+                        <meta itemprop="target" content="https://nm.org/search?q ={terms}" />
+                        <label class="assistive-text" for="site-search">Search</label>
+                        <input type="search" id="site-search" class="input-clearable" itemprop=" query-input" name="terms" placeholder="How may we help you?" valueMaxLength="150" data-track="header" data-track-action="site search" data-track-label="click" />
+                        <span class="field-validation-valid" data-valmsg-for="terms" data-valmsg-replace="true"></span>
+                        <span class="btn-clear btn-clear-search" role="button">
+                            <span><span class="assistive-text">Clear field</span></span>
+                        </span>
+                        <button class="btn btn-site-search" data-track="header" data-track-action="site search" data-track-label="search icon" aria-label="site search">
+                            <span class="icon material-icons search" aria-hidden="true"></span>
+                        </button>
+                        <button id="mobile-search-close" class="btn btn-link btn-search-cancel btn-no-shadow header-show-for-md">Cancel</button>
+                    </form>
+                    <div class="site-search-suggested">
+                        <div class="autocomplete-results"></div>
+                        <ul class="list-unstyled suggested-sections">
+                            <li class="suggested-section-item"><a class="more-link link-search-suggest" href="/doctors/search-results" data-track="header" data-track-category="Header" data-track-action="site search" data-track-label="Find Doctors"><span class="icon fas fa-user-md"></span>&nbsp;<span class="more-link-text">Find Doctors</span></a></li>
+                            <li class="suggested-section-item"><a class="more-link link-search-suggest" href="/locations" data-track="header" data-track-category="Header" data-track-action="site search" data-track-label="Locations Near You"><span class="material-icons" aria-hidden="true">location_on</span>&nbsp;<span class="more-link-text">Locations Near You</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+
+<nav id="site-nav" class="main-nav nav-bar hide-for-md" aria-label="Primary">
+    <div class="row">
+        <ul class="nav col dropdown-container">
+                    <li class="nav-item "><a class="nav-link" href="/doctors/search-results" data-track="header" data-track-action="Doctors" target="_self">Doctors</a></li>
+                    <li class="nav-item "><a class="nav-link" href="/locations" data-track="header" data-track-action="Locations" target="_self">Locations</a></li>
+                    <li class="nav-item nav-conditions-and-services "><a class="nav-link" href="/conditions-and-care-areas" data-track="header" data-track-action="Conditions &amp; Services" target="_self">Conditions &amp; Services</a></li>
+                    <li class="nav-patients-and-visitors nav-item "><a class="nav-link menu-trigger" href="#" data-target="mega-menu-1" data-track="header" data-track-action="Patients &amp; Visitors" target="_self">Patients &amp; Visitors</a></li>
+                    <li class="nav-healthbeat nav-item "><a class="nav-link menu-trigger" href="#" data-target="mega-menu-2" data-track="header" data-track-action="HealthBeat" target="_self">HealthBeat</a></li>
+                    <li class="nav-item "><a class="nav-link" href="/conditions-and-care-areas/clinical-trials-and-research" data-track="header" data-track-action="Clinical Research" target="_self">Clinical Research</a></li>
+        </ul>
+        <div id="mega-menu-1" class="mega-menu">
+            <div class="mega-menu-wrap flex-column">
+                <ul class="list-unstyled list-links-content mega-menu-links">
+                    <li class="menu-grid-column">
+                            <p class="list-title"><a href="/patients-and-visitors/billing-and-insurance" target="_self">Billing, Insurance &amp; Records</a></p>
+                            <ul class="sub-list">
+                                    <li><a href="/patients-and-visitors/billing-and-insurance/financial-assistance" target=_self class="btn-link">Financial Assistance</a></li>
+                                    <li><a href="/patients-and-visitors/billing-and-insurance/insurance-information" target=_self class="btn-link">Insurance Information</a></li>
+                                    <li><a href="/patients-and-visitors/mynm-mychart-and-medical-records" target=_self class="btn-link">Medical Records</a></li>
+                                    <li><a href="/patients-and-visitors/billing-and-insurance/pay-a-bill" target=_self class="btn-link">Pay a Bill</a></li>
+                            </ul>
+                            <p class="list-title"><a href="/patients-and-visitors/education-and-support" target="_self">Education &amp; Support</a></p>
+                            <ul class="sub-list">
+                                    <li><a href="/patients-and-visitors/classes-and-events" target=_self class="btn-link">Classes, Events and Support Groups</a></li>
+                                    <li><a href="https://encyclopedia.nm.org/" target=_blank class="btn-link">Health Encyclopedia</a></li>
+                                    <li><a href="/patients-and-visitors/patient-education" target=_self class="btn-link">Patient Education</a></li>
+                            </ul>
+                    </li>
+                    <li class="menu-grid-column">
+                            <p class="list-title"><a href="/patients-and-visitors/for-your-visit" target="_self">For Your Visit</a></p>
+                            <ul class="sub-list">
+                                    <li><a href="/patients-and-visitors/accessibility-resources" target=_self class="btn-link">Accessibility Resources</a></li>
+                                    <li><a href="/patients-and-visitors/patient-rights-policies/advance-directives" target=_self class="btn-link">Advance Directives</a></li>
+                                    <li><a href="/patients-and-visitors/preparing-for-your-visit/questions-to-ask" target=_self class="btn-link">Questions to Ask</a></li>
+                                    <li><a href="/patients-and-visitors/preparing-for-your-visit/echeck-in" target=_self class="btn-link">eCheck-In</a></li>
+                                    <li><a href="/patients-and-visitors/patient-relations/interpretation-services" target=_self class="btn-link">Interpretation Services</a></li>
+                                    <li><a href="/patients-and-visitors/parking-options" target=_self class="btn-link">Parking Options</a></li>
+                                    <li><a href="/patients-and-visitors/preparing-for-your-visit/follow-up-care" target=_self class="btn-link">Follow-Up Care</a></li>
+                                    <li><a href="/patients-and-visitors/telehealth" target=_self class="btn-link">Telehealth</a></li>
+                            </ul>
+                    </li>
+                    <li class="menu-grid-column">
+                            <p class="list-title"><a href="/patients-and-visitors/get-involved" target="_self">Get Involved</a></p>
+                            <ul class="sub-list">
+                                    <li><a href="/conditions-and-care-areas/donate-blood" target=_self class="btn-link">Donate Blood</a></li>
+                                    <li><a href="/patients-and-visitors/daisy-award-nomination" target=_self class="btn-link">Nominate an Extraordinary Nurse</a></li>
+                                    <li><a href="/patients-and-visitors/patient-and-family-advisory-councils" target=_self class="btn-link">Patient And Family Advisory Councils</a></li>
+                                    <li><a href="/patients-and-visitors/locations-and-hours/form-employee-appreciation" target=_self class="btn-link">Northwestern Medicine Employee Appreciation</a></li>
+                                    <li><a href="/patients-and-visitors/send-well-wishes-to-a-patient" target=_self class="btn-link">Send Well Wishes to a Patient</a></li>
+                                    <li><a href="/patients-and-visitors/volunteer" target=_self class="btn-link">Volunteer</a></li>
+                            </ul>
+                    </li>
+                    <li class="menu-grid-column">
+                            <p class="list-title"><a href="/patients-and-visitors/international-and-executive-health" target="_self">International &amp; Executive Health</a></p>
+                            <ul class="sub-list">
+                                    <li><a href="/patients-and-visitors/executive-health" target=_self class="btn-link">Executive Health</a></li>
+                                    <li><a href="/patients-and-visitors/international-health" target=_self class="btn-link">International Health</a></li>
+                            </ul>
+                            <p class="list-title"><a href="/patients-and-visitors/patient-experience-policies" target="_self">Patient Experience Policies</a></p>
+                            <ul class="sub-list">
+                                    <li><a href="/patients-and-visitors/patient-relations" target=_self class="btn-link">Patient Relations</a></li>
+                                    <li><a href="/patients-and-visitors/patient-rights-policies" target=_self class="btn-link">Patient Rights and Policies</a></li>
+                                    <li><a href="/conditions-and-care-areas/covid-19-resource-center/patient-safety-during-covid-19" target=_self class="btn-link">Patient Safety During COVID-19</a></li>
+                                    <li><a href="/conditions-and-care-areas/covid-19-resource-center/visitor-policy-updates" target=_self class="btn-link">Current Visitor Policies</a></li>
+                            </ul>
+                        <div class="view-all-section">
+                                <a href="/patients-and-visitors">VIEW ALL</a>
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+        <div id="mega-menu-2" class="mega-menu">
+            <div class="mega-menu-wrap mega-menu-image flex-column">
+                    <div class="menu-item">
+                            <a href="/healthbeat">
+                                <h3 class="title-link">
+                                    HealthBeat
+                                </h3>
+                            </a>
+                                                    <p class="content-body">
+                                Your trusted resource for health and wellness information and the latest medical advances to help you and your family live better.
+                            </p>
+
+                    </div>
+                    <div class="menu-item">
+                            <a href="/healthbeat/healthy-tips">
+                                <div class="category-image">
+                                    <img src="/-/media/northwestern/images/navigation/healthy-tips_megamenu.jpg" alt="Healthy Tips - Image of Chicken Salad" />
+                                </div>
+                                <p class="category-link">
+                                    Healthy Tips
+                                </p>
+                            </a>
+                        
+                    </div>
+                    <div class="menu-item">
+                            <a href="/healthbeat/medical-advances">
+                                <div class="category-image">
+                                    <img src="/-/media/northwestern/images/navigation/medical-advances_megamenu.jpeg" alt="Medical Advances - Images of Physicians Operating" />
+                                </div>
+                                <p class="category-link">
+                                    Medical Advances
+                                </p>
+                            </a>
+                        
+                    </div>
+                    <div class="menu-item">
+                            <a href="/healthbeat/patient-stories">
+                                <div class="category-image">
+                                    <img src="/-/media/northwestern/images/navigation/patient-stories-2_megamenu.jpg" alt="Patient Stories - Image of Couple Dancing" />
+                                </div>
+                                <p class="category-link">
+                                    Patient Stories
+                                </p>
+                            </a>
+                        
+                    </div>
+
+                    <div class="view-all-section">
+                        <a href="/healthbeat">VIEW ALL</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+        </div>
+        <div class="hb-landing-header">
+            <div class="row row-narrow py-4 hb-landing-heading">
+                <div class="hb-landing-logo"><a href="/healthbeat"><img src="/~/media/Northwestern/healthbeat/images/logo/hblogo2x" /></a></div>
+                <div class="hb-ots"></div>
+            </div>
+        </div>
+    </header>
+<div id="breadcrumb-bar" class="breadcrumb-container breadcrumb-global hide-for-xs">
+    <div class="row">
+        <nav class="breadcrumb" vocab="https://schema.org/" typeof="BreadcrumbList" aria-label="Breadcrumbs">
+            <ol>
+                
+
+
+
+    <li property="itemListElement" typeof="ListItem">
+            <a href="/" property="item" typeof="WebPage"><span property="name">Home</span></a>
+            <meta property="position" content="1">
+    </li>
+
+            </ol>
+        </nav>
+    </div>
+</div>
+    <div id="scrollContainer">
+        <div id="headerBg" class="bg-parent">
+            <img src="/-/media/northwestern/images/homepage-banners/abstract-background.jpg" alt="">
+        </div>
+        <main id="homeContent" class="mega-scroll container">
+            <div class="gray-bg" id="gray-bg"></div>
+            <div id="disruptor-mobile-topbar"></div>
+            
+            
+<div class="main-content full">
+    <div class="search-panel-container">
+    <div class="search-panel-wrapper">
+        <div class="search-panel-header">
+                    <h2 class="panel-title">Leading the way to better medicine.</h2>
+                    <div class="panel-image">
+                        <img src="/-/media/northwestern/images/badges-2024-2025/homepage/usnwr-nmh-honor-roll.png?la=en&amp;h=128&amp;w=130&amp;hash=E5C4367FCB41746609EBABD5643AECAF" alt="Northwestern Memorial Hospital Honor Roll 2024-2025" />
+                            <h3 class="image-label">Northwestern Memorial Hospital</h3>
+                    </div>
+        </div>
+        
+
+    <div id="hp-search-root"></div>
+
+            <section class="btn-panel">
+                
+
+
+<div class="panel-title">
+    <p>Schedule care and manage your health</p>
+</div>
+<div class="btn-card-container">
+    <div class="btn-card">
+        <a href="/patients-and-visitors/appointments" class="btn btn-secondary main-btn main-btn-single">Appointments</a>
+    </div>
+    <div class="btn-card">
+        <a href="/locations?type=Immediate+Care&sort=Distance&sortName=Distance&page=1" class="btn btn-secondary main-btn">Immediate Care <span class="fas fa-angle-down"></span></a>
+        <div class="secondary-container">
+            <a href="https://mynm.nm.org/MyChart/scheduling/onmyway" class="btn btn-primary" target="_blank">In-Office Reservation</a>
+            <a href="https://mynm.nm.org/MyChart/scheduling/onmyway" class="btn btn-primary" target="_blank">Virtual Visit</a>
+            <a href="https://www.nm.org/locations?type=Immediate+Care&sort=Distance&sortName=Distance&page=1" class="btn btn-primary" target="_blank">Walk-In Locations</a>
+        </div>
+    </div>
+    <div class="btn-card">
+        <a href="https://mynm.nm.org/MyChart/Authentication/Login" class="btn btn-secondary main-btn external-btn" target="_blank">MyNM Patient Portal <span class="fas fa-external-link-alt"></span></a>
+        <div class="secondary-container">
+            <a href="https://mynm.nm.org/MyChart/Authentication/Login" class="btn btn-primary" target="_blank">Sign In to MyNM Web <span class="fas fa-external-link-alt"></span></a>
+            <a href="https://play.google.com/store/apps/details?id=org.nm.mobile.myNM" class="btn btn-primary">Download the MyNM App</a>
+        </div>
+    </div>
+</div>
+            </section>
+                <div class="show-for-mobile panel-image">
+            <img src="/-/media/northwestern/images/badges-2024-2025/homepage/usnwr-nmh-honor-roll.png?la=en&amp;h=128&amp;w=130&amp;hash=E5C4367FCB41746609EBABD5643AECAF" alt="Northwestern Memorial Hospital Honor Roll 2024-2025" />
+                <h3 class="image-label">Northwestern Memorial Hospital</h3>
+        </div>
+    </div>
+
+</div>
+
+<section class="section section-hero panel panel-alt feature-panel hp-slider-panel large-image-card p-0 hp-panel-underlay">
+    <div class="panel-header">
+            <h2 class="panel-title">WHAT MAKES US BETTER</h2>
+            </div>
+
+    <div class="panel-content hp-align-center">
+
+            <div class="flex-column group-cards no-wrap-big">
+                
+    <div class="d-flex flex-row flex-wrap image-text-cards" onClick = window.location.href=&#39;/healthbeat/medical-advances/new-therapies-and-drug-trials/Awake-Kidney-Transplantation-A-Revolution-in-Renal-Care&#39; >
+        <div class="image-text-card flex-card">
+            <div class="card card-callout large-image-card">
+                <div class="card-flex">
+                    <div class="card-content card-flex flex-lg-row ">
+                        <div class="body-content d-flex flex-column justify-content-center">
+                                <p class="text-card-subtitle h3">GROUNDBREAKING PROCEDURES</p>
+                                                                <div class="text-card-body">
+                                        For the first time at Northwestern Medicine, surgeons perform an awake kidney transplant, allowing the patient to go home 24 hours later.
+                                    </div>
+                        </div>
+                        <div class="text-card-img-container">
+<img src="/-/media/northwestern/images/homepage-banners/fy24-homepage/what-makes-us-better/northwestern-medicine-wmub1-groundbreaking-procedures-oct24.png?la=en&amp;h=540&amp;w=960&amp;hash=4DB3EF5C9A0FA5BAEFB86848EFF490B5" alt="Surgeons performing a kidney transplant while patient is awake" />
+                                                    </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="d-flex flex-row flex-wrap image-text-cards" onClick = window.location.href=&#39;/healthbeat/medical-advances/science-and-research/Is-This-the-Key-to-Controlling-Lupus&#39; >
+        <div class="image-text-card flex-card">
+            <div class="card card-callout large-image-card">
+                <div class="card-flex">
+                    <div class="card-content card-flex flex-lg-row image-text-left">
+                        <div class="body-content d-flex flex-column justify-content-center">
+                                <p class="text-card-subtitle h3">MEDICAL ADVANCES</p>
+                                                                <div class="text-card-body">
+                                        Northwestern Medicine scientists discover a potential cause of lupus, a revelation that could lead to a cure.
+                                    </div>
+                        </div>
+                        <div class="text-card-img-container">
+<img src="/-/media/northwestern/images/homepage-banners/fy24-homepage/what-makes-us-better/northwestern-medicine-wmub2-medical-advances-oct24.png?la=en&amp;h=540&amp;w=960&amp;hash=46A0D7185573AE53E4245A6BFFD322DC" alt="A scientist performing research" />
+                                                    </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+            </div>
+
+
+    </div>
+</section>
+
+
+
+<section class="section section-hero panel panel-alt feature-panel hp-slider-panel large-image-card p-0 hp-panel-underlay">
+    <div class="panel-header">
+            <h2 class="panel-title">MAKES YOU BETTER</h2>
+            </div>
+
+    <div class="panel-content hp-align-center">
+
+            <div class="flex-column group-cards no-wrap-big">
+                
+    <div class="d-flex flex-row flex-wrap image-text-cards" onClick = window.location.href=&#39;/healthbeat/patient-stories/Chicago-Figure-Skater-Beats-Brain-Cancer&#39; >
+        <div class="image-text-card flex-card">
+            <div class="card card-callout large-image-card">
+                <div class="card-flex">
+                    <div class="card-content card-flex flex-lg-row ">
+                        <div class="body-content d-flex flex-column justify-content-center">
+                                <p class="text-card-subtitle h3">ADVANCED TREATMENTS</p>
+                                                                <div class="text-card-body">
+                                        A U.S. champion skater returns to the ice cancer-free after receiving both chemotherapy and a stem cell transplant to treat a rare brain tumor.
+                                    </div>
+                        </div>
+                        <div class="text-card-img-container">
+<img src="/-/media/northwestern/images/homepage-banners/fy24-homepage/makes-you-better/northwestern-medicine-myb2-advanced-treatments-oct24.png?la=en&amp;h=540&amp;w=960&amp;hash=0420D96091257C49634962BA49D7264C" alt="Imaging of a brain tumor" />
+                                                    </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="d-flex flex-row flex-wrap image-text-cards" onClick = window.location.href=&#39;/healthbeat/healthy-tips/Wearable-Technology-Your-Hearts-New-Best-Friend&#39; >
+        <div class="image-text-card flex-card">
+            <div class="card card-callout large-image-card">
+                <div class="card-flex">
+                    <div class="card-content card-flex flex-lg-row image-text-left">
+                        <div class="body-content d-flex flex-column justify-content-center">
+                                <p class="text-card-subtitle h3">CLINICAL RESEARCH</p>
+                                                                <div class="text-card-body">
+                                        Northwestern Medicine receives a $37 million award to explore ways wearables can save lives.
+                                    </div>
+                        </div>
+                        <div class="text-card-img-container">
+<img src="/-/media/northwestern/images/homepage-banners/fy24-homepage/featured-stories/northwestern-medicine-fs1-clinical-research-oct24.png?la=en&amp;h=540&amp;w=960&amp;hash=8C8A3D67538BF767D5E414836D23C318" alt="A person checking their Smartwatch" />
+                                                    </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+            </div>
+
+
+    </div>
+</section>
+
+
+
+<section class="section section-hero panel panel-alt feature-panel hp-slider-panel feature-stories-card pt-0 pb-7 hp-panel-underlay">
+    <div class="panel-header">
+            <h2 class="panel-title">Featured Stories</h2>
+            </div>
+
+    <div class="panel-content hp-align-center">
+
+            <div class="flex-column group-cards no-wrap-big">
+                <div class="social-slider-container hp-container">
+                    <div id="hp-scroll-slider-28c44695-7fa5-4d44-b608-b6d2f68d461f" data-columns="3" data-guid="28c44695-7fa5-4d44-b608-b6d2f68d461f">
+
+                        
+    <div class="image-text-card badge-card flex-card" >
+        <div class="card card-callout" onClick = window.location.href=&#39;/healthbeat/healthy-tips/Tattoo-Removal-Program-Helps-Patients-Overcome-Barriers-and-Stigmas&#39;>
+            <div class="card-flex">
+                <div class="card-content">
+                        <div class="image-container">
+
+                            <img src="/-/media/northwestern/images/homepage-banners/fy24-homepage/featured-stories/northwestern-medicine-fs1-community-impact-oct24-replacement.png?la=en&amp;h=540&amp;w=960&amp;hash=55B8499264DCD30C5B40F0C1C27D8714" alt="northwestern-medicine-fs1-community-impact-oct24-replacement" />
+
+
+                        </div>
+
+                        <p class="text-card-title h3 hp-align-left">Community Impact</p>
+
+
+                            <p class="text-card-body hp-align-left">Our tattoo removal program helps patients overcome barriers and stigmas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="image-text-card badge-card flex-card" >
+        <div class="card card-callout" onClick = window.location.href=&#39;/conditions-and-care-areas/dermatology/ethnic-skin-care&#39;>
+            <div class="card-flex">
+                <div class="card-content">
+                        <div class="image-container">
+
+                            <img src="/-/media/northwestern/images/homepage-banners/fy24-homepage/featured-stories/northwestern-medicine-fs3-access-to-care-oct24.png?la=en&amp;h=540&amp;w=960&amp;hash=67C199D1157F9D94538BB9F03A1B650B" alt="Street view of the Northwestern Medicine Arkes Pavilion" />
+
+
+                        </div>
+
+                        <p class="text-card-title h3 hp-align-left">Access to Care</p>
+
+
+                            <p class="text-card-body hp-align-left">Visit one of the first U.S. centers dedicated to treating ethnic skin, hair and nail conditions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="image-text-card badge-card flex-card" >
+        <div class="card card-callout" onClick = window.location.href=&#39;/healthbeat/patient-stories/Dead-Bug-Exercises-Myopathy-Diagnosis&#39;>
+            <div class="card-flex">
+                <div class="card-content">
+                        <div class="image-container">
+
+                            <img src="/-/media/northwestern/images/homepage-banners/fy24-homepage/featured-stories/northwestern-medicine-fs2-multidisciplinary-care-oct24.png?la=en&amp;h=540&amp;w=960&amp;hash=465DA9491E37F21FCCA8986DB46752AE" alt="A physician examining a patient with a stethoscope" />
+
+
+                        </div>
+
+                        <p class="text-card-title h3 hp-align-left">Multidisciplinary Care</p>
+
+
+                            <p class="text-card-body hp-align-left">Six specialties in one clinic help an Illinois woman manage a rare autoimmune disease.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+                    </div>
+                    <div id=hp-slider-controls28c44695-7fa5-4d44-b608-b6d2f68d461f class="hp-slider-controls">
+                        <div id=hp-previous-button28c44695-7fa5-4d44-b608-b6d2f68d461f class="hp-previous-button"><span class="fa fa-chevron-left" aria-hidden="true"></span></div>
+                        <div id=hp-next-button28c44695-7fa5-4d44-b608-b6d2f68d461f class="hp-next-button"><span class="fa fa-chevron-right" aria-hidden="true"></span></div>
+                    </div>
+
+                </div>
+            </div>
+
+
+    </div>
+</section>
+
+
+
+<section class="section section-hero panel panel-alt feature-panel hp-slider-panel latest-news-card pt-0 pb-7 hp-panel-underlay">
+    <div class="panel-header">
+            <h2 class="panel-title">News</h2>
+            </div>
+
+    <div class="panel-content hp-align-center">
+
+            <div class="flex-column group-cards no-wrap-big">
+                <div class="social-slider-container hp-container">
+                    <div id="hp-scroll-slider-d6f5b67e-27cb-40d2-b765-7696a5fc044e" data-columns="4" data-guid="d6f5b67e-27cb-40d2-b765-7696a5fc044e">
+
+                        
+    <div class="image-text-card badge-card flex-card" >
+        <div class="card card-callout" onClick = window.location.href=&#39;/healthbeat/healthy-tips/Deadly-Belly-Bulges-Abdominal-Aortic-Aneurysms&#39;>
+            <div class="card-flex">
+                <div class="card-content">
+
+                        <p class="text-card-title h3 hp-align-left">Patient Success Stories</p>
+
+
+                            <p class="text-card-body hp-align-left">&lsquo;He was dying.&rsquo; A patient receives lifesaving surgery for a ruptured abdominal aortic aneurysm.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="image-text-card badge-card flex-card" >
+        <div class="card card-callout" onClick = window.location.href=&#39;/about-us/nm-community-impact/our-commitment/economic-and-workforce-development&#39;>
+            <div class="card-flex">
+                <div class="card-content">
+
+                        <p class="text-card-title h3 hp-align-left">Community Impact</p>
+
+
+                            <p class="text-card-body hp-align-left">This community organization helps us create job opportunities for people reentering the workforce.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="image-text-card badge-card flex-card" >
+        <div class="card card-callout" onClick = window.location.href=&#39;/healthbeat/medical-advances/How-Does-Robotic-Surgery-Work&#39;>
+            <div class="card-flex">
+                <div class="card-content">
+
+                        <p class="text-card-title h3 hp-align-left">Medical Milestones</p>
+
+
+                            <p class="text-card-body hp-align-left">A Northwestern Medicine Palos Hospital physician has completed more than 500 robotic surgeries.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="image-text-card badge-card flex-card" >
+        <div class="card card-callout" onClick = window.location.href=&#39;/healthbeat/medical-advances/A-Better-Way-to-Treat-Chronic-Tendon-Pain&#39;>
+            <div class="card-flex">
+                <div class="card-content">
+
+                        <p class="text-card-title h3 hp-align-left">Orthopaedic Care</p>
+
+
+                            <p class="text-card-body hp-align-left">A musician gets back on stage with an innovative nonsurgical device for chronic tendon pain.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+                    </div>
+                    <div id=hp-slider-controlsd6f5b67e-27cb-40d2-b765-7696a5fc044e class="hp-slider-controls">
+                        <div id=hp-previous-buttond6f5b67e-27cb-40d2-b765-7696a5fc044e class="hp-previous-button"><span class="fa fa-chevron-left" aria-hidden="true"></span></div>
+                        <div id=hp-next-buttond6f5b67e-27cb-40d2-b765-7696a5fc044e class="hp-next-button"><span class="fa fa-chevron-right" aria-hidden="true"></span></div>
+                    </div>
+
+                </div>
+            </div>
+
+
+    </div>
+</section>
+
+
+
+<section class="section section-hero panel panel-alt feature-panel hp-slider-panel social-card pt-0 pb-7 hp-panel-underlay">
+    <div class="panel-header">
+            <h2 class="panel-title">#NMBetter</h2>
+                    <span class="panel-label">@northwesternmedicine</span>
+    </div>
+
+    <div class="panel-content hp-align-center">
+
+            <div class="flex-column group-cards no-wrap-big">
+                <div class="social-slider-container hp-container">
+                    <div id="hp-scroll-slider-e309c89b-bfef-4c69-9a55-9aa19e7de133" data-columns="4" data-guid="e309c89b-bfef-4c69-9a55-9aa19e7de133">
+
+                        
+    <div class="image-text-card badge-card flex-card" >
+        <div class="card card-callout" onClick = window.open(&#39;https://www.facebook.com/northwesternmedicine/posts/pfbid02fNZvUhyFaHoRRYXCfnR6DgmjBJhro9MfE52LJ2ykSYcertmnaWh1CwSfyDusFJtLl&#39;)>
+            <div class="card-flex">
+                <div class="card-content">
+                        <div class="image-container">
+
+                            <img src="/-/media/northwestern/images/homepage-banners/fy24-homepage/social-media/northwestern-medicine-social-media-1-oct24.png?la=en&amp;h=1080&amp;w=1080&amp;hash=EAF46A36EEC438F9EC632105977A7A23" alt="Physician pointing to her gold medal and smiling" />
+
+                                <div class="text-card-social-icon">
+                                    <span class="icon fab fa-facebook-square fa-2x" aria-hidden="true"></span>
+                                </div>
+
+                        </div>
+
+
+
+                            <p class="text-card-body hp-align-left">An orthopaedic physician brings home gold with the U.S. Women's National Soccer Team.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="image-text-card badge-card flex-card" >
+        <div class="card card-callout" onClick = window.open(&#39;https://www.instagram.com/p/C-3bPx3P0kF/&#39;)>
+            <div class="card-flex">
+                <div class="card-content">
+                        <div class="image-container">
+
+                            <img src="/-/media/northwestern/images/homepage-banners/fy24-homepage/social-media/northwestern-medicine-social-media-3-oct24.png?la=en&amp;h=1080&amp;w=1080&amp;hash=B9640171E62D25504383C0E7F363CDC8" alt="Parents smiling and posing with their baby" />
+
+                                <div class="text-card-social-icon">
+                                    <span class="icon fab fa-instagram fa-2x" aria-hidden="true"></span>
+                                </div>
+
+                        </div>
+
+
+
+                            <p class="text-card-body hp-align-left">After arriving 3 months early and getting 110 days of NICU care, baby Sawyer is headed home!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="image-text-card badge-card flex-card" >
+        <div class="card card-callout" onClick = window.open(&#39;https://www.instagram.com/p/C-1Rtf0PgkT/&#39;)>
+            <div class="card-flex">
+                <div class="card-content">
+                        <div class="image-container">
+
+                            <img src="/-/media/northwestern/images/homepage-banners/fy24-homepage/social-media/northwestern-medicine-social-media-2-oct24.png?la=en&amp;h=1080&amp;w=1080&amp;hash=753475F357A56E7DB1D81B0523A39229" alt="Team NM members posing with bowling balls in a bowling alley" />
+
+                                <div class="text-card-social-icon">
+                                    <span class="icon fab fa-instagram fa-2x" aria-hidden="true"></span>
+                                </div>
+
+                        </div>
+
+
+
+                            <p class="text-card-body hp-align-left">Our volunteers roll strikes with Aspire, an organization that supports people with disabilities.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="image-text-card badge-card flex-card" >
+        <div class="card card-callout" onClick = window.open(&#39;https://www.linkedin.com/posts/northwestern-medicine_nmbetter-activity-7212467814543056897-mtp3&#39;)>
+            <div class="card-flex">
+                <div class="card-content">
+                        <div class="image-container">
+
+                            <img src="/-/media/northwestern/images/homepage-banners/fy24-homepage/social-media/northwestern-medicine-social-media-4-oct24.png?la=en&amp;h=1080&amp;w=1080&amp;hash=CB8E77AC2304A1F6AD8400795E8D3149" alt="Mother and son smiling at the Cancer Survivors’ Celebration Walk &amp; 5K" />
+
+                                <div class="text-card-social-icon">
+                                    <span class="icon fab fa-linkedin fa-2x" aria-hidden="true"></span>
+                                </div>
+
+                        </div>
+
+
+
+                            <p class="text-card-body hp-align-left">Over 3,800 cancer survivors and supporters raise a record-breaking $550,000 for cancer research.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+                    </div>
+                    <div id=hp-slider-controlse309c89b-bfef-4c69-9a55-9aa19e7de133 class="hp-slider-controls">
+                        <div id=hp-previous-buttone309c89b-bfef-4c69-9a55-9aa19e7de133 class="hp-previous-button"><span class="fa fa-chevron-left" aria-hidden="true"></span></div>
+                        <div id=hp-next-buttone309c89b-bfef-4c69-9a55-9aa19e7de133 class="hp-next-button"><span class="fa fa-chevron-right" aria-hidden="true"></span></div>
+                    </div>
+
+                </div>
+            </div>
+
+
+    </div>
+</section>
+
+
+<section class="section section-hero panel panel-alt hp-panel-underlay">
+    <div class="badge-panel-container badge-slider">
+        
+    <div class="badge-image-panel">
+        <div class="text-card-img-container">
+<img src="/-/media/northwestern/images/badges-2024-2025/homepage/usnwr-cdh-best-regional-hospitals-ranked-18-types-of-care.png?la=en&amp;h=134&amp;w=130&amp;hash=7E3A10CADBDE30890C61083892A879CE" alt="Northwestern Medicine Central DuPage Hospital has been recognized by U.S. News and World Report in 18 types of care." />
+
+        </div>
+            <p class="image-label h3 pt-1">Central DuPage Hospital</p>
+    </div>
+
+
+    <div class="badge-image-panel">
+        <div class="text-card-img-container">
+<img src="/-/media/northwestern/images/badges-2024-2025/homepage/usnwr-lfh-12-types-of-care.png?la=en&amp;h=134&amp;w=130&amp;hash=82BEF4CD482C5ABB5D5A6526F7DB2A12" alt="Northwestern Medicine Lake Forest Hospital has been recognized by U.S. News and World Report in 12 types of care." />
+
+        </div>
+            <p class="image-label h3 pt-1">Lake Forest Hospital</p>
+    </div>
+
+
+    <div class="badge-image-panel">
+        <div class="text-card-img-container">
+<img src="/-/media/northwestern/images/badges-2024-2025/homepage/usnwr-mrh-best-hospitals-rehabilitation.png?la=en&amp;h=128&amp;w=130&amp;hash=7BC35BD80F16FBFAB4AB7447514ACC8F" alt="Northwestern Medicine Palos Hospital has been recognized by U.S. News and World Report for Rehabilitation." />
+
+        </div>
+            <p class="image-label h3 pt-1">Marianjoy Rehabilitation Hospital</p>
+    </div>
+
+
+    <div class="badge-image-panel">
+        <div class="text-card-img-container">
+<img src="/-/media/northwestern/images/badges-2024-2025/homepage/usnwr-huntley-mchenry-woodstock-11-types-care.png?la=en&amp;h=134&amp;w=130&amp;hash=00C52199F2C3FDE9B8FA22E1CEFA21FC" alt="Northwestern Medicine McHenry, Huntley and Woodstock hospitals have been recognized by U.S. News and World Report in 9 types of care." />
+
+        </div>
+            <p class="image-label h3 pt-1">McHenry, Huntley &amp; Woodstock Hospitals</p>
+    </div>
+
+
+    <div class="badge-image-panel">
+        <div class="text-card-img-container">
+<img src="/-/media/northwestern/images/badges-2024-2025/homepage/usnwr-nmh-honor-roll.png?la=en&amp;h=128&amp;w=130&amp;hash=E5C4367FCB41746609EBABD5643AECAF" alt="Northwestern Memorial Hospital Honor Roll 2024-2025" />
+
+        </div>
+            <p class="image-label h3 pt-1">Northwestern Memorial Hospital</p>
+    </div>
+
+
+    <div class="badge-image-panel">
+        <div class="text-card-img-container">
+<img src="/-/media/northwestern/images/badges-2024-2025/homepage/usnwr-nmh-11-specialties.png?la=en&amp;h=138&amp;w=130&amp;hash=118B1308DD1C05E488F688C04B85648C" alt="Northwestern Medicine Northwestern Memorial Hospital has been recognized by U.S. News and World Report in 11 specialties." />
+
+        </div>
+            <p class="image-label h3 pt-1">Northwestern Memorial Hospital</p>
+    </div>
+
+
+    <div class="badge-image-panel">
+        <div class="text-card-img-container">
+<img src="/-/media/northwestern/images/badges-2024-2025/homepage/usnwr-palos-regional-hospital-9-types-of-care.png?la=en&amp;h=134&amp;w=130&amp;hash=6B2BA999ED18AF4C5B1B1C073860E65C" alt="Northwestern Medicine Palos Hospital has been recognized by U.S. News and World Report in 9 types of care." />
+
+        </div>
+            <p class="image-label h3 pt-1">Palos Hospital</p>
+    </div>
+
+
+    </div>
+</section>
+
+</div>
+
+            
+        </main>
+    </div>
+    <footer id="site-footer" class="container">
+        
+
+
+
+<div class="site-footer">
+    <section class="section section-bottom-padding section-newsletter no-print">
+        <div class="row">
+            <div class="col social-col">
+                <div class="follow-us-container">
+                    <span class="follow-us-text"> Follow Us</span>
+                    <nav itemscope itemtype="http://schema.org/MedicalOrganization" aria-label="Primary Social">
+                        <div class="assistive-text">Primary Social Navigation</div>
+                        <link itemprop="url" href="https://www.nm.org/?utm_source=paloshealth.com&amp;utm_medium=301re&amp;utm_campaign=palos">
+                        <meta itemprop="name" content="Northwestern Medicine" />
+                        <ul class="list-unstyled list-inline icon-links social">
+                            <li>
+                                <a itemprop="sameAs" href="https://www.facebook.com/northwesternmedicine" target="_blank" title="Northwestern Medicine on Facebook" rel="me noopener"><span class="icon fab fa-facebook-f"></span><span class="assistive-text">Facebook</span></a>
+                            </li>
+                            <li>
+                                <a itemprop="sameAs" href="https://twitter.com/NorthwesternMed" target="_blank" title="Northwestern Medicine on Twitter" rel="me noopener"><span class="icon fa-brands fa-x-twitter"></span><span class="assistive-text">Twitter</span></a>
+                            </li>
+                            <li>
+                                <a itemprop="sameAs" href="https://instagram.com/northwesternmedicine" target="_blank" title="Northwestern Medicine on Instagram" rel="me noopener"><span class="icon fab fa-instagram"></span><span class="assistive-text">Instagram</span></a>
+                            </li>
+                            <li>
+                                <a itemprop="sameAs" href="https://www.linkedin.com/company/northwestern-medicine" target="_blank" title="Northwestern Medicine on LinkedIn" rel="me noopener"><span class="icon fab fa-linkedin-in"></span><span class="assistive-text">LinkedIn</span></a>
+                            </li>
+                            <li>
+                                <a itemprop="sameAs" href="http://www.tiktok.com/&#64;northwesternmedicine" target="_blank" title="Northwestern Medicine on TikTok" rel="me noopener"><span class="icon fab fa-tiktok"></span><span class="assistive-text">TikTok</span></a>
+                            </li>
+                            <li>
+                                <a itemprop="sameAs" href="http://pinterest.com/nmhnews/" target="_blank" title="Northwestern Medicine on Pinterest" rel="me noopener"><span class="icon fab fa-pinterest"></span><span class="assistive-text">Pinterest</span></a>
+                            </li>
+                            <li>
+                                <a itemprop="sameAs" href="https://www.youtube.com/user/NMHChicago" target="_blank" title="Northwestern Medicine on YouTube" rel="me noopener"><span class="icon fab fa-youtube"></span><span class="assistive-text">YouTube</span></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col">
+<div class="fieldset-newsletter">
+        <legend class="assistive-text">newsletter sign up</legend>
+        <div class="col lg-6 md-5 sm-12 fieldset-label email-opt-pop-col-label">
+            <label for="newsletter-sign-up">Sign up for our newsletter</label>
+        </div>
+        <div class="col lg-2 email-opt-pop-col-btn">
+            <a href="/healthbeat/healthbeat-newsletter-form" class="btn btn-primary btn-sign-up">
+                Sign Up
+            </a>
+
+        </div>
+</div>            </div>
+        </div>
+    </section>
+    <section class="section no-print">
+        <div class="footer-link-list clearfix">
+            <div class="col">
+                <div class="row">
+                    <div class="group-cards five-column">
+                                <div class="card md-4 lg-2 first-links">
+                                    <div class="list-links ">
+                                            <p class="list-title">Patient Care &amp; Records</p>
+                                    <ul class="list-unstyled list-links-content">
+                                        
+                                            <li><a href="/conditions-and-care-areas/immediate-care" target="_self" class="btn-link">Immediate Care</a></li>
+                                            <li><a href="https://mynm.nm.org/MyChart/Authentication/Login" target="_blank" class="btn-link">MyNM Patient Portal</a></li>
+                                            <li><a href="/patients-and-visitors/mynm-mychart-and-medical-records" target="_self" class="btn-link">Medical Records</a></li>
+                                            <li><a href="https://symptomchecker.isabelhealthcare.com/index.jsp?passcode=WMujp9uTvIiTddING2vdVu3x5oW4405A" target="_blank" class="btn-link">Symptom Checker</a></li>
+                                                                            </ul>
+                                    </div>
+                                </div>
+                                <div class="card md-4 lg-2 first-links">
+                                    <div class="list-links list-first">
+                                            <p class="list-title">Billing &amp; Insurance</p>
+                                    <ul class="list-unstyled list-links-content">
+                                        
+                                            <li><a href="/patients-and-visitors/billing-and-insurance/billing-questions" target="_self" class="btn-link">Billing Questions</a></li>
+                                            <li><a href="/patients-and-visitors/billing-and-insurance/financial-assistance" target="_self" class="btn-link">Financial Assistance</a></li>
+                                            <li><a href="/patients-and-visitors/billing-and-insurance/insurance-information" target="_self" class="btn-link">Insurance Information</a></li>
+                                            <li><a href="/patients-and-visitors/billing-and-insurance/pay-a-bill" target="_self" class="btn-link">Pay a Bill</a></li>
+                                            <li><a href="/patients-and-visitors/billing-and-insurance/price-transparency" target="_self" class="btn-link">Price Transparency</a></li>
+                                                                                    <li class="view-all"><a href="/patients-and-visitors/billing-and-insurance" target="_self">View All Billing &amp; Insurance <span class="material-icons link-icon" aria-hidden="true">arrow_forward</span></a></li>
+                                    </ul>
+                                    </div>
+                                </div>
+                                <div class="card md-4 lg-2 first-links">
+                                    <div class="list-links ">
+                                            <p class="list-title">Get Involved</p>
+                                    <ul class="list-unstyled list-links-content">
+                                        
+                                            <li><a href="/patients-and-visitors/classes-and-events" target="_self" class="btn-link">Classes, Events and Support Groups</a></li>
+                                            <li><a href="https://jobs.nm.org/" target="_blank" class="btn-link">Careers</a></li>
+                                            <li><a href="/patients-and-visitors/volunteer" target="_self" class="btn-link">Volunteer</a></li>
+                                            <li><a href="/about-us/workforce-development" target="_self" class="btn-link">Workforce Development</a></li>
+                                                                            </ul>
+                                    </div>
+                                </div>
+                                <div class="card md-4 lg-2 first-links">
+                                    <div class="list-links ">
+                                            <p class="list-title">About Us</p>
+                                    <ul class="list-unstyled list-links-content">
+                                        
+                                            <li><a href="/about-us/awards-and-accreditations" target="_self" class="btn-link">Awards and Accreditations</a></li>
+                                            <li><a href="/about-us/nm-community-impact" target="_self" class="btn-link">Community Impact</a></li>
+                                            <li><a href="/about-us/diversity-and-inclusion" target="_self" class="btn-link">Diversity and Inclusion</a></li>
+                                            <li><a href="/about-us/financial-statements-and-annual-reports" target="_self" class="btn-link">Financial Statements and Annual Reports</a></li>
+                                            <li><a href="/about-us/history" target="_self" class="btn-link">History</a></li>
+                                            <li><a href="https://shopnmstore.com/" target="_blank" class="btn-link">NM Store</a></li>
+                                            <li><a href="/about-us/foundation" target="_self" class="btn-link">Northwestern Memorial Foundation</a></li>
+                                            <li><a href="https://news.nm.org" target="_blank" class="btn-link">Newsroom</a></li>
+                                            <li><a href="/about-us/quality" target="_self" class="btn-link">Quality</a></li>
+                                                                                    <li class="view-all"><a href="/about-us" target="_self">View All About Us <span class="material-icons link-icon" aria-hidden="true">arrow_forward</span></a></li>
+                                    </ul>
+                                    </div>
+                                </div>
+                                <div class="card md-4 lg-2 first-links">
+                                    <div class="list-links ">
+                                            <p class="list-title">For Medical Professionals &amp; Students</p>
+                                    <ul class="list-unstyled list-links-content">
+                                        
+                                            <li><a href="/for-medical-professionals/employee-physician-login" target="_self" class="btn-link">Employee and Physician Login</a></li>
+                                            <li><a href="https://www.feinberg.northwestern.edu/" target="_blank" class="btn-link">Feinberg School of Medicine</a></li>
+                                            <li><a href="/for-medical-professionals/for-physicians" target="_self" class="btn-link">For Physicians</a></li>
+                                            <li><a href="/for-medical-professionals/for-nurses" target="_self" class="btn-link">For Nurses</a></li>
+                                            <li><a href="/for-medical-professionals/i-am-a-student" target="_self" class="btn-link">For Students</a></li>
+                                            <li><a href="/for-medical-professionals/epiccare" target="_self" class="btn-link">For Qualifying Organizations</a></li>
+                                                                                    <li class="view-all"><a href="/for-medical-professionals" target="_self">View All For Medical Professionals &amp; Students <span class="material-icons link-icon" aria-hidden="true">arrow_forward</span></a></li>
+                                    </ul>
+                                    </div>
+                                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section-footer-phone-numbers">
+
+        <div class="col">
+            <div class="row">
+                <div class="group-cards flex-card">
+                    <div class="card flex-card">
+                        <a href="/" class="block left northwestern-logo" data-track="footer" data-track-action="logo">
+                            <img src="/Content/Northwestern/img/northwestern-medicine-logo.png" alt="Northwestern Medicine Logo" />
+                        </a>
+                    </div>
+                    <div class="footer-card-container">
+                        <div class="row">
+                            <div class="card footer-btn">
+                                <a class="btn btn-primary" href="tel:184466238837">1-844-NMBETTER</a> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="card footer-btn">
+                                <a class="btn btn-secondary" href="/contact-us">NM Directory & Contact</a>                              
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section-bottom-padding section-footer-bottom">
+        <div class="assistive-text">Additional Footer Links</div>
+        <div class="row">
+
+                <div class="col md-12 lg-5 xl-7 copyright">
+                    <nav aria-label="Footer">
+                        <div class="assistive-text">Footer Navigation</div>
+                        <ul class="list-unstyled list-inline small utility no-print">
+                            <li><a href="/patients-and-visitors/patient-rights-policies">Patient Rights and Policies</a></li>
+                            <li><a href="/patients-and-visitors/patient-rights-policies/accessibility-policy">Accessibility</a></li>
+                        </ul>
+                    </nav>
+                    <p class="small">&#169; 2024 by Northwestern Medicine&#174; and Northwestern Memorial HealthCare.<br /> Northwestern Medicine&#174; is a trademark of Northwestern Memorial HealthCare, used by Northwestern University.</p>
+            </div>
+        </div>
+    </section>
+</div>
+    </footer>
+<div id="outdated-browser" style="display:none;">
+    <div class="password-pop-content px-5 py-3">
+        <div class="oudated-browser h-100 align-center d-md-block py-3">
+            <h2 class="h1 brand-color-alt extra-bold m-0 pb-1 px-3">You are using an unsupported browser</h2>
+            <p class="brand-color-alt mb-0 mx-auto py-4">Please consider using one of these supported browsers</p>
+            <div class="mw-100 w-100 row">
+                <a data-fancybox-close href="https://www.google.com/chrome/" class="col sm-3 btn btn-link icon-browser transform-none" target="_blank" rel="noopener" onclick="javascript: $.fancybox.close();"><img class="icon" src="/Content/Northwestern/img/browser-icons/icon-chrome.png" alt="" />Chrome</a>
+                <a data-fancybox-close href="https://www.microsoft.com/en-us/edge" class="col sm-3 btn btn-link icon-browser transform-none" target="_blank" rel="noopener" onclick="javascript: $.fancybox.close();"><img class="icon" src="/Content/Northwestern/img/browser-icons/icon-edge.png" alt="" />Edge</a>
+                <a data-fancybox-close href="https://support.apple.com/downloads/safari" class="col sm-3 btn btn-link icon-browser transform-none" target="_blank" rel="noopener" onclick="javascript: $.fancybox.close();"><img class="icon" src="/Content/Northwestern/img/browser-icons/icon-safari.png" alt="" />Safari</a>
+                <a data-fancybox-close href="https://www.mozilla.org/en-US/firefox/new/" class="col sm-3 btn btn-link icon-browser transform-none" target="_blank" rel="noopener" onclick="javascript: $.fancybox.close();"><img class="icon" src="/Content/Northwestern/img/browser-icons/icon-firefox.png" alt="" />Firefox</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<nav id="mobile-nav" class="main-nav header-show-for-md" aria-label="Mobile">
+    <ul class="nav row">
+                <li class="nav-item"><a class="nav-link" href="/doctors/search-results" data-track="header" data-track-action="Doctors" target="_self">Doctors</a></li>
+                <li class="nav-item"><a class="nav-link" href="/locations" data-track="header" data-track-action="Locations" target="_self">Locations</a></li>
+                <li class="nav-item"><a class="nav-link" href="/conditions-and-care-areas" data-track="header" data-track-action="Conditions &amp; Services" target="_self">Conditions &amp; Services</a></li>
+                <li class="nav-item has-submenu">
+                    <a class="nav-link" href="#" data-target="mega-menu-1" data-track="header" data-track-action="Patients &amp; Visitors" target="_self">Patients &amp; Visitors</a>
+                    <ul class="list-unstyled nav-links-mobile">
+                            <li><a href="/patients-and-visitors/billing-and-insurance" target="_self" class="btn-link">Billing, Insurance &amp; Records</a></li>
+                            <li><a href="/patients-and-visitors/education-and-support" target="_self" class="btn-link">Education &amp; Support</a></li>
+                            <li><a href="/patients-and-visitors" target="_self" class="btn-link">VIEW ALL</a></li>
+                            <li><a href="/patients-and-visitors/for-your-visit" target="_self" class="btn-link">For Your Visit</a></li>
+                            <li><a href="/patients-and-visitors/get-involved" target="_self" class="btn-link">Get Involved</a></li>
+                            <li><a href="/patients-and-visitors/international-and-executive-health" target="_self" class="btn-link">International &amp; Executive Health</a></li>
+                            <li><a href="/patients-and-visitors/patient-experience-policies" target="_self" class="btn-link">Patient Experience Policies</a></li>
+                        <li><a href="/patients-and-visitors" target="_self" class="btn-link">View All</a></li>
+                    </ul>
+
+                </li>
+                <li class="nav-item has-submenu">
+                    <a class="nav-link" href="#" data-target="mega-menu-2" data-track="header" data-track-action="HealthBeat" target="_self">HealthBeat</a>
+                    <ul class="list-unstyled nav-links-mobile">
+                                <li><a href="/healthbeat/healthy-tips" target="_self" class="btn-link">Healthy Tips</a></li>
+                                <li><a href="/healthbeat/medical-advances" target="_self" class="btn-link">Medical Advances</a></li>
+                                <li><a href="/healthbeat/patient-stories" target="_self" class="btn-link">Patient Stories</a></li>
+
+                            <li><a href="/healthbeat" target="_self" class="btn-link">View All</a></li>
+                    </ul>
+
+                </li>
+                <li class="nav-item"><a class="nav-link" href="/conditions-and-care-areas/clinical-trials-and-research" data-track="header" data-track-action="Clinical Research" target="_self">Clinical Research</a></li>
+        <li class="nav-item utility-nav-item first-child-item"><a class="nav-link nav-link-sm" href="/patients-and-visitors/appointments">Appointments</a></li>
+        <li class="nav-item utility-nav-item"><a class="nav-link nav-link-sm" href="https://mynm.nm.org/MyChart/Authentication/Login" target="_blank">MyNM Patient Portal</a></li>
+        <li class="nav-item utility-nav-item"><a class="nav-link nav-link-sm" href="/patients-and-visitors/billing-and-insurance/pay-a-bill">Pay a Bill</a></li>
+        <li class="nav-item utility-nav-item"><a class="nav-link nav-link-sm" href="/patients-and-visitors/billing-and-insurance/financial-assistance">Financial Assistance</a></li>
+        <li class="nav-item utility-nav-item"><a class="nav-link nav-link-sm" href="https://jobs.nm.org/" target="_blank">Careers</a></li>
+        <li class="nav-item utility-nav-item"><a class="nav-link nav-link-sm" href="https://www.feinberg.northwestern.edu/">Feinberg School of Medicine</a></li>
+        <li class="nav-item utility-nav-item"><a class="nav-link nav-link-sm" href="https://nmgive.donordrive.com/index.cfm?fuseaction=donate.event&eventID=619">Give Now</a></li>
+    </ul>
+</nav>
+<div class="header-show-for-md" id="mobile-nav-close"></div>
+
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
+
+
+<script src="/Content/Northwestern/js/_libs/cdnjs/jquery.unveil2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js" defer></script>
+<script src="/content/northwestern/dist/js/home/scroll.js?version=414ef8ed2b"  ></script><script src="//ajax.aspnetcdn.com/ajax/knockout/knockout-3.3.0.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+<script src="/content/northwestern/dist/js/bundle-libs.js?version=c9bc82bd57"  ></script>
+<script src="/content/northwestern/dist/js/bundle-components.js?version=e71aedfbfe"  ></script>
+<script src="/content/northwestern/dist/js/bundle-shared.js?version=2bb402589b"  ></script>
+<script src="/Content/Northwestern/js/bundles/validation/jquery.validate.customadapters.js"></script>
+
+<script src="/content/northwestern/js/polyfills/fetch.umd.js"></script>
+            <!-- React 18.1.1 production version -->
+            <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin="anonymous"></script>
+            <!-- ReactDOM 18.1.1 production version -->
+            <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+<script src="/content/northwestern/dist/js/homepage/homepagesearch.js?version=abb0b2206f"  ></script>
+<script src="/Content/Northwestern/js/views/Sliders/scrollable-feed.js"></script>
+
+
+
+<script src="/content/northwestern/dist/js/doctors/searchoverlay.js?version=69ed250b4c"  ></script>
+
+
+
+
+    </body>
+</html>

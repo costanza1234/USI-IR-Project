@@ -1,0 +1,644 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" >
+<head>
+        <TITLE>CUNY.edu Temporarily Unavailable</TITLE>
+      <link href="maintenance/main.css" rel="stylesheet" type="text/css" />
+                <script src="maintenance/jquery-1.3.2.js" type="text/javascript"></script>
+        <script src="maintenance/main-wrap.js" type="text/javascript"></script>
+
+       
+</head>
+
+<body>
+
+	<div id="shadowbox">
+        
+        <div class="container">
+        
+        <div id="atticbar"> 
+      
+    	</div>
+        		
+                <div class="header">
+                
+                	<table class="layout-960-3">
+       				<tbody>
+       				<tr>
+       		
+            			<td class="left-270" style="padding-top: 20px;"><a href="http://www.cuny.edu" title="CUNY Home Page"><img src="maintenance/cuny-logo.gif" alt="CUNY Logo" /></a></td>
+                        
+                        <td class="mid-380" style="vertical-align:middle; padding-top: 20px;">&nbsp;
+                        	
+                        </td>
+                        
+                       <td class="right-270">
+                        <div class="find-links"><a title="Show/Hide Panel" id="findcollege-link">College Websites</a></div>
+                        
+                        </td>
+                        
+                        
+            
+            		</tr>
+            		</tbody>
+            		</table>
+            	
+            	
+                </div>
+                
+                  <div id="horznav">
+         
+         	<a href="https://cunyportal.cuny.edu/cpr/authenticate/portal_login.jsp" class="login">Portal Log-in</a>
+         
+         </div> 
+        
+       
+        		<div class="maincontent">
+                
+                <h1 class="title">CUNY.EDU is Under Maintenance</h1>
+        
+       			<h3 style="text-transform:none; margin: 5px 0px 20px 0px; font-weight:normal;">The CUNY Portal and applications such as Blackboard (for students, faculty, and staff) are still available. See below.</h3>
+      
+      
+      				<table class="layout-960-2">
+       				<tbody>
+       				<tr>
+       		
+            			<td class="left-270">
+                         <div id="menu">
+                        	<div class="auto-menu">
+                        		<ul>
+
+                                <li style="padding-bottom: 9px"><a href="https://cunyportal.cuny.edu/cpr/authenticate/portal_login.jsp" class="login">CUNY Portal Log-in</a></li>
+ 
+                               <li style="padding-bottom: 9px"><a href="https://home.cunyfirst.cuny.edu/oam/Portal_Login1.html" class="login">CUNYfirst</a></li>
+ 
+
+<li style="padding-bottom: 9px"><a href="https://portal0.uapc.cuny.edu/uapc/main.jsp" class="login">Apply Online</a></li>
+                               
+<li style="padding-bottom: 9px"><a href="https://bbhosted.cuny.edu/webapps/login/noportal" class="login">Blackboard</a></li>
+ 
+<li style="padding-bottom: 9px"><a href="https://degreeworks.cuny.edu" class="login">DegreeWorks</a></li>
+
+<li style="padding-bottom: 9px"><a href="https://facts.cuny.edu" class="login">FACTS</a></li>
+<li style="padding-bottom: 9px"><a href="https://virtualbookstore.cuny.edu" class="login">Virtual Bookstore</a></li>
+
+
+                              <li><a href="#help">Portal Help</a></li>
+                                <li><a href="#faqs">Portal FAQs</a></li>
+                        		<li><a href="#mypage">Portal "My Page" FAQs</a></li>
+                               </ul>
+                            </div>
+                        </div>
+                        
+                        </td>
+                        <td class="right-670"><img src="maintenance/hp_header_background_logo.jpg" alt="Banner 1" /></td>
+                    </tr>
+                    </tbody>
+                    </table>
+                    <br />
+                        
+      				<table class="layout-960-3">
+       				<tbody>
+       				<tr>
+       		
+            			<td class="left-270">
+                        
+                       <h3>About CUNY</h3>
+            <hr />
+            <br />
+                    
+<p>The City University of New York is the nation's leading urban public university serving more than 480,000 students at 23 colleges and institutions in New York City. The University's 23 institutions include 11 senior colleges, six community colleges, the William E. Macaulay Honors College at CUNY, the Graduate School and University Center, the CUNY Graduate School of Journalism, the CUNY School of Law, the CUNY School of Professional Studies, and the CUNY School of Public Health.</p>
+
+<p>Serving more than 243,000 degree-credit students and 273,000 continuing and professional education students, the University confers 35,000 degrees each year - more than 1.1 million associate, baccalaureate, master's and doctoral degrees since 1967. CUNY plays a crucial role in the life and economy of the city and state. As of 2007, 54 percent of undergraduates and 46 percent of all college students in New York City were attending CUNY. College Now, CUNY's academic enrichment program for 46,000 high school students, is offered at CUNY campuses and at more than 343 high schools. Online baccalaureate degrees are offered by the School of Professional Studies.</p> 
+              </td>
+            
+            			<td class="mid-380">
+            			 <h3>CUNY Portal Services</h3>
+            <hr />
+            <br />
+            <div id="button-box">
+			<div class="one-link-box">
+			<a href="https://bbhosted.cuny.edu/webapps/login/noportal" shape="rect" style="border-top: 0px none" title="Blackboard Direct">Blackboard<span style="color: #e67700">&gt;&gt;</span>
+			</a>
+			</div>
+			</div>
+			<br />
+<div id="portalloginbox">
+<table id="portallogintable">
+<tbody>
+<tr>
+<td id="left">
+<a class="portal" href="https://cunyportal.cuny.edu/cpr/authenticate/portal_login.jsp" id="services-link" shape="rect" title="Portal Login">Portal Log-In <span style="color: #e67700">&gt;&gt;</span>
+			</a>
+</td>
+<td id="right">
+<a href="https://cunyportal.cuny.edu/citizen_CUNY/new_user_registration/regchoice.html" shape="rect" title="create a new account">create a new account 
+			</a>
+</td>
+</tr>
+</tbody>
+</table>
+
+<span style="padding-left: 7px;">
+<strong>You must <a href="https://cunyportal.cuny.edu/cpr/authenticate/portal_login.jsp" id="services-link" shape="rect" title="Portal Login">log-in</a> to reach the following services:</strong>
+</span>
+			<ul class="serviceslist">
+
+				<li>Application for Admission</li>
+				<li>Blackboard - <a href="https://bbhosted.cuny.edu/webapps/login/noportal" shape="rect" title="Blackboard Direct">alternative login available</a>
+</li>
+				<li>CPE Results</li>
+				<li>CUNY Alert</li>
+				<li>CUNY Mall</li>
+				<li>Degreeworks</li>
+				<li>ePermit</li>
+				<li>Financial Aid Status</li>
+				<li>Status of Application for Admission</li>
+			</ul>
+<hr />
+</div>
+           				</td>
+            			
+                        <td class="right-270">
+            			   
+                       <h3>Announcements</h3>
+            <hr />
+            <br />
+            <p><strong><a href="https://home.cunyfirst.cuny.edu/psp/cnyepprd/GUEST/HRMS/c/COMMUNITY_ACCESS.CLASS_SEARCH.GBL?FolderPath=PORTAL_ROOT_OBJECT.HC_CLASS_SEARCH_GBL&IsFolder=false&IgnoreParamTempl=FolderPath%2cIsFolder">Schedule of Classses</a></strong><br />Looking for classes offered in the upcoming semester? Search our listing of upcoming courses so you can better plan your schedule. <a href="https://home.cunyfirst.cuny.edu/psp/cnyepprd/GUEST/HRMS/c/COMMUNITY_ACCESS.CLASS_SEARCH.GBL?FolderPath=PORTAL_ROOT_OBJECT.HC_CLASS_SEARCH_GBL&IsFolder=false&IgnoreParamTempl=FolderPath%2cIsFolder" class="suffix">&gt;&gt;</a></p>
+            <br />
+            
+            <p><strong><a href="http://student.cuny.edu/cgi-bin/RegisteredPrograms/menu.pl?STYLE=NEW">Academic Programs</a></strong><br />The City University of New York, the nation's largest urban public university, comprises 23 institutions, more than 1,400 academic programs, 200 majors leading to associate and baccalaureate degrees, and 100 graduate degree majors. <a href="http://student.cuny.edu/cgi-bin/RegisteredPrograms/menu.pl?STYLE=NEW" class="suffix">&gt;&gt;</a></p>
+         
+    
+
+                        </td>
+       
+       				</tr>
+        			</tbody>
+        			</table>     
+                    
+                    <br />
+                   
+                    
+<hr />
+<br />
+<span class="anchor" id="help" />
+<h3>Portal Help</h3>
+           
+           
+            <p>If you are unable to login or register to the CUNY Portal and have questions regarding Blackboard, eSIMS &amp; ePermit, you can get help desk assistance by clicking on your local campus below:</p>
+            <table class="layout-960-2">
+            <tbody>
+            <tr>
+            <td class="left">
+            
+              
+   
+   
+    <p>
+<a class="Article_links" onclick="window.open('http://portal.cuny.edu/cms/id/cuny/documents/informationpage/028722.htm', 'howto', config='height=310,width=645,scrollbars=yes')">
+    Baruch College</a>
+</p>
+      
+      <p>
+
+<a class="Article_links" onclick="window.open('http://portal.cuny.edu/cms/id/cuny/documents/informationpage/028743.htm', 'howto', config='height=235,width=645,scrollbars=yes')">Borough of Manhattan Community College</a>
+</p>
+
+      
+     <p>
+<a class="Article_links" onclick="window.open('http://portal.cuny.edu/cms/id/cuny/documents/informationpage/028723.htm', 'howto', config='height=230,width=645,scrollbars=yes')">Bronx Community College</a>
+</p>
+      
+     <p>
+<a class="Article_links" onclick="window.open('http://portal.cuny.edu/cms/id/cuny/documents/informationpage/028724.htm', 'howto', config='height=230,width=645,scrollbars=yes')">Brooklyn College</a>
+</p>
+
+      
+     <p>
+
+<a class="Article_links" onclick="window.open('http://portal.cuny.edu/cms/id/cuny/documents/informationpage/028725.htm', 'howto', config='height=245,width=645,scrollbars=yes')">City College</a>
+</p>
+      
+      <p>
+<a class="Article_links" onclick="window.open('http://portal.cuny.edu/cms/id/cuny/documents/informationpage/028741.htm', 'howto', config='height=230,width=645,scrollbars=yes')">College of Staten Island</a>
+</p>
+            <p>
+<a class="Article_links" onclick="window.open('http://portal.cuny.edu/cms/id/cuny/documents/informationpage/028727.htm', 'howto', config='height=130,width=645,scrollbars=yes')">CUNY Baccalaureate Degree</a>
+</p>
+     
+      
+       <p>
+<a class="Article_links" onclick="window.open('http://portal.cuny.edu/cms/id/cuny/documents/informationpage/028737.htm', 'howto', config='height=215,width=645,scrollbars=yes')">CUNY Online Baccalaureate Degree</a>
+
+</p>
+      
+      <p>
+<a class="Article_links" onclick="window.open('http://portal.cuny.edu/cms/id/cuny/documents/informationpage/028745.htm', 'howto', config='height=245,width=645,scrollbars=yes')">CUNY School of Law</a>
+</p>
+      
+      <p>
+<a class="Article_links" onclick="window.open('http://portal.cuny.edu/cms/id/cuny/documents/informationpage/028728.htm', 'howto', config='height=230,width=645,scrollbars=yes')">CUNY Graduate Center</a>
+</p>
+      
+      <p>
+<a class="Article_links" onclick="window.open('http://portal.cuny.edu/cms/id/cuny/documents/informationpage/028729.htm', 'howto', config='height=265,width=645,scrollbars=yes')">Hostos Community Collge</a>
+</p>
+      
+       <p>
+
+<a class="Article_links" onclick="window.open('http://portal.cuny.edu/cms/id/cuny/documents/informationpage/028730.htm', 'howto', config='height=450,width=645,scrollbars=yes')">Hunter College</a>
+</p>
+ <p>
+<a class="Article_links" onclick="window.open('http://portal.cuny.edu/cms/id/cuny/documents/informationpage/028731.htm', 'howto', config='height=230,width=645,scrollbars=yes')">John Jay College</a>
+</p>
+
+      
+ 
+</td>
+<td class="right">
+      
+            <p>
+<a class="Article_links" onclick="window.open('http://portal.cuny.edu/cms/id/cuny/documents/informationpage/028732.htm', 'howto', config='height=250,width=645,scrollbars=yes')">Kingsborough Community College</a>
+</p>
+      
+      <p>
+<a class="Article_links" onclick="window.open('http://portal.cuny.edu/cms/id/cuny/documents/informationpage/028733.htm', 'howto', config='height=228,width=645,scrollbars=yes')">LaGuardia Community College</a>
+
+</p>
+      
+      <p>
+<a class="Article_links" onclick="window.open('http://portal.cuny.edu/cms/id/cuny/documents/informationpage/028734.htm', 'howto', config='height=315,width=645,scrollbars=yes')">Lehman College</a>
+</p>
+      
+           <p>
+<a class="Article_links" onclick="window.open('http://portal.cuny.edu/cms/id/cuny/documents/informationpage/028735.htm', 'howto', config='height=315,width=645,scrollbars=yes')">Medgar Evers College</a>
+</p>
+      
+      <p>
+<a class="Article_links" onclick="window.open('http://portal.cuny.edu/cms/id/cuny/documents/informationpage/028726.htm', 'howto', config='height=230,width=645,scrollbars=yes')">New York City College of Technology</a>
+</p>
+      
+     <p>
+
+<a class="Article_links" onclick="window.open('http://portal.cuny.edu/cms/id/cuny/documents/informationpage/028738.htm', 'howto', config='height=245,width=645,scrollbars=yes')">Queens College</a>
+</p>
+
+      
+      <p>
+<a class="Article_links" onclick="window.open('http://portal.cuny.edu/cms/id/cuny/documents/informationpage/028739.htm', 'howto', config='height=275,width=645,scrollbars=yes')">Queensborough Community College</a>
+</p>
+      
+
+      <p>
+<a class="Article_links" onclick="window.open('http://portal.cuny.edu/cms/id/cuny/documents/informationpage/028740.htm', 'howto', config='height=195,width=645,scrollbars=yes')">The School of Professional Studies</a>
+</p>
+             <p>
+<a class="Article_links" onclick="window.open('http://portal.cuny.edu/cms/id/cuny/documents/informationpage/028736.htm', 'howto', config='height=230,width=645,scrollbars=yes')">Sophie Davis School of Biomedical Education</a>
+
+</p>
+
+      <p>
+<a class="Article_links" onclick="window.open('http://portal.cuny.edu/cms/id/cuny/documents/informationpage/028742.htm', 'howto', config='height=260,width=645,scrollbars=yes')">York College</a>
+</p>
+      
+    <p>
+<a class="Article_links" onclick="window.open('http://portal.cuny.edu/cms/id/cuny/documents/informationpage/028746.htm', 'howto', config='height=125,width=645,scrollbars=yes')">Administrative Offices (East 42nd Street)</a>
+</p>
+      <p>
+<a class="Article_links" onclick="window.open('http://portal.cuny.edu/cms/id/cuny/documents/informationpage/029522.htm', 'howto', config='height=230,width=645,scrollbars=yes')">Administrative/CIS Offices (Hudson Street)</a>
+</p>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+ <hr />
+                    
+                    <br />
+                    <span class="anchor" id="faqs" />
+                    <h3>Portal FAQs and Answers</h3>
+                    
+                    <p>
+
+<a href="#difference" shape="rect">What is the difference between the CUNY portal and the CUNY website?</a>
+
+</p>
+<p>
+
+<a href="#register" shape="rect">How do I register/login on the CUNY portal?</a>
+
+</p>
+<p>
+
+<a href="#ssn" shape="rect">Worried about submitting your social security number to  register for our site?</a>
+
+</p>
+<p>
+
+<a href="#forgot" shape="rect">I forgot my password and/or username. What should I do?</a>
+
+</p>
+<p>
+
+<a href="#address" shape="rect">How do I change my home address on the portal?</a>
+
+</p>
+<p>
+
+<a href="#customize" shape="rect">How do I customize my view on the CUNY portal?</a>
+
+</p>
+<p>
+
+<a href="#college" shape="rect">Can I access my college's website through the portal?</a>
+
+</p>
+<p>
+
+<a href="#college" shape="rect">What browser works best with the CUNY portal?</a>
+
+</p>
+<p>
+
+<a href="#pdfview" shape="rect">I wanted to view a PDF file, but I got an error message,   what do I do?</a>
+
+</p>
+<br />
+
+                    <strong>
+<span class="anchor" id="difference" />What is the difference between the CUNY portal and the CUNY website?</strong>
+<p>
+The CUNY Portal is the source of your private and secure information at CUNY (application status, financial aid info, etc...) as well as services that allow you to register for a course, access Blackboard and Degreeworks, and customize your &quot;My Page&quot;.
+<br />
+<br />
+The CUNY website or (cuny.edu) is the source of all public information at C UNY such as academic programs, the CUNY Newswire, admissions information, the library catalog, job postings, links to the college websites, etc..</p>
+<p>&nbsp;</p>
+<strong>
+<span class="anchor" id="register" />How do I register/login on the CUNY portal?</strong>
+<p>
+<a href="https://cunyportal.cuny.edu/cpr/authenticate/portal_login.jsp" shape="rect" title="Portal Login page">Click Here</a>. 
+</p>
+<p>
+<u>If you have previously registered</u> on the CUNY portal, type in   your Username and Password and click on the Log-in button.
+</p>
+<p>
+<u>If you have not registered</u> on the CUNY portal, select the   &quot;Register Now!&quot; link. A new page will display six categories for registration:   student, faculty, staff, applicant, and alumni or visitor. Select the   appropriate link. Students, faculty and staff must enter their last name, social   security number and birth date in order to validate their connection with the   university.</p>
+<p>&nbsp;</p>
+<strong>
+<span class="anchor" id="ssn" />Worried about submitting your social security number to  register for our site?</strong>
+<p>
+Within the portal registration process, we ask for your Social   Security Number (SSN) once and only once. By design, this number is transmitted   to us under the widely recognized https security protocol the one and only time   that you supply it, and it is not stored anywhere in the CUNY portal. Well   behind the scenes, we use a complex mathematical abstraction process that allows   us to verify that the SSN entered for you is correct. To provide further   protection, our process is designed so that it is impossible to re-construct the   original SSN once it has been sent to us on that single occasion when you   register.</p>
+<p>&nbsp;</p>
+<strong>
+<span class="anchor" id="forgot" />I forgot my password and/or username. What should I do?<br />
+</strong>
+<p>
+<a href="https://cunyportal.cuny.edu/cpr/treg/validateUser.jsp">Click Here</a>. You can then either fill out a form to re-validate your account or have your current password sent to your registered email address.</p>
+<p>&nbsp;</p>
+<strong>
+<span class="anchor" id="address" />How do I change my home address on the portal?</strong>
+<br />
+<br />
+
+<h4 class="low-gray">To change your home address on the portal:</h4>
+<p>
+&quot;student&quot; - contact your registrar&apos;s office.
+</p>
+<p>
+&quot;faculty/staff&quot; - contact your HR department.
+</p>
+<p>
+&quot;visitor&quot; - login and go to your profile.
+</p>
+<p>
+For &quot;applicants&quot;:
+</p>
+<ul>
+	<li>  If you have filled out the form with the correct information,  you don&apos;t have to worry about
+	the information you have in your profile.</li>
+	<li>If you have not submitted the form and don&apos;t mind filling out another online form, you may
+	register for another  &quot;applicant&quot; account.</li>
+	<li> If you fill out the application form  with the wrong information and have submitted it,  
+	please contact the admission&apos;s office:  aonline@mail.cuny.edu or call 212-997- CUNY    
+	(2869)</li>
+   
+</ul>
+<p>&nbsp;</p>
+<strong>
+<span class="anchor" id="customize" />How do I customize my view on the CUNY portal?</strong>
+<p>
+To create your customized view you must register and login. A   new tab will appear in the upper right hand corner. Click on &quot;My Page&quot; and   select one of the &quot;edit&quot; buttons to add or change information.</p>
+<p>&nbsp;</p>
+<strong>
+<span class="anchor" id="college" />Can I access my college's website through the portal?</strong>
+<p>
+Yes. From the college dropdown box, you can select your   college&apos;s website.</p>
+<p>&nbsp;</p>
+<strong>
+<span class="anchor" id="browser" />What browser works best with the CUNY portal?</strong>
+<p>
+The portal is best viewed using Internet Explorer 5.x or higher, with Java enabled, and a resolution of 800x600 or   greater.</p>
+<p>&nbsp;</p>
+<strong>
+<span class="anchor" id="pdfview" />I wanted to view a PDF file, but I got an error message,   what do I do?</strong>
+<p>
+Viewing PDF files requires a PDF Reader. Download the free Adobe Acrobat PDF Reader if needed. <a href="http://get.adobe.com/reader/" shape="rect" title="Get Adobe Acrobat Reader">http://www.adobe.com</a>.
+</p>
+<hr />
+<br />
+<span class="anchor" id="mypage" />
+<h3>Portal "My Page" FAQs</h3>
+<p><strong>&apos;My Page&apos; on CUNY's Portal</strong></p>
+<p>
+When you register with CUNY's portal and login, you are shown a default page ''My Page'' that displays several blank modules: bookmarks, text and tasks. You can   edit these default modules, change the modules displayed or move the modules for   a different display.</p>
+<p>&nbsp;</p>
+<p><strong>Editing 'My Page'   Modules</strong></p>
+<p>
+At the top right corner of the Bookmark and Text   Pad modules are two 'buttons': 'edit' which allows you to the edit the content   of the module, and 'x' which closes the module, removing it from 'My Page'.   Don't be alarmed if you click on the 'x' by mistake. Although it immediately   closes the module and removes it from 'My Page', you can open it again by   clicking on the 'Edit Content' link at the top right of the page. All the   information you created in the module is still there.</p>
+<p>&nbsp;</p>
+<p>
+<strong>Bookmark:</strong> You can add any number of your   favorite bookmarks here: Apple, CNN, NY Times, you name it! While you can only   add three at a time, you can edit the list whenever you wish to add more of your   favorite links. And of course you can delete or change these bookmarks at any   time. You can also choose to have these links open a new browser window, or use   the same window to display your link by clicking the checkbox at the bottom of   the module while you are editing its content. When you make changes to your   Bookmark module, be sure to click on the Update button at the bottom of the Edit   view to save your changes.</p>
+<p>&nbsp;</p>
+<p>
+<strong>Text Pad:</strong> Write anything you please, a note to   yourself, phone numbers, whatever. You can even use simple HTML tags in the text   pad. When you make changes to your Text Pad module, be sure to click on the   Update button at the bottom of the Edit view to save your changes.</p>
+<p>&nbsp;</p>
+<p>
+<strong>Task List: </strong>This list allows you to create a to   do list. You may want to use it to list tasks required for applying to CUNY,   papers to write, appointments, or plans with friends. It's up to you. The Task   List Options link allows you to control how many of your tasks are displayed by   default upon login. You may want the default, which shows up to three tasks, and   then use the View All link at the bottom of the module to see a complete list of   your tasks. Or you can change the default number of tasks shown by clicking on   the Options link and changing your preferences. When you make changes to your   Task List module, be sure to click on the Save or Save &amp; Update button at   the bottom of the Edit view to save your changes.</p>
+<p>&nbsp;</p>
+<p><strong>Adding and Changing Modules and Categories Displayed</strong></p>
+<p>
+CUNY's portal hosts a tremendous amount of   information related to your life at CUNY, whether you are a student, faculty or   staff. When you click on the Edit Content link at the top right of My Page, you   will see numerous categories, each with a list of links: Alumni and Visitors,   Colleges and Programs, Current Students, Faculty and Staff and Prosepctive   Students. Each of these categories has a number of links you will find helpful.   Choose those most relevant to your current status. You can add and change these   links at any time. No more roaming around for those critical   connections!</p>
+<p>&nbsp;</p>
+<p><strong>Arranging the Layout of Modules ' Move   Content</strong></p>
+<p>
+My Page uses the concept of modules for the   different items you want displayed on your personalized page. As you add and   change the modules on your page, you may want to rearrange the placement of   these modules.
+</p>
+<p>
+Click on the Move Content link at the top right of My Page to   move modules and use either of the interfaces to move your modules around: 
+</p>
+<p>
+You can use the default interface, which shows all modules and   their placement on the page. Click the black arrows to move a particular module.   Gray arrows indicate you cannot move a module in this direction.
+</p>
+<p>
+You can also move items using the Panel-to-Panel Quick Move icon   shown next to each module while in the Move Content view. A red dot indicates   the current panel location of the module you've selected to move. Click on a   panel, top or bottom, to quickly move the module. With this method, you cannot   move the module to the middle of a column, use the default interface for   that.
+</p>
+                    
+	  
+   		  </div>
+        
+      			<div id="footer">
+        
+        		</div>
+                
+                <div id="findbar">
+
+             <div id="findcollege">
+<table class="find-table">
+<thead>
+<tr>
+<td class="find-td-1">SENIOR and GRADUATE COLLEGES</td>
+
+<td class="find-td-2">SENIOR and GRADUATE COLLEGES</td>
+<td class="find-td-3">HONORS and PROFESSIONAL</td>
+<td class="find-td-4">
+<span class="find-hide-button">
+<a id="findcollege-hide-button">
+<img alt="[X]" src="maintenance/close_cuny_blue.gif" />
+</a>
+</span>COMMUNITY COLLEGES</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="find-td-1">
+<ul>
+
+<li>
+<a href="http://www.baruch.cuny.edu" title="Baruch College">Baruch College</a>
+</li>
+<li>
+<a href="http://www.brooklyn.cuny.edu" title="Brooklyn College">Brooklyn College</a>
+</li>
+<li>
+<a href="http://www1.ccny.cuny.edu" title="The City College of New York">The City College of New York</a>
+</li>
+<li>
+<a href="http://www.csi.cuny.edu" title="College of Staten Island">College of Staten Island</a>
+</li>
+<li>
+
+<a href="http://cunyba.gc.cuny.edu" title="CUNY Baccalaureate Degree">CUNY Baccalaureate Degree</a>
+</li>
+<li>
+<a href="https://sps.cuny.edu" title="CUNY Online Baccalaureate Degree">CUNY Online Baccalaureate Degree</a>
+</li>
+<li>
+<a href="http://www.hunter.cuny.edu" title="Hunter College">Hunter College</a>
+</li>
+</ul>
+</td>
+<td class="find-td-2">
+<ul>
+<li>
+<a href="http://www.jjay.cuny.edu/" title="John Jay College of Criminal Justice">John Jay College of Criminal Justice</a>
+
+</li>
+<li>
+<a href="http://www.lehman.cuny.edu" title="Lehman College">Lehman College</a>
+</li>
+<li>
+<a href="http://www.mec.cuny.edu" title="Medgar Evers College">Medgar Evers College</a>
+</li>
+<li>
+<a href="http://www.citytech.cuny.edu" title="New York City College of Technology">New York City College of Technology</a>
+</li>
+<li>
+<a href="http://www.qc.cuny.edu" title="Queens College">Queens College</a>
+</li>
+
+<li>
+<a href="http://www.york.cuny.edu" title="York College">York College</a>
+</li>
+</ul>
+</td>
+<td class="find-td-3">
+<ul>
+<li>
+<a href="http://www.gc.cuny.edu" title="CUNY Graduate Center">CUNY Graduate Center</a>
+</li>
+<li>
+<a href="http://www.journalism.cuny.edu" title="CUNY Graduate School of Journalism">CUNY Graduate School of Journalism</a>
+</li>
+<li>
+
+<a href="http://www.law.cuny.edu" title="CUNY School of Law">CUNY School of Law</a>
+</li>
+<li>
+<a href="http://www.sps.cuny.edu" title="CUNY School of Professional Studies">CUNY School of Professional Studies</a>
+</li>
+<li>
+<a href="http://www.cuny.edu/sph" title="CUNY School of Public Health">CUNY School of Public Health & Health Policy</a>
+</li>
+<li>
+<a href="http://www.macaulay.cuny.edu" title="Macaulay Honors College">Macaulay Honors College</a>
+</li>
+</ul>
+</td>
+
+<td class="find-td-4">
+<ul>
+<li>
+<a href="http://www.bmcc.cuny.edu" title="Borough of Manhattan Community College">Borough of Manhattan Community College</a>
+</li>
+<li>
+<a href="http://www.bcc.cuny.edu" title="Bronx Community College">Bronx Community College</a>
+</li>
+<li>
+<a href="http://www.hostos.cuny.edu" title="Hostos Community College">Hostos Community College</a>
+</li>
+<li>
+<a href="http://www.kbcc.cuny.edu" title="Kingsborough Community College">Kingsborough Community College</a>
+
+</li>
+<li>
+<a href="http://www.laguardia.cuny.edu" title="LaGuardia Community College">LaGuardia Community College</a>
+</li>
+<li>
+<a href="http://www.qcc.cuny.edu" title="Queensborough Community College">Queensborough Community College</a>
+</li>
+<li>
+<a href="http://guttman.cuny.edu" title="Guttman Community College">Guttman Community College</a>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+</div>   
+    
+    	</div>
+        
+	</div>
+        <script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script><script type="text/javascript">
+		try {
+		var pageTracker = _gat._getTracker("UA-4306471-2");
+		pageTracker._setDomainName(".cuny.edu");
+		pageTracker._trackPageview();
+		var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-4306471-2']);
+    _gaq.push(['_trackPageview']);
+		} catch(err) {}
+</script>
+        
+		</body>
+        </html>
+	

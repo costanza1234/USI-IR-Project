@@ -1,0 +1,762 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    
+
+<meta charset="UTF-8">
+
+<title>Welcome to HSHS Medical Group</title>
+<meta name="description" content="By choosing the HSHS Medical Group, you will have access to a full range of primary care, specialty groups and HSHS hospitals throughout central and southern Illinois."/>
+<meta name="keywords" content="" />
+
+<meta property="og:title" content="Welcome to HSHS Medical Group" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.hshs.org/medical-group" />
+<meta property="og:image" content="https://www.hshs.org/getmedia/fa96ee41-b617-49b6-a681-c4a2fd118570/MG_Web-Hero_1400x388.png?width=1400&amp;height=388&amp;ext=.png"/>
+<meta property="og:description" content="By choosing the HSHS Medical Group, you will have access to a full range of primary care, specialty groups and HSHS hospitals throughout central and southern Illinois."/>
+
+<meta property="twitter:title" content="Welcome to HSHS Medical Group"/>
+<meta property="twitter:card" content="website"/>
+<meta property="twitter:image" content="https://www.hshs.org/getmedia/fa96ee41-b617-49b6-a681-c4a2fd118570/MG_Web-Hero_1400x388.png?width=1400&amp;height=388&amp;ext=.png"/>
+<meta property="twitter:description" content="By choosing the HSHS Medical Group, you will have access to a full range of primary care, specialty groups and HSHS hospitals throughout central and southern Illinois."/>
+
+    
+
+<link href="/dist/hshs-index.css?v=xvnr1zlqg2BobGiFQ1jX05kze4yOVdpjDvKtE0dfsNY" rel="stylesheet" type="text/css" />
+
+
+
+    <link href="/dist/vendor.css?v=HSKEMOESAJRrDhjy_L0KnAj53z5tFB-teHxO7tEpBKo" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    
+    <link href="/_content/Kentico.Content.Web.Rcl/Content/Bundles/Public/systemPageComponents.min.css" rel="stylesheet" />
+
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-M2R9LSZ');
+    </script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body class="">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M2R9LSZ"
+                height="0"
+                width="0"
+                style="display:none;visibility:hidden">
+        </iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="body-container">
+        
+
+<header id="stickyHeader">
+    <div class="logo-header-icon-container">
+        <div class="logo-wrapper">
+            <a href="/medical-group">
+                <img src="/getmedia/5b0a8bca-59d8-4a0b-b858-06616ffeb0d7/HSHSMedGroup_FullColor_H_v2_A_1.png?width=529&amp;height=141&amp;ext=.png" alt="hshs logo" />
+            </a>
+        </div>
+        <div class="button-container tablet">
+                    <div class="menu-cta">
+                        
+
+    <a href="https://providers.hshs.org/" class="btn-small btn btn-primary" target="_blank">Find Care</a>
+
+                    </div>
+                    <div class="menu-cta">
+                        
+
+    <a href="https://www.myhshs.org/MyHSHS/Authentication/Login?" class="btn-small btn btn-hollow" target="_blank">MyHSHS</a>
+
+                    </div>
+        </div>
+        <div class="mobile-nav-icon-wrapper">
+            <button class="toggle-mobile-menu" aria-expanded="false" aria-controls="navigation" aria-label="Toggle mobile navigation">
+                <i class="fa-sharp fa-solid fa-bars"></i>
+                <i class="fa-sharp fa-solid fa-close"></i>
+            </button>
+        </div>
+
+    </div>
+    <div class="button-container mobile">
+                <div class="menu-cta">
+                    
+
+    <a href="https://providers.hshs.org/" class="btn-small btn btn-primary" target="_blank">Find Care</a>
+
+                </div>
+                <div class="menu-cta">
+                    
+
+    <a href="https://www.myhshs.org/MyHSHS/Authentication/Login?" class="btn-small btn btn-hollow" target="_blank">MyHSHS</a>
+
+                </div>
+    </div>
+    <nav id="navigation">
+        <div class="nav-wrapper">
+            <div class="utility-selections">
+                <div class="mobile-search-bar-container">
+                    <form action="https://www.hshs.org/medical-group/search" method="get">
+                        <hshs-general-search-results>
+                            <div class="mobile-search-container">
+                                <input type="text" class="mobile-search-input search-input" name="search" placeholder="How can we help you?" />
+                                <button type="submit" class="search-button" aria-label="Search">
+                                    <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </div>
+                        </hshs-general-search-results>
+                    </form>
+                </div>
+            </div>
+            <div class="main-nav">
+                <ul class="main-menu-list">
+                            <li class="menu-link">
+                                
+
+    <a href="/medical-group/patient-resources" class=" link main-menu-item  link main-menu-item" target="_self">Patient Resources</a>
+
+                            </li>
+                            <li class="menu-link">
+                                
+
+    <a href="/medical-group/services" class=" link main-menu-item  link main-menu-item" target="_self">Services</a>
+
+                            </li>
+                            <li class="menu-link">
+                                
+
+    <a href="/medical-group/about-us" class=" link main-menu-item  link main-menu-item" target="_self">About Us</a>
+
+                            </li>
+                            <li class="menu-link">
+                                
+
+    <a href="/medical-group/urgent-care" class=" link main-menu-item  link main-menu-item" target="_self">Urgent Care</a>
+
+                            </li>
+                            <li class="menu-link">
+                                
+
+    <a href="/medical-group/giving" class=" link main-menu-item  link main-menu-item" target="_self">Giving</a>
+
+                            </li>
+
+                    <li class="cta-container">
+                                <div class="menu-cta">
+                                    
+
+    <a href="https://providers.hshs.org/" class="btn-small btn btn-primary" target="_blank">Find Care</a>
+
+                                </div>
+                                <div class="menu-cta">
+                                    
+
+    <a href="https://www.myhshs.org/MyHSHS/Authentication/Login?" class="btn-small btn btn-hollow" target="_blank">MyHSHS</a>
+
+                                </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="utility-nav">
+                <ul>
+                        <li>
+                            
+<a href="/medical-group/locations" class=" link" target="_self">Locations</a>
+
+                        </li>
+                        <li>
+                            
+<a href="/medical-group/contact" class=" link" target="_self">Contact Us</a>
+
+                        </li>
+                        <li>
+                            
+<a href="https://payments.hshs.org/" class=" link" target="_blank">Bill Pay</a>
+
+                        </li>
+                        <li>
+                            
+<a href="/medical-group/careers" class=" link" target="_blank">Careers</a>
+
+                        </li>
+                </ul>
+                <div class="utility-buttons">
+                    <button class="search-open" aria-expanded="false" aria-controls="desktop-search" aria-label="Search">
+                        <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="mobile-address-nav">
+                <ul>
+                    <li>
+                        <address class="link">HSHS Medical Group Corporate Services<br/>3051 Hollis Drive,<br/>Springfield, IL 62704</address>
+                    </li>
+                        <li>
+                            <a class="link" href="https://www.google.com/maps/place/3051&#x2B;Hollis&#x2B;Dr,&#x2B;Springfield,&#x2B;IL&#x2B;62704/@39.7574174,-89.7134971,17z/data=!3m1!4b1!4m6!3m5!1s0x887547688b31e03f:0x8dbf803be9b7ad1a!8m2!3d39.7574133!4d-89.7109222!16s%2Fg" target="_blank">Get Directions</a>
+                        </li>
+
+                        <li>
+                            <button class="link sub-menu-toggle" aria-expanded="false" aria-controls="sub-menu-2ce95452-477e-453e-90dd-3907d5a10a44" aria-label="Show System Links sub menu">
+                                System Links
+                                <i class="fa-sharp fa-solid fa-caret-down"></i>
+                            </button>
+                            <ul id="sub-menu-2ce95452-477e-453e-90dd-3907d5a10a44" class="sub-menu">
+                                    <li>
+                                        
+<a href="/" class=" link" target="_self"> Hospital Sisters Health System</a>
+
+                                    </li>
+                                    <li>
+                                        
+<a href="/about-us/our-family" class=" link" target="_blank">Our Hospitals &amp; Partners</a>
+
+                                    </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button class="link sub-menu-toggle" aria-expanded="false" aria-controls="sub-menu-7f1d6e6c-9230-4b0c-bede-36ad02e850cb" aria-label="Show Website Support sub menu">
+                                Website Support
+                                <i class="fa-sharp fa-solid fa-caret-down"></i>
+                            </button>
+                            <ul id="sub-menu-7f1d6e6c-9230-4b0c-bede-36ad02e850cb" class="sub-menu">
+                                    <li>
+                                        
+<a href="https://hshs.service-now.com/$pwd_reset.do?sysparm_url=password_reset" class=" link" target="_self">Colleague Password Reset</a>
+
+                                    </li>
+                                    <li>
+                                        
+<a href="https://www.hshs.org/colleague-remote-access" class=" link" target="_self">Colleague Remote Access</a>
+
+                                    </li>
+                            </ul>
+                        </li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="desktop-search" class="desktop-search">
+        <form action="https://www.hshs.org/medical-group/search" method="get">
+            <hshs-general-search-results>
+                <div class="desktop-search-container">
+                    <input type="text" class="mobile-search-input search-input" name="search" placeholder="How can we help you?" />
+                    <button type="submit" class="main-desktop-search-button search-button" aria-label="Search">
+                        <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </hshs-general-search-results>
+        </form>
+        <button class="search-close" aria-expanded="false" aria-controls="desktop-search" aria-label="Close desktop search">
+            <i class="fa-sharp fa-solid fa-close"></i>
+        </button>
+        <div class="search-overlay"></div>
+    </div>
+
+</header>
+
+        
+
+    <hshs-alert id="e8d8d0d4-7e12-407d-9304-a4fcc6bd2c15" class="alert alert-bg-primary sticky visible">
+        <div class="alert-content copy copy-small">
+            <span class="alert-title">Update</span>
+            <span class="alert-detail">August 2023 Data Incident Update</span>
+
+
+<a href="/august-2023-data-incident-update" class="link-small link link-reverse" target="_self">Learn More</a>
+
+            <button class="alert-close" aria-label="close-alert">
+                <i class="fa-sharp fa-solid fa-close"></i>
+            </button>
+        </div>
+    </hshs-alert>
+    <hshs-alert id="0854504e-fa4e-42ff-ae0c-4508651af28e" class="alert alert-bg-high sticky visible">
+        <div class="alert-content copy copy-small">
+            <span class="alert-title">Attention</span>
+            <span class="alert-detail">Seasonal Visitor Guidelines Now in Effect</span>
+
+
+<a href="/about-us/seasonal-visitor-guidelines" class="link-small link link-reverse" target="_self">Learn More</a>
+
+            <button class="alert-close" aria-label="close-alert">
+                <i class="fa-sharp fa-solid fa-close"></i>
+            </button>
+        </div>
+    </hshs-alert>
+
+        <main>
+            
+
+
+
+
+
+<div class="home-banner">
+    <div class="home-banner-image-container">
+            <img src="/getmedia/fa96ee41-b617-49b6-a681-c4a2fd118570/MG_Web-Hero_1400x388.png?width=1400&amp;height=388&amp;ext=.png" alt="" />
+
+<svg class="swoop-horiz" viewBox="0 0 375 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_1727_31135)">
+        <path class="under-swoop mobile-swoop widget-background-blue" d="M0 72H375V1.07288C375 1.07288 258.594 58.625 122.656 64.875C39.8265 68.6832 0 54.1979 0 54.1979V72Z" fill="#004b8d"/>
+        <path d="M0 56.6208C60.2556 75.6107 186.514 87.1424 375 22.7717V-0.489746C168.567 89.6406 33.63 62.1754 0 52.7561V56.6208Z" fill="#55BCEB" />
+    </g>
+    <defs>
+        <clipPath id="clip0_1727_31135">
+            <rect width="375" height="72" fill="white" />
+        </clipPath>
+    </defs>
+</svg>
+<svg class="swoop-horiz" viewBox="0 0 375 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_1727_31135)">
+        <path class="under-swoop desktop-swoop widget-background-gray" d="M0 72H375V1.07288C375 1.07288 258.594 58.625 122.656 64.875C39.8265 68.6832 0 54.1979 0 54.1979V72Z" fill="#004b8d"/>
+        <path d="M0 56.6208C60.2556 75.6107 186.514 87.1424 375 22.7717V-0.489746C168.567 89.6406 33.63 62.1754 0 52.7561V56.6208Z" fill="#55BCEB" />
+    </g>
+    <defs>
+        <clipPath id="clip0_1727_31135">
+            <rect width="375" height="72" fill="white" />
+        </clipPath>
+    </defs>
+</svg>    </div>
+    <div class="home-banner-container">
+        <div class="home-banner-card-container banner-cards-5">
+                <a class="banner-card" href="https://www.myhshs.org/MyHSHS/Authentication/Login?" target="_blank">
+                    <img class="banner-card-image" src="/getmedia/0d08b66c-230f-4bc7-b84d-4cfd68f12c21/Login.jpg?width=700&amp;height=700&amp;ext=.jpg" alt="Login to MyHSHS Patient Portal" />
+                    <div class="banner-card-divider"></div>
+                    <h6 class="banner-card-heading">Login to MyHSHS Patient Portal</h6>
+                </a>
+                <a class="banner-card" href="https://providers.hshs.org/" target="_blank">
+                    <img class="banner-card-image" src="/getmedia/3c4a104b-a38b-4580-9fb3-c5bb27c2b1d7/FindDoc.jpg?width=700&amp;height=700&amp;ext=.jpg" alt="Find a Doctor Near Me" />
+                    <div class="banner-card-divider"></div>
+                    <h6 class="banner-card-heading">Find a Doctor Near Me</h6>
+                </a>
+                <a class="banner-card" href="https://payments.hshs.org/" target="_blank">
+                    <img class="banner-card-image" src="/getmedia/e57546df-07d3-43b3-9aeb-0431b51e04be/BillPay.jpg?width=700&amp;height=700&amp;ext=.jpg" alt="Pay My Bill" />
+                    <div class="banner-card-divider"></div>
+                    <h6 class="banner-card-heading">Pay My Bill</h6>
+                </a>
+                <a class="banner-card" href="/medical-group/patient-advocate" target="_self">
+                    <img class="banner-card-image" src="/getmedia/19a72ea2-429b-4b8c-bb4a-71faeb0ced15/Patient-Adv_MG_Kim.jpg?width=700&amp;height=700&amp;ext=.jpg" alt="Talk to Our Patient Advocate" />
+                    <div class="banner-card-divider"></div>
+                    <h6 class="banner-card-heading">Talk to Our Patient Advocate</h6>
+                </a>
+                <a class="banner-card" href="https://careers.hshs.org/" target="_blank">
+                    <img class="banner-card-image" src="/getmedia/cd6913be-5c64-4dbc-98c8-10b8b530118c/FindJob.jpg?width=700&amp;height=700&amp;ext=.jpg" alt="Find a Job" />
+                    <div class="banner-card-divider"></div>
+                    <h6 class="banner-card-heading">Find a Job</h6>
+                </a>
+        </div>
+
+        <div class="home-banner-search-container">
+            <form action="https://www.hshs.org/medical-group/search" method="get">
+                <hshs-general-search-results>
+                    <input type="text" class="mobile-search-input search-input" name="search" placeholder="How can we help you?" />
+                    <button type="submit" class="search-button" aria-label="Search">
+                        <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </hshs-general-search-results>
+            </form>
+        </div>
+
+        <div class="home-banner-motto-container">
+            <h1 class="hidden-h1">Welcome to HSHS Medical Group</h1>
+                    <img class="motto" src="/getmedia/ed679009-82b5-4cc3-b97a-41e0e74a83b1/Here-with-you.png?width=279&amp;height=38&amp;ext=.png" alt="" />
+
+        </div>
+    </div>
+</div>
+
+
+<div>
+    
+    <div>
+        
+
+
+
+
+
+
+<section class="partners-widget widget-background-white">
+    <div class="partners-widget-container">
+            <div class="partners-heading-container">
+                <div class="heading-decoration-line-left"></div>
+                    <h2 class="partners-heading">Looking for cardiovascular care?</h2>
+                <div class="heading-decoration-line-right"></div>
+            </div>
+
+        <div class="partners-logo-container">
+                    <img alt="" src="/getmedia/d666db3a-d9e0-4ef3-bb10-f0e985f77bf5/prairie-cardiovascular-logo.png?width=200&amp;height=88&amp;ext=.png" />
+        </div>
+
+            <div class="partner-button-container">
+                <a class="btn btn-primary btn-small partners-button" href="https://www.prairieheart.org/find-a-physician-and-apc/" target="_blank" aria-label="Learn More about Looking for cardiovascular care?">
+                    Click to find Prairie providers
+                </a>
+            </div>
+    </div>
+</section>
+    
+
+
+    </div>
+    <div>
+        
+
+
+
+
+
+
+<section class="image-with-text-widget">
+    <div class="media-with-text-background widget-background-blue-gradient">
+        <div class="image-with-text-wrapper flex-reverse image-layout-circle">
+                <div class="split-content-image">
+                    <div class="image-container">
+                        <img class="sc-img  " src="/HSHS/media/HSHS/HFG_Events.jpg" alt="Career" />
+                        
+<svg class="swoop-horiz" viewBox="0 0 375 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_1727_31135)">
+        <path class="under-swoop widget-background-blue-gradient" d="M0 72H375V1.07288C375 1.07288 258.594 58.625 122.656 64.875C39.8265 68.6832 0 54.1979 0 54.1979V72Z" fill="#004b8d"/>
+        <path d="M0 56.6208C60.2556 75.6107 186.514 87.1424 375 22.7717V-0.489746C168.567 89.6406 33.63 62.1754 0 52.7561V56.6208Z" fill="#55BCEB" />
+    </g>
+    <defs>
+        <clipPath id="clip0_1727_31135">
+            <rect width="375" height="72" fill="white" />
+        </clipPath>
+    </defs>
+</svg>
+                    </div>
+                </div>
+
+            
+
+<div class="split-content-text">
+        <h2 class="split-content-heading">Careers that Change Lives</h2>
+        <svg width="100" height="4" viewBox="0 0 100 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line y1="2" x2="100" y2="2" stroke="#8FB935" stroke-width="4" />
+        </svg>
+        <div class="split-content-body">
+            <div class="rich-text">
+                <p id="isPasted">HSHS is hiring! Click the button to see all open positions.</p><p>As part of HSHS, you'll join a team that is focused on improving, excelling and building a better tomorrow. Whether it is a clinical, technical, professional or support position you're seeking, this is your chance to launch a rewarding career.</p>
+            </div>
+                <div class="split-content-cta-button">
+                    <a class="btn btn-small btn-primary-reverse btn" href="/careers" target="_blank">Learn More</a>
+                </div>
+        </div>
+</div>
+
+        </div>
+    </div>
+
+
+</section>
+    
+
+
+    </div>
+    <div>
+        
+
+
+
+
+
+
+<section class="featured-set-widget">
+    <div class="featured-set-widget-container">
+
+        <div class="featured-set-heading-container">
+                <div class="heading-decoration-line-left"></div>
+            <h2 class="featured-set-heading">HSHS Medical Group News</h2>
+                <div class="heading-decoration-line-right"></div>
+        </div>
+
+    <div class="featured-set-container">
+
+            <div class="featured-set-item-container">
+                    <div class="featured-set-item-card card-layout-3">
+                    
+    <a class="listing-card" href="https://www.hshs.org/medical-group/news/hshs-medical-group-welcomes-quenten-ausin" aria-label="Learn more about HSHS Medical Group Welcomes Quenten Austin" target="_self" data-listing-date="12/6/2024 10:50:27 AM">
+            <div class="image-container listing-card-image-container">
+                <img class="image listing-card-image" src="/getmedia/a89b5f02-4107-4b23-b6e6-2dd64ea4afd2/News_SAE_12-24-Austin_Quenten.jpg?width=700&amp;height=394&amp;ext=.jpg" alt="Quenten Austin, PA" />
+            </div>
+        <div class="text-container listing-card-text-container">
+
+            <h3 class="header listing-card-heading">HSHS Medical Group Welcomes Quenten Austin</h3>
+
+                <div class="date copy copy-small bold">December 06, 2024</div>
+
+
+                <div class="copy copy-small description">
+                    Austin joins the team in Effingham at Occupational Health and Leadwell
+                </div>
+
+            <div class="link-container">
+                <span class=" link link-primary-default link-sm">Read More</span>
+            </div>
+        </div>
+    </a>
+
+                </div>
+            </div>
+            <div class="featured-set-item-container">
+                    <div class="featured-set-item-card card-layout-3">
+                    
+    <a class="listing-card" href="https://www.hshs.org/medical-group/news/caitlin-bird,-aprn-joins-hshs-medical-group" aria-label="Learn more about Caitlin Bird, APRN Joins HSHS Medical Group" target="_self" data-listing-date="11/15/2024 11:25:33 AM">
+            <div class="image-container listing-card-image-container">
+                <img class="image listing-card-image" src="/getmedia/2eaa33c0-06ba-4505-986c-e664ab37e082/Bird_Caitlin.png?width=700&amp;height=398&amp;ext=.png" alt="Caitlin Bird, APRN" />
+            </div>
+        <div class="text-container listing-card-text-container">
+
+            <h3 class="header listing-card-heading">Caitlin Bird, APRN Joins HSHS Medical Group</h3>
+
+                <div class="date copy copy-small bold">November 15, 2024</div>
+
+
+                <div class="copy copy-small description">
+                    HSHS Medical Group welcomes Bird to HSHS Good Shepherd in Shelbyville
+                </div>
+
+            <div class="link-container">
+                <span class=" link link-primary-default link-sm">Read More</span>
+            </div>
+        </div>
+    </a>
+
+                </div>
+            </div>
+            <div class="featured-set-item-container">
+                    <div class="featured-set-item-card card-layout-3">
+                    
+    <a class="listing-card" href="https://www.hshs.org/medical-group/news/tanya-loy,-aprn-joins-hshs-medical-group" aria-label="Learn more about Tanya Loy, APRN joins HSHS Medical Group" target="_self" data-listing-date="11/15/2024 10:10:55 AM">
+            <div class="image-container listing-card-image-container">
+                <img class="image listing-card-image" src="/getmedia/aee7ebca-07e1-4913-9708-b5b19cac926d/Loy_Tanya.jpg?width=700&amp;height=398&amp;ext=.jpg" alt="Tanya Loy, APRN joins HSHS Medical Group" />
+            </div>
+        <div class="text-container listing-card-text-container">
+
+            <h3 class="header listing-card-heading">Tanya Loy, APRN joins HSHS Medical Group</h3>
+
+                <div class="date copy copy-small bold">November 15, 2024</div>
+
+
+                <div class="copy copy-small description">
+                    HSHS Medical Group is pleased to welcome Tanya to their Decatur team
+                </div>
+
+            <div class="link-container">
+                <span class=" link link-primary-default link-sm">Read More</span>
+            </div>
+        </div>
+    </a>
+
+                </div>
+            </div>
+    </div>
+
+        <div class="btn-container">
+                <a class="btn btn-primary" href="/medical-group/news" target="_self" aria-label="More about HSHS Medical Group News">Read More</a>
+        </div>
+    </div>
+</section>
+    
+
+
+    </div>
+</div>
+
+
+        </main>
+        
+
+<footer>
+    <div class="footer-content-wrapper">
+        <div class="main-links-wrapper">
+
+            <div class="logo-wrapper main-link-container">
+                <a href="/medical-group">
+                    <img src="/getmedia/7f1ae448-9770-4de6-8032-b8647d6ff66c/HSHSMedGroup_White_H_v2.png?width=280&amp;height=125&amp;ext=.png" alt="hshs logo" />
+                </a>
+                <figcaption></figcaption>
+
+            </div>
+
+            <div class="address-wrapper main-link-container">
+                <p class="footer-header">Address</p>
+                <div class="footer-content">
+                    <p>HSHS Medical Group Corporate Services
+3051 Hollis Drive,
+Springfield, IL 62704</p>
+                </div>
+                    <a class="link" target="_blank" href="https://www.google.com/maps/place/3051&#x2B;Hollis&#x2B;Dr,&#x2B;Springfield,&#x2B;IL&#x2B;62704/@39.7574174,-89.7134971,17z/data=!3m1!4b1!4m6!3m5!1s0x887547688b31e03f:0x8dbf803be9b7ad1a!8m2!3d39.7574133!4d-89.7109222!16s%2Fg">Get Directions</a>
+
+            </div>
+
+                <div class="system-links-wrapper main-link-container">
+                    <p class="footer-header">System Links</p>
+                    <ul>
+
+                            <li footer-content>
+                                
+<a href="/" class=" link" target="_self"> Hospital Sisters Health System</a>
+
+                            </li>
+                            <li footer-content>
+                                
+<a href="/about-us/our-family" class=" link" target="_blank">Our Hospitals &amp; Partners</a>
+
+                            </li>
+
+                    </ul>
+                </div>
+                <div class="system-links-wrapper main-link-container">
+                    <p class="footer-header">Website Support</p>
+                    <ul>
+
+                            <li footer-content>
+                                
+<a href="https://hshs.service-now.com/$pwd_reset.do?sysparm_url=password_reset" class=" link" target="_self">Colleague Password Reset</a>
+
+                            </li>
+                            <li footer-content>
+                                
+<a href="https://www.hshs.org/colleague-remote-access" class=" link" target="_self">Colleague Remote Access</a>
+
+                            </li>
+
+                    </ul>
+                </div>
+        </div>
+
+        <div class="desktop-divider"></div>
+
+        <div class="sub-links-wrapper">
+                <div class="social-links-wrapper">
+                    <ul>
+                            <li>
+                                <a href="https://www.facebook.com/HSHSMedicalGroupOrg/" target="_blank" aria-label="facebook"><i class="fa-brands fa-facebook"></i></a>
+                            </li>
+
+
+                            <li>
+                                <a href="https://www.instagram.com/hshsmedgroup/" target="_blank" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.linkedin.com/company/hshs-medical-group" target="_blank" aria-label="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.youtube.com/@hshsmedicalgroup7448" target="_blank" aria-label="youtube"><i class="fa-brands fa-youtube"></i></a>
+                            </li>
+                    </ul>
+                </div>
+            <div class="legal-links-wrapper">
+                <ul>
+                        <li class="legal-divider"></li>
+                        <li class="legal-links footer-content">
+                            
+<a href="/medical-group/legal" class=" link" target="_self">Legal</a>
+
+                        </li>
+                        <li class="legal-divider"></li>
+                        <li class="legal-links footer-content">
+                            
+<a href="/about-us/patient-financial-services/price-transparency/hshs-hospital-price-tools" class=" link" target="_blank">Price Transparency</a>
+
+                        </li>
+                        <li class="legal-divider"></li>
+                        <li class="legal-links footer-content">
+                            
+<a href="/privacy-policy" class=" link" target="_self">Privacy Policy</a>
+
+                        </li>
+                        <li class="legal-divider"></li>
+                        <li class="legal-links footer-content">
+                            
+<a href="/website-privacy-policy" class=" link" target="_self">Website Cookie &amp; Privacy Policy</a>
+
+                        </li>
+                        <li class="legal-divider"></li>
+                        <li class="legal-links footer-content">
+                            
+<a href="/website-terms-of-use" class=" link" target="_self">Website Terms of Use </a>
+
+                        </li>
+                    <li class="legal-divider"></li>
+                    <li class="legal-links footer-content copy-right-text">
+                        &#xA9; 2024 HSHS Hospital Sisters Health System
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    </div>
+    
+    <script src="/_content/Kentico.Content.Web.Rcl/Scripts/jquery-3.5.1.js"></script>
+<script src="/_content/Kentico.Content.Web.Rcl/Scripts/jquery.unobtrusive-ajax.js"></script>
+<script type="text/javascript">
+window.kentico = window.kentico || {};
+window.kentico.builder = {}; 
+window.kentico.builder.useJQuery = true;</script><script src="/_content/Kentico.Content.Web.Rcl/Content/Bundles/Public/systemFormComponents.min.js"></script>
+
+    <script src="/dist/home.bundle.js" asp-append-version="true"></script>
+
+
+    <script src="/dist/vendor.bundle.js?v=2F46KEabhkBZUKi4n7t3X1uVRx47TA_5y-qddJxNjMo"></script>
+    <script src="/dist/master.bundle.js?v=YMjrn9GNZ-38-BwKsegMFUM5qWBPXlv5SueqTsvSAtQ"></script>
+    <script type="text/javascript" src="/WebsiteClient/gsight.js" async></script>
+
+    
+
+    <script>
+        let lastScrollTop = 0;
+        const header = document.getElementById('stickyHeader');
+        const alertBanner = document.getElementsByClassName('alert');
+        const alertHeight = alertBanner[0]?.offsetTop;
+
+        window.addEventListener(
+            'scroll',
+            function () {
+                let currentScroll = window.scrollY || document.documentElement.scrollTop;
+
+                if (window.innerWidth < 992) {
+                    if (currentScroll > lastScrollTop) {
+                        if (alertBanner.length > 0) {
+                            header.style.top = -alertHeight + 'px'
+                        } else {
+                            if (header.classList.contains('show-mobile')) {
+                                header.style.top = '0';
+                            } else {
+                                header.style.top = '-300px';
+                            }
+                        }
+                    } else {
+                        header.style.top = '0';
+                    }
+                    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+                }
+            },
+            false
+        );
+    </script>
+
+</body>
+</html>
