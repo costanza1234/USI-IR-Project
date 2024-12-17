@@ -10,6 +10,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 def remove_incomplete(data):
     return [item for item in data if item["name"] and item["mission"]]
 
+
 def load_data():
     # Load data
     with open('./global_giving.json', 'r', encoding='utf-8') as file1:
@@ -40,7 +41,7 @@ def initialize_index(documents):
     return index
 
 def search_index(index, documents, query):
-    retriever = pt.terrier.Retriever(index, wmodel="BM25")
+    retriever = pt.terrier.Retriever(index, wmodel="BM25")  # Alternative Models: "TF_IDF", "Tf"
     results = retriever.search(query)
     joined = results.join(documents.set_index('docno'), on='docno')
     return joined
@@ -66,8 +67,10 @@ def filter_charities(
         q_countries: Optional[List[str]] = None,
         q_continents: Optional[List[str]] = None
 ):
+    i = 0
     filtered_charities = []
     for item in charities:
+        i = i + 1
         charity = item.get("charity")
         # get the cause
         causes = charity.get("cause", [])
@@ -80,15 +83,15 @@ def filter_charities(
         # get the continent
         continent = charity.get("continent")
 
-        if len(q_causes) > 0:
+        if q_causes is not None:
             matches = [q for q in q_causes if any(q == cause['name'] for cause in causes)]
             if len(matches) == 0:
                 continue
-        if len(q_countries) > 0:
+        if q_countries is not None:
             matches = [q for q in q_countries if any(q == country['name'] for country in countries)]
             if len(matches) == 0:
                 continue
-        if len(q_continents) > 0 and not any(q == continent for q in q_continents):
+        if q_continents is not None and not any(q == continent for q in q_continents):
             continue
         
         # If all conditions passed, append item to filtered_data
@@ -158,18 +161,3 @@ def update_query(original_query: str, feedback: Dict[str, bool], documents) -> s
     updated_terms |= original_terms  # Retain original terms
     updated_query = " ".join(sanitize_terms(updated_terms))
     return updated_query
-
-
-def dump_field(filename, field_name):
-    data = load_data()
-    fields = set()
-    for charity in data:
-        c_fields = charity.get(field_name, [])
-        if c_fields is None or c_fields == "": continue
-        if isinstance(c_fields, str):
-            c_fields = [{"name": c_fields}]  # if it's only one cause transform into a list
-        for field in c_fields:
-            fields.add(field["name"])
-    result = {"data": list(fields)}  # convert to list for JSON serialization
-    with open(filename, "w") as json_file:
-        json.dump(result, json_file, indent=4)

@@ -41,14 +41,16 @@ async def search(
 ):
 
     # check if causes is Query(None)
-    if causes is not Query(None):
+    if causes is Query(None) or None:
         causes = []
     # check if countries is Query(None)
-    if countries is not Query(None):
+    if countries is Query(None) or None:
         countries = []
     # check if continents is Query(None)
-    if continents is not Query(None):
+    if continents is Query(None) or None:
         continents = []
+
+    print(countries)
 
     # Check if there is existing feedback for this session
     if session_id in feedback and feedback[session_id]["updated_query"]:
@@ -82,8 +84,6 @@ async def give_feedback(session_id: str, docid: str, relevant: bool):
     )
     session_feedback["updated_query"] = updated_query
 
-    search_results = await search(updated_query, session_id)
-
-    print(feedback)
+    search_results = await search(updated_query, session_id, None, None, None)
 
     return search_results
