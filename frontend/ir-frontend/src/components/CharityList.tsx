@@ -86,7 +86,7 @@ export default function CharityList({
   };
 
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
+    <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2, mt: '1rem' }}>
       {charities.length === 0 ? (
         <Typography variant="h5" align="center" mt="2rem">
           No charities found.<br></br>
@@ -94,7 +94,14 @@ export default function CharityList({
         </Typography>
       ) : (
         charities.map((charity, index) => (
-          <Card key={index} sx={{ width: '100%' }}>
+          <Card
+            key={index}
+            sx={{
+              width: '100%',
+              boxShadow:
+                '0px 3px 5px -1px rgba(0,0,0,0.2), 0px 6px 10px 0px rgba(0,0,0,0.14), 0px 1px 18px 0px rgba(0,0,0,0.12)',
+            }}
+          >
             <CardContent>
               <Grid container spacing={2}>
                 <Grid
