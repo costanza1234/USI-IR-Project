@@ -54,6 +54,19 @@ const stopWords = new Set([
   'with',
 ]);
 
+const sanitizeFilename = (name: string) => {
+  return name.replace(/[^a-zA-Z0-9]/g, '_');
+};
+
+const getImagePath = (charity: Charity) => {
+  const sanitizedFilename = sanitizeFilename(charity.name);
+  if (charity.logoUrl && charity.logoUrl.includes('globalgiving')) {
+    return `/images/global_giving/${sanitizedFilename}.png`;
+  } else {
+    return `/images/charity_navigator/${sanitizedFilename}.png`;
+  }
+};
+
 export default function CharityList({
   charities,
   query,
@@ -111,7 +124,11 @@ export default function CharityList({
                 >
                   <Box
                     component="img"
-                    src={charity.logoUrl || '/notFound.png'}
+                    src={
+                      !charity.logoUrl || charity.logoUrl.startsWith('<')
+                        ? '/notFound.png'
+                        : getImagePath(charity)
+                    }
                     alt={`${charity.name} logo`}
                     sx={{ width: '100%', height: 'auto', aspectRatio: '1 / 1' }}
                     onError={(e: BaseSyntheticEvent) => {
