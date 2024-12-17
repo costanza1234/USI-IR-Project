@@ -26,9 +26,12 @@ export default function Home() {
       setCharities([]);
       return;
     } else {
-      const mappedCharities = data.charities.map(
-        (item: CharityResponse) => item.charity
-      );
+      const mappedCharities = data.charities.map((item: CharityResponse) => {
+        return {
+          ...item.charity,
+          docid: item.docid,
+        };
+      });
       setCharities(mappedCharities);
     }
   };
