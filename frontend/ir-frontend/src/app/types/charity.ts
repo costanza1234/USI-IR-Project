@@ -17,11 +17,13 @@ export interface Charity {
   logoUrl: string;
   cause: Cause[];
   countries_of_operation: CountryOfOperation[];
+  docid: number;
 }
 
 export interface CharityResponse {
   score: number;
   charity: Charity;
+  docid: number;
 }
 
 export interface SearchResponse {
