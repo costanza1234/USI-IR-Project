@@ -33,6 +33,8 @@ To gather data, we accessed the Global Giving API and downloaded XML files conta
 \end{itemize}
 
 \subsubsection{Data Processing}
+
+// todo add jupyter notebook etc
 After retrieving the data, we developed a parser using Python's \texttt{ElementTree} library to extract information from the XML format. To enhance the dataset:
 \begin{itemize}
 \item Geographical information was added using \texttt{pycountry} and \texttt{pycountry\_convert}, allowing us to classify organizations by continent based on their headquarters.
