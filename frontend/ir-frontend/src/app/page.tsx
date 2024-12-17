@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Box, CircularProgress } from '@mui/material';
+import { Box, CircularProgress, Typography } from '@mui/material';
 import SearchComponent from '@/components/SearchComponent';
 import CharityList from '@/components/CharityList';
 import { Charity, CharityResponse, SearchResponse } from '@/app/types/charity';
@@ -95,6 +95,11 @@ export default function Home() {
         overflow: 'hidden',
       }}
     >
+      {!searchActive && (
+        <Typography variant="h5" align="center" sx={{ mb: 2 }}>
+          I&apos;m looking for a charity about...
+        </Typography>
+      )}
       <Box
         sx={{
           position: searchActive ? 'sticky' : 'static',
@@ -107,27 +112,38 @@ export default function Home() {
         <SearchComponent onSearch={handleSearch} />
       </Box>
       {searchActive && (
-        <Box
-          sx={{
-            flex: 1,
-            overflowY: 'auto',
-            width: '60%',
-            padding: '1rem',
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-          }}
-        >
+        <>
           {loading ? (
-            <CircularProgress />
+            <Box
+              sx={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                height: '100%',
+                width: '100%',
+              }}
+            >
+              <CircularProgress />
+            </Box>
           ) : (
-            <CharityList
-              charities={charities}
-              query={query}
-              handleFeedback={handleFeedback}
-            />
+            <Box
+              sx={{
+                flex: 1,
+                overflowY: 'auto',
+                width: '60%',
+                padding: '1rem',
+                display: 'flex',
+                flexDirection: 'column',
+              }}
+            >
+              <CharityList
+                charities={charities}
+                query={query}
+                handleFeedback={handleFeedback}
+              />
+            </Box>
           )}
-        </Box>
+        </>
       )}
     </Box>
   );
