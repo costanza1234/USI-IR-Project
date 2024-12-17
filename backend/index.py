@@ -80,15 +80,15 @@ def filter_charities(
         # get the continent
         continent = charity.get("continent")
 
-        if q_causes is not None:
+        if len(q_causes) > 0:
             matches = [q for q in q_causes if any(q == cause['name'] for cause in causes)]
             if len(matches) == 0:
                 continue
-        if q_countries is not None:
+        if len(q_countries) > 0:
             matches = [q for q in q_countries if any(q == country['name'] for country in countries)]
             if len(matches) == 0:
                 continue
-        if q_continents is not None and not any(q == continent for q in q_continents):
+        if len(q_continents) > 0 and not any(q == continent for q in q_continents):
             continue
         
         # If all conditions passed, append item to filtered_data
