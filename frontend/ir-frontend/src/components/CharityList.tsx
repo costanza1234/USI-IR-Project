@@ -10,6 +10,7 @@ import {
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 import ThumbDownIcon from '@mui/icons-material/ThumbDown';
 import { Charity } from '@/app/types/charity';
+import { BaseSyntheticEvent } from 'react';
 
 interface CharityListProps {
   charities: Charity[];
@@ -103,9 +104,12 @@ export default function CharityList({
                 >
                   <Box
                     component="img"
-                    src={charity.logoUrl}
+                    src={charity.logoUrl || '/notFound.png'}
                     alt={`${charity.name} logo`}
                     sx={{ width: '100%', height: 'auto', aspectRatio: '1 / 1' }}
+                    onError={(e: BaseSyntheticEvent) => {
+                      e.target.src = '/notFound.png';
+                    }}
                   />
                 </Grid>
                 <Grid
