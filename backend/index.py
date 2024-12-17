@@ -1,8 +1,10 @@
-from typing import List, Optional
+from typing import List, Optional, Dict
 import pyterrier as pt
 import pandas as pd
 import numpy as np
 import json
+import re
+from sklearn.feature_extraction.text import TfidfVectorizer
 
 # only keep the charities that have a name and a mission
 def remove_incomplete(data):
@@ -20,9 +22,7 @@ def load_data():
 # the documents are returned in format idx, text
 # idx: d1, d2, ...
 # text: the text included in the mission field in the data AND the name field
-def load_documents():  
-    data = load_data()
-
+def load_documents(data):
     texts = []
     for i in range(len(data)):
         mission = data[i]['mission']
@@ -46,39 +46,18 @@ def search_index(index, documents, query):
     joined = results.join(documents.set_index('docno'), on='docno')
     return joined
 
-def get_statistics(index):
-    return index.getCollectionStatistics().toString()
-
-# Nt is the number of unique documents that each term occurs in – this is useful for calculating IDF.
-# TF is the total number of occurrences – some weighting models use this instead of Nt.
-# The numbers in the @{} are a pointer – they tell Terrier where the postings are for that term in the inverted index data structure.
-def print_lexicon(index):
-    for kv in index.getLexicon():
-        print("%s  -> %s " % (kv.getKey(), kv.getValue().toString()  ))
-
-# Look up a term in the Lexicon
-# print(index.getLexicon()["document"].toString())
-
-# Running multiple queries
-# queries = pd.DataFrame([["q1", "document"], ["q2", "unkown topic"]], columns=["qid", "query"])
-# retriever.transform(queries)
-
-# Saving the results in trec_format
-# pt.io.write_results(joined, "backend/results.txt", format='trec')
-
 # convert from terrier results (pandas data frame) to charities with rank
-def get_charities(results):
-    data = load_data()
+def get_charities(results, data):
     charities = []
     for idx, row in results.iterrows():
         docid = row['docid']
-        score = row['score'] # HKCF
+        score = row['score']
         
-        charity = data[docid]
-        
+        charity = data[docid]    
         charities.append({
             "score": score,
-            "charity": charity
+            "charity": charity,
+            "docid": docid
         })
     return charities
 
@@ -117,6 +96,68 @@ def filter_charities(
         
         # If all conditions passed, append item to filtered_data
         filtered_charities.append(item)
-
-
     return filtered_charities
+
+def retrieve_document_by_id(docid, documents):
+    i = 0
+    for idx, row in documents.iterrows():
+        if int(docid) == i: return row['text']
+        i += 1
+    return None
+
+# remove special characters from the terms to make them safe for queries
+def sanitize_terms(terms):
+    sanitized_terms = set()
+    for term in terms:
+        # Remove characters like ', ", `, \, etc., and ensure no empty strings remain
+        sanitized_term = re.sub(r"[\(\)\-\'\"`\\]", "", term).strip()
+        if sanitized_term:  # Only include non-empty terms
+            sanitized_terms.add(sanitized_term)
+    return sanitized_terms
+
+# Update the query based on relevance feedback
+# original_query (str): The original user query
+# feedback (Dict[str, bool]): Feedback where keys are document IDs and values are relevance (True/False).
+# documents: the documents
+# RETURNS: str: Updated query.
+def update_query(original_query: str, feedback: Dict[str, bool], documents) -> str:
+    relevant_docs = [retrieve_document_by_id(doc_id, documents) for doc_id, is_relevant in feedback.items() if is_relevant]
+    non_relevant_docs = [retrieve_document_by_id(doc_id, documents) for doc_id, is_relevant in feedback.items() if not is_relevant]
+    
+    # Filter out None (invalid doc IDs)
+    relevant_docs = [doc for doc in relevant_docs if doc]
+    non_relevant_docs = [doc for doc in non_relevant_docs if doc]
+    
+    # Combine documents into corpora for TF-IDF vectorization
+    corpus = relevant_docs + non_relevant_docs
+    labels = [1] * len(relevant_docs) + [0] * len(non_relevant_docs)  # 1 for relevant, 0 for non-relevant
+    
+    # Initialize TF-IDF vectorizer with tokenization and stopword removal
+    vectorizer = TfidfVectorizer(stop_words='english', token_pattern=r'\b[a-zA-Z]{2,}\b')
+    X = vectorizer.fit_transform(corpus)  # Calculate TF-IDF matrix
+    
+    # Extract feature names (terms)
+    terms = vectorizer.get_feature_names_out()
+    
+    # Compute term scores: sum TF-IDF scores for relevant and subtract non-relevant
+    scores = X.toarray()
+    term_weights = {}
+    for idx, term in enumerate(terms):
+        relevant_score = sum(scores[i][idx] for i in range(len(relevant_docs)))  # Sum over relevant docs
+        non_relevant_score = sum(scores[i + len(relevant_docs)][idx] for i in range(len(non_relevant_docs)))  # Sum over non-relevant docs
+        term_weights[term] = relevant_score - non_relevant_score  # Emphasize relevant terms
+    
+    # Sort terms by weight (descending)
+    sorted_terms = sorted(term_weights.items(), key=lambda x: x[1], reverse=True)
+    
+    # Combine with original query terms
+    original_terms = set(original_query.split())
+    updated_terms = set()
+    for term, weight in sorted_terms:
+        if weight > 0:  # Only include positively weighted terms
+            updated_terms.add(term)
+    
+    # Final updated query
+    updated_terms |= original_terms  # Retain original terms
+    updated_query = " ".join(sanitize_terms(updated_terms))
+    return updated_query
