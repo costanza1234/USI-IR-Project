@@ -81,52 +81,59 @@ export default function CharityList({ charities, query }: CharityListProps) {
 
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
-      {charities.map((charity, index) => (
-        <Card key={index} sx={{ width: '100%' }}>
-          <CardContent>
-            <Grid container spacing={2}>
-              <Grid
-                size={{
-                  xs: 2,
-                }}
-              >
-                <Box
-                  component="img"
-                  src={charity.logoUrl}
-                  alt={`${charity.name} logo`}
-                  sx={{ width: '100%', height: 'auto', aspectRatio: '1 / 1' }}
-                />
+      {charities.length === 0 ? (
+        <Typography variant="h5" align="center" mt="2rem">
+          No charities found.<br></br>
+          Try searching for something else.
+        </Typography>
+      ) : (
+        charities.map((charity, index) => (
+          <Card key={index} sx={{ width: '100%' }}>
+            <CardContent>
+              <Grid container spacing={2}>
+                <Grid
+                  size={{
+                    xs: 2,
+                  }}
+                >
+                  <Box
+                    component="img"
+                    src={charity.logoUrl}
+                    alt={`${charity.name} logo`}
+                    sx={{ width: '100%', height: 'auto', aspectRatio: '1 / 1' }}
+                  />
+                </Grid>
+                <Grid
+                  size={{
+                    xs: 10,
+                  }}
+                >
+                  <Typography variant="h5">
+                    <Link
+                      href={charity.organization_url}
+                      underline="none"
+                      color="inherit"
+                    >
+                      {charity.name}
+                    </Link>
+                  </Typography>
+                  <Typography variant="body2">
+                    {highlightQuery(cutMission(charity.mission), query)}
+                  </Typography>
+                  <Box sx={{ display: 'flex', gap: 1, mt: 1 }}>
+                    <IconButton aria-label="thumb up">
+                      <ThumbUpIcon />
+                    </IconButton>
+                    <IconButton aria-label="thumb down">
+                      <ThumbDownIcon />
+                    </IconButton>
+                  </Box>
+                </Grid>
               </Grid>
-              <Grid
-                size={{
-                  xs: 10,
-                }}
-              >
-                <Typography variant="h5">
-                  <Link
-                    href={charity.organization_url}
-                    underline="none"
-                    color="inherit"
-                  >
-                    {charity.name}
-                  </Link>
-                </Typography>
-                <Typography variant="body2">
-                  {highlightQuery(cutMission(charity.mission), query)}
-                </Typography>
-                <Box sx={{ display: 'flex', gap: 1, mt: 1 }}>
-                  <IconButton aria-label="thumb up">
-                    <ThumbUpIcon />
-                  </IconButton>
-                  <IconButton aria-label="thumb down">
-                    <ThumbDownIcon />
-                  </IconButton>
-                </Box>
-              </Grid>
-            </Grid>
-          </CardContent>
-        </Card>
-      ))}
+            </CardContent>
+          </Card>
+        ))
+      )}
     </Box>
   );
 }
