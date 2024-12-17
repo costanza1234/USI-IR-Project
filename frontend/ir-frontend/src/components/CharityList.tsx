@@ -14,6 +14,7 @@ import { Charity } from '@/app/types/charity';
 interface CharityListProps {
   charities: Charity[];
   query: string;
+  handleFeedback: (docid: number, relevant: number) => void;
 }
 
 const stopWords = new Set([
@@ -52,7 +53,11 @@ const stopWords = new Set([
   'with',
 ]);
 
-export default function CharityList({ charities, query }: CharityListProps) {
+export default function CharityList({
+  charities,
+  query,
+  handleFeedback,
+}: CharityListProps) {
   const highlightQuery = (text: string, query: string) => {
     if (!query) return text;
 
@@ -121,10 +126,16 @@ export default function CharityList({ charities, query }: CharityListProps) {
                     {highlightQuery(cutMission(charity.mission), query)}
                   </Typography>
                   <Box sx={{ display: 'flex', gap: 1, mt: 1 }}>
-                    <IconButton aria-label="thumb up">
+                    <IconButton
+                      aria-label="thumb up"
+                      onClick={() => handleFeedback(charity.docid, 1)}
+                    >
                       <ThumbUpIcon />
                     </IconButton>
-                    <IconButton aria-label="thumb down">
+                    <IconButton
+                      aria-label="thumb down"
+                      onClick={() => handleFeedback(charity.docid, 0)}
+                    >
                       <ThumbDownIcon />
                     </IconButton>
                   </Box>

@@ -11,17 +11,41 @@ export default function Home() {
   const [searchActive, setSearchActive] = useState(false);
   const [charities, setCharities] = useState<Charity[]>([]);
   const [query, setQuery] = useState('');
+  const [sessionId, setSessionId] = useState('');
 
   const handleSearch = async (query: string) => {
     setSearchActive(true);
     setQuery(query);
-    const sessionId = uuidv4();
+    const newSessionId = uuidv4();
+    setSessionId(newSessionId);
     const response = await fetch(
-      `http://127.0.0.1:8000/search?query=${query}&session_id=${sessionId}`
+      `http://127.0.0.1:8000/search?query=${query}&session_id=${newSessionId}`
     );
     const data: SearchResponse = await response.json();
 
-    // if data is empty (undefined), set charities to an empty array
+    if (!data || !data.charities) {
+      setCharities([]);
+      return;
+    } else {
+      const mappedCharities = data.charities.map((item: CharityResponse) => {
+        return {
+          ...item.charity,
+          docid: item.docid,
+        };
+      });
+      setCharities(mappedCharities);
+    }
+  };
+
+  const handleFeedback = async (docid: number, relevant: number) => {
+    const response = await fetch(
+      `http://127.0.0.1:8000/feedback/${sessionId}/${docid}/${relevant}`,
+      {
+        method: 'POST',
+      }
+    );
+    const data: SearchResponse = await response.json();
+
     if (!data || !data.charities) {
       setCharities([]);
       return;
@@ -67,7 +91,11 @@ export default function Home() {
             padding: '1rem',
           }}
         >
-          <CharityList charities={charities} query={query} />
+          <CharityList
+            charities={charities}
+            query={query}
+            handleFeedback={handleFeedback}
+          />
         </Box>
       )}
     </Box>
