@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Box } from '@mui/material';
+import { Box, CircularProgress } from '@mui/material';
 import SearchComponent from '@/components/SearchComponent';
 import CharityList from '@/components/CharityList';
 import { Charity, CharityResponse, SearchResponse } from '@/app/types/charity';
@@ -12,6 +12,7 @@ export default function Home() {
   const [charities, setCharities] = useState<Charity[]>([]);
   const [query, setQuery] = useState('');
   const [sessionId, setSessionId] = useState('');
+  const [loading, setLoading] = useState(false);
 
   const handleSearch = async (
     query: string,
@@ -37,10 +38,12 @@ export default function Home() {
       queryParams.append('countries', country)
     );
 
+    setLoading(true);
     const response = await fetch(
       `http://127.0.0.1:8000/search?${queryParams.toString()}`
     );
     const data: SearchResponse = await response.json();
+    setLoading(false);
 
     if (!data || !data.charities) {
       setCharities([]);
@@ -57,6 +60,7 @@ export default function Home() {
   };
 
   const handleFeedback = async (docid: number, relevant: number) => {
+    setLoading(true);
     const response = await fetch(
       `http://127.0.0.1:8000/feedback/${sessionId}/${docid}/${relevant}`,
       {
@@ -64,6 +68,7 @@ export default function Home() {
       }
     );
     const data: SearchResponse = await response.json();
+    setLoading(false);
 
     if (!data || !data.charities) {
       setCharities([]);
@@ -108,13 +113,20 @@ export default function Home() {
             overflowY: 'auto',
             width: '60%',
             padding: '1rem',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
           }}
         >
-          <CharityList
-            charities={charities}
-            query={query}
-            handleFeedback={handleFeedback}
-          />
+          {loading ? (
+            <CircularProgress />
+          ) : (
+            <CharityList
+              charities={charities}
+              query={query}
+              handleFeedback={handleFeedback}
+            />
+          )}
         </Box>
       )}
     </Box>
