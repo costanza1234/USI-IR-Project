@@ -1,5 +1,8 @@
 \documentclass[unicode,9pt,a4paper,oneside,numbers=endperiod,openany]{scrartcl}
 
+\usepackage{hyperref}
+
+
 \renewcommand{\thesubsection}{\arabic{subsection}}
 
 \input{assignment.sty}
@@ -14,6 +17,30 @@
 \newline
 
 \section{Overview}
+
+Our retrieval system is about charities. We collected data from two websites: \href{https://www.globalgiving.org}{Global Giving} and \href{https://www.charitynavigator.org}{Charity Navigator}.
+
+\subsection{The Features}
+
+We decided to implement the following features:
+
+\begin{itemize}
+    \item \textbf{Filtering (simple feature)}: in addition to being able to search by title, the user is able to filter the results based on 3 additional attributes.
+    In our case, the user can filter the charities by:
+    \begin{itemize}
+        \item causes: one or more causes
+        \item country: one or more countries 
+        \item continent: one or more continent
+    \end{itemize}
+
+    The possible options are a list of the existing fields in the charities we obtained in the data retrieval. This way the user can select one or more options from existing ones.
+    The user interface also offers autocompletion to make the filtering exerience easier.
+    
+    \item \textbf{Results Snippets (simple feature)}: the results are presented in the form of result snippets in a
+    kind of “Google style”, with query terms highlighted.
+    \item \textbf{User Relevance Feedback (complex feature)}: the user can provide a positive or negative feedback on each result to mark them as relevant or irrelevant. We implemented TF-IDF query expansion, keeping track of all the preferences specified for a query, and resetting the feedback whenn the user inserts a new query.
+\end{itemize}
+
 
 \section{Frontend Design and Implementation}
 
@@ -67,6 +94,74 @@ The Charity Navigator system enabled detailed data extraction while addressing t
 
 
 \section{Backend and Indexing/Retrieval}
+
+\subsection{Indexing and Retrieval}
+
+For the indexing we used Python-Terrier with the Retriever model "BM25".
+
+\subsubsection{The Documents}
+
+The data is collected from the JSON files produced by the scraping, and charities with missing data are removed.
+In the index, the "text" column in the Pandas DataFrame for each charity will contain a combination of the charity's name and the charity's mission, so that the user can find results based on both the title and the description.
+
+\subsubsection{The Index}
+
+The index documents are kept in the folder \texttt{backend/index\_docs}, and we used BM25 as the retrieval model. After the query is inserted, and the list of relevant documents is obtained, each document is mapped to its corresponding charity object using the "docno" column, and the ranked list of charities is returned to the frontend.
+
+\subsubsection{The Relevance Feedback}
+
+For the relevance feedback, a dictionary \texttt{feedback} is kept, containing the feedback information for each session. When the user inserts a new query, the session is restored so that the feedback on a previous query doesn't affect the feedback on a new query.
+For each session the feedback is kept in the form of a list of  \texttt{(docid, relevant)} pairs.
+
+We perform query augmentation using TF-IDF, considering all the feedback provided on a single query.
+
+The documents on which the user has expressed feedback are separated into relevant documents and non-relevant sets. Using a TF-IDF vectorizer with tokenization and stopword removal, we generated a term-document matrix for both relevant and non-relevant documents.
+Then, term weights are computed by summing TF-IDF scores from relevant documents and subtracting scores from non-relevant ones. This emphasizes terms strongly associated with relevant documents while downplaying those linked to non-relevant ones.
+Terms are sorted by their computed weights, and positively weighted terms are added to the original query. Original terms are retained to preserve the query's context.
+
+This approach dynamically refines the query by integrating the feedback of the user, enhancing the relevance of the query.
+
+
+
+\subsection{The Backend}
+
+Since we used Python-Terrier for the retrieval, we decided to have a backend in Python, and we used Fast API.
+
+The backend contains two routes, one is used for the retrieval based on the query and filters, the other is used for the user relevance feedback.
+
+The retreival of the document and the indexing are performed only once, when the backend is initialized.
+
+\subsubsection{The Routes}
+
+\begin{itemize}
+    \item \texttt{GET /search?query=<query>\&session\_id=<session\_id>}: \newline
+    This route takes the following parameters:
+    \begin{itemize}
+        \item \texttt{query}: a string representing the query input by the user
+        \item \texttt{session\_id}: the id of the session. A session starts when a new query is inserted, and is used to keep track of the relevance feedback for a specific query.
+        \item \texttt{causes}: optional list of strings containing the filtering information of the cause attribute.
+        \item \texttt{continents}: optional list of strings containing the filtering information of the continent attribute.
+        \item \texttt{countries}: optional list of strings containing the filtering information of the country attribute.
+    \end{itemize}
+    This route takes the index and the documents initialized when the backend is run, and performs a retreival of the documents relevant to the query. Once the ranked list of results is obtained, it is mapped to a list of charity objects that are then filtered according to the filters specified in the request. The resulting list is returned as a response to the request.
+    The result is a list of objects with the following attributes:
+    \begin{itemize}
+        \item \texttt{score}: the score of the document.
+        \item \texttt{docid}: the id of the document in the index.
+        \item \texttt{charity}: a complex object containing all the information of the charity, like the name, logo, mission, coutnry, etc\dots .
+    \end{itemize}
+    \item \texttt{POST /feedback/<session\_id>/<docid>/<relevant>}:\newline
+    This route takes the following parameters:
+    \begin{itemize}
+        \item \texttt{session\_id}: the id of the session.
+        \item \texttt{docid}: the id of the document on which the feedback is expressed.
+        \item \texttt{relevant}: 1 if the user has identified the document as relevant to the query, 0 otherwise.
+    \end{itemize}
+    This route adds information about the feedback regarding the session specified. For each session there is a list of feedback entries for each \texttt{(docid, relevant)} pair.
+    After the feedback for the session has been updated, the query augmentation is performed using TF-IDF considering ALL the documents that the user has specified as being relevant or not relevant to the query.
+\end{itemize}
+
+
 
 \section{User Evaluation}
 
