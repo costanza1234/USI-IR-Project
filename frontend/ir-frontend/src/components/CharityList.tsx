@@ -165,6 +165,9 @@ export default function CharityList({
                       onClick={() => handleFeedback(charity.docid, 0)}
                     >
                       <ThumbDownIcon />
+                      <Typography paddingLeft="1rem" variant="caption">
+                        Is this relevant?
+                      </Typography>
                     </IconButton>
                   </Box>
                 </Grid>
