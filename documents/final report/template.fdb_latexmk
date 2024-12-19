@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1734540930.90412 "/Users/lasagnese/Desktop/USI-IR-Project/documents/final report/template.tex" "template.pdf" "template" 1734540932.07524 0
-  "/Users/lasagnese/Desktop/USI-IR-Project/documents/final report/template.tex" 1734540930.67378 10269 956290b05d017fba0006188417bca486 ""
+["pdflatex"] 1734650011.14967 "/Users/lasagnese/Desktop/USI-IR-Project/documents/final report/template.tex" "template.pdf" "template" 1734650012.66085 0
+  "/Users/lasagnese/Desktop/USI-IR-Project/documents/final report/template.tex" 1734650010.91956 14279 c42c88d52272d6b4f1ea9cfe3838daa1 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm0900.tfm" 1136768653 1536 c4f439db76ef96a9c53bc437f35ffe20 ""
@@ -79,9 +79,12 @@
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
   "CI_logo.png" 1734393903.32286 29750 c3223f29bc9a73e639c0602ee5a21f49 ""
   "assignment.sty" 1734393903.32297 1731 ddad2b286c8f09bbe91a92a1e6959594 ""
-  "template.aux" 1734540932.02369 7465 772ac73f6f92a9a5ec37f079d9f2c2ad "pdflatex"
-  "template.out" 1734540931.72655 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "template.tex" 1734540930.67378 10269 956290b05d017fba0006188417bca486 ""
+  "fig/filters.png" 1734647790.47945 88380 b0b26ed886ef48967ccc77ad81312af4 ""
+  "fig/main-page.png" 1734646581.60723 57173 cd306c6b539e64b42791051297faaa8f ""
+  "fig/results-page.png" 1734648582.40834 323089 4bab86baef568c02bade3102bd80cce5 ""
+  "template.aux" 1734650012.60637 8923 f22659b6a9bcbb106b02287db52e5cfd "pdflatex"
+  "template.out" 1734650012.01212 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "template.tex" 1734650010.91956 14279 c42c88d52272d6b4f1ea9cfe3838daa1 ""
   (generated)
   "template.aux"
   "template.log"

@@ -1,6 +1,9 @@
 \documentclass[unicode,9pt,a4paper,oneside,numbers=endperiod,openany]{scrartcl}
 
 \usepackage{hyperref}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
 
 
 \renewcommand{\thesubsection}{\arabic{subsection}}
@@ -20,6 +23,7 @@
 
 Our retrieval system is about charities. We collected data from two websites: \href{https://www.globalgiving.org}{Global Giving} and \href{https://www.charitynavigator.org}{Charity Navigator}.
 
+Our work has been split evenly between team members. Davide took care of the frontend, Costanza of the scraping and data retrieval, and Agnese of the backend, indexing, and query augmentaiton.
 \subsection{The Features}
 
 We decided to implement the following features:
@@ -44,16 +48,80 @@ We decided to implement the following features:
 
 \section{Frontend Design and Implementation}
 
+The initial design research and UI mockup creation have been completed using Figma. 
+Then, the design has been implemented using Next.js and Material UI to have a modern, minimalistic, user-friendly,  "Google Style" look.
+
+\subsection{The landing page}
+
+The landing page is minimalistic, containing only the search bar and the filters. The design is inspired by Google, having a wide search bar that invites the user to insert a query.
+The white colors are also inspired by Google's design, with a strong shading contrast highlighting the search bar.
+The search bar is centered and the search button is large and minimalistic to make the searching experience more simple.
+This page contains as little text as possible to avoid overwhelming the user, but there is an invitation to search charities, and an example of a query to inspire the user's imagination.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\linewidth]{fig/main-page.png}
+    \caption{The landing page}
+\end{figure}
+
+
+\subsection{The results page}
+
+The results page is also inspired by Google's design, by always showing the search bar and the filters at the top of the page to 
+allow the user to refine the query at any time. The search bar always has a reasonable size and shows the query to which the results correspond to.
+
+The results are shown as an ordered ranked list, where the charity which is more relevant to the query is shown first.
+The ranked list of charities is bounded at 1000 results, to avoid 
+sending too much data to the frontend and ensure that the user is not scrolling forever.
+
+The result snippets contais information about the charity in a "Google Style" desing, showing the charity's logo and name clearly.
+Clicking on the result snippet will take the user to the official web page of the charity. 
+Each snippet also contains some lines of the document's text, showing the query terms highlighted. This allows the user to 
+get a feeling of the content of the document in relation to the query. This was part of the second required feature we implemented.
+The text content is kept short (2-3 lines) to avoid overwhelming the user and allowing each snippet to have a reasonable size.
+
+Lastly, each snippet has a feedback section, also kept minimalistic, that prompt the user to give relevance feedback on the charity.
+Clicking on the thumb up or thumb down icon will refresh the result page, and apply the relevance feedback, performing wuery augmentation and displaying more relevant results.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\linewidth]{fig/results-page.png}
+    \caption{The results page}
+\end{figure}
+
+
+\subsection{The filters}
+
+The filters are always present under the search bar, and allow the user to select one or more option from the possible values.
+Autocompletion is supported when picking an option, to make the filtering experience less time-consuming.
+The selected options are shown to the user, allowing to easily see the and remove the filters currently set.
+Clicking on the search icon will search results relevant to the query and filter them according to the chosen filters.
+
+As metioned previously, the options of each filter are taken from the actual values that the fields take in all the charities in the data.
+We decided to do this so that the user can see what options are available in order to inspire them and give them an overview of what's available.
+The list of options is computed in the backend once, and retrieved statically from the frontend as a JSON object.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\linewidth]{fig/filters.png}
+    \caption{The filters}
+\end{figure}
+
 \section{Data Collection and Processing}
 
+We obtained the data from two websites, using a mix of leveraging their API's and applying scraping methods.
+The two websites are \href{https://www.globalgiving.org}{Global Giving} and \href{https://www.charitynavigator.org}{Charity Navigator}.
+
+The data has been obtained using the Jupyter Notebooks in the folder \texttt{scraping}. The resulting JSON files have then been moved into the backend to allow static data retrieval when building the index.
+
+
 \subsection{Global Giving}
-Global Giving provides structured data on charitable organizations through its API in XML format. We utilized this API to collect comprehensive information about each organization, ensuring a reliable and standardized method of data retrieval.
+Global Giving provides structured data on charitable organizations through its API in XML format. We utilized this API to collect comprehensive information about each charity, ensuring a standardized method of data retrieval.
 
 \subsubsection{Data Retrieval}
-To gather data, we accessed the Global Giving API and downloaded XML files containing details of various organizations. The use of their API eliminated the need for web scraping, allowing us to work directly with structured data. The XML files provided:
+To gather data, we accessed the Global Giving API and downloaded XML files containing details of various organizations. The use of their API eliminated the need for web scraping, allowing us to work directly with structured data. The XML files provided the following information about each charity:
 \begin{itemize}
-\item Basic details such as the organization name and location.
-\item Operational metrics, including active and total projects.
+\item Basic details such as the charity's name and location.
 \item Mission statements and website URLs.
 \item Themes representing the causes they work on.
 \item Countries where the organizations operate.
@@ -61,7 +129,6 @@ To gather data, we accessed the Global Giving API and downloaded XML files conta
 
 \subsubsection{Data Processing}
 
-// todo add jupyter notebook etc
 After retrieving the data, we developed a parser using Python's \texttt{ElementTree} library to extract information from the XML format. To enhance the dataset:
 \begin{itemize}
 \item Geographical information was added using \texttt{pycountry} and \texttt{pycountry\_convert}, allowing us to classify organizations by continent based on their headquarters.
@@ -76,8 +143,7 @@ Charity Navigator offers data through its GraphQL API. Unlike Global Giving, Cha
 Using the GraphQL API, we tailored queries to retrieve:
 \begin{itemize}
 \item Organization details, including names and locations.
-\item Ratings and operational metrics.
-\item Mission statements and website URLs.
+\item Causes, mission statements and website URLs.
 \end{itemize}
 The GraphQL API's flexibility allowed us to avoid redundant data requests and efficiently handle nested data structures. 10,000 records were retrieved in batches of 10 to not flood the server.
 
@@ -85,13 +151,10 @@ The GraphQL API's flexibility allowed us to avoid redundant data requests and ef
 The lack of logos in Charity Navigator's data required us to develop a custom solution for locating and extracting organization logos from their websites. This system:
 \begin{itemize}
 \item Parsed webpage structures using \texttt{BeautifulSoup} to identify elements marked as logos.
-\item Checked metadata and special tags (e.g., \texttt{}) for logo information.
+\item Checked metadata and special tags (e.g., \texttt{svg}) for logo information.
 \item Scanned for images commonly used as logos, filtering out irrelevant elements like favicons or menu icons.
 \end{itemize}
 Standard Python libraries, including \texttt{requests}, \texttt{BeautifulSoup}, and \texttt{re}, facilitated these operations. Finally, the processed data was converted to JSON format to match the structure of Global Giving's dataset.
-
-The Charity Navigator system enabled detailed data extraction while addressing the challenge of missing logos. The resulting dataset, enriched with logos and stored in JSON format, supports comprehensive analysis and cross-platform comparisons.
-
 
 \section{Backend and Indexing/Retrieval}
 
