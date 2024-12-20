@@ -228,7 +228,99 @@ The retreival of the document and the indexing are performed only once, when the
 
 \section{User Evaluation}
 
-\section{Appendix}
+\subsection{Aim of Evaluation}
+
+We want to evaluate the following features:
+
+\begin{itemize}
+    \item Usability of User Interface (can the user formulate queries and understand the result page?)
+    \item Clarity of Result Snippets (can the user understand the results?)
+    \item Relevance of Results (is the user satisfied with the results of the query?)
+    \item Filters (can the user figure out how to use filters?)
+    \item Relevance Feedback (does the user understand how to give feedback on the relevance of documents?)
+\end{itemize}
+
+\subsection{Experimental Hypotheses}
+
+Our hypotheses is that the users will be able to perform a series of tasks in the hypotized number of clicks, and number of queries, without the need of external help.
+
+\subsection{Experimental Methodology}
+
+\subsubsection{The Methodology}
+
+\begin{itemize}
+    \item \textbf{Data}: the collection used in the experiment is the total set of charities collected during the scraping.
+    The data set is current, since the scraping was performed recently, but this does not have a big influence in the context of charities.
+    As we are using the whole data set obtained from the scraping, the data set should be large enough.
+    \item \textbf{Experimental subjects}: the experiment will be conducted on 3 subjects taken from people attending the IR course this year. They are not expected to be experts in terms of charities, but they are expected to have familiarity with retrieval systems.
+    \item \textbf{Search tasks}: the subjects will be asked to perform 4 given tasks. No help will be given to the subjects unless they raise questions. The need for help will be noted in the experiment. As the users are not expected to be familiar with charities, we do not provide them with real search tasks.
+    \item \textbf{Criteria}: The performance of the subjects at each task will be measured in terms of:
+    \begin{itemize}
+        \item number of clicks
+        \item number of queries (when a user clicks on the search button)
+        \item whether they needed external help
+    \end{itemize}
+    The performance of the system at each task will be measured in terms of:
+    \begin{itemize}
+        \item whether the system raises any unexpected errors
+        \item how relevant the results are to the query
+    \end{itemize}
+    All the criteria are quantitative data, except for the relevance of the results, which is a form of qualitative data and will be measured by the user with a Likert scale
+\end{itemize}
+
+\subsubsection{The Tasks}
+
+We selected the following tasks:
+\newline
+
+\begin{tabular}{c|c|l}
+
+    Task ID & Feature Tested & Task \\ \hline
+    T1 & Usability of User Interface & "Find a charity that provides shelters for dogs" \\ 
+    T2 & Filters & "Narrow results to North America" \\
+    T3 & Clarity of Result Snippets & "Find out more information about the first result" \\
+    T4 & Relevance Feedback & "Mark a charity as relevant and review updated recommendations." \\      
+\end{tabular}
+
+\subsubsection{The Experimental Matrix}
+
+\begin{tabular}{c|c|c|c|c}
+
+    Subject & First Task & Second Task & Third Task & Last Task \\ \hline
+    Subject 1 & T1 & T2 & T3 & T4 \\
+    Subject 2 & T1 & T3 & T2 & T4 \\
+    Subject 3 & T1 & T2 & T4 & T3 \\
+\end{tabular}
+
+\subsection{The Experiment}
+
+Subjects were given a list of tasks on a printed sheet of paper. The subjects had to do the same tasks but in different orders.
+Before the start of the experiment, the subjects were informed to only ask for help if they couldn't figure it out on their own, and to signal to the observer when they thought they had completed each task.
+
+This was done because the need of external help is a criteria we are measuring, so each user was aware of the possibility of asking for help, but also incentivized to try to ask as little as possible.
+
+\subsection{The Results}
+
+\subsubsection{The Expected Results}
+
+The following table represents the measurements expected from the users.
+\newline
+
+\begin{tabular}{c|c|c|c|c}
+    Task ID & clicks & queries & need of external help & system raises errors \\ \hline
+    T1 & 2 & 1 & no & no \\
+    T2 & 3 & 1 & no & no \\
+    T3 & 1 & 0 & no & no \\
+    T4 & 1 & 0 & no & no \\
+\end{tabular}
+
+\subsubsection{Subject 1}
+
+\subsubsection{Subject 2}
+
+\subsubsection{Subject 3}
+
+\subsection{Data Analysis}
 
 
 \end{document}
