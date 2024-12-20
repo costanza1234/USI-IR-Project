@@ -1,8 +1,8 @@
-PWD /Users/davide/USI/5thSemester/InfRetrv/USI-IR-Project/documents/final report
+PWD /Users/lasagnese/Desktop/USI-IR-Project/documents/final report
 INPUT /usr/local/texlive/2024/texmf.cnf
 INPUT /usr/local/texlive/2024/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/davide/USI/5thSemester/InfRetrv/USI-IR-Project/documents/final report/template.tex
+INPUT /Users/lasagnese/Desktop/USI-IR-Project/documents/final report/template.tex
 OUTPUT template.log
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/koma-script/scrartcl.cls
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/koma-script/scrartcl.cls
