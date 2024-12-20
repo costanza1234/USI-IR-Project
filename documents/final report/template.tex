@@ -30,25 +30,25 @@ We decided to implement the following features:
 
 \begin{itemize}
     \item \textbf{Filtering (simple feature)}: in addition to being able to search by title, the user is able to filter the results based on 3 additional attributes.
-    In our case, the user can filter the charities by:
-    \begin{itemize}
-        \item causes: one or more causes
-        \item country: one or more countries 
-        \item continent: one or more continent
-    \end{itemize}
+          In our case, the user can filter the charities by:
+          \begin{itemize}
+              \item causes: one or more causes
+              \item country: one or more countries
+              \item continent: one or more continent
+          \end{itemize}
 
-    The possible options are a list of the existing fields in the charities we obtained in the data retrieval. This way the user can select one or more options from existing ones.
-    The user interface also offers autocompletion to make the filtering exerience easier.
-    
+          The possible options are a list of the existing fields in the charities we obtained in the data retrieval. This way the user can select one or more options from existing ones.
+          The user interface also offers autocompletion to make the filtering exerience easier.
+
     \item \textbf{Results Snippets (simple feature)}: the results are presented in the form of result snippets in a
-    kind of “Google style”, with query terms highlighted.
+          kind of “Google style”, with query terms highlighted.
     \item \textbf{User Relevance Feedback (complex feature)}: the user can provide a positive or negative feedback on each result to mark them as relevant or irrelevant. We implemented TF-IDF query expansion, keeping track of all the preferences specified for a query, and resetting the feedback whenn the user inserts a new query.
 \end{itemize}
 
 
 \section{Frontend Design and Implementation}
 
-The initial design research and UI mockup creation have been completed using Figma. 
+The initial design research and UI mockup creation have been completed using Figma.
 Then, the design has been implemented using Next.js and Material UI to have a modern, minimalistic, user-friendly,  "Google Style" look.
 
 \subsection{The landing page}
@@ -67,16 +67,16 @@ This page contains as little text as possible to avoid overwhelming the user, bu
 
 \subsection{The results page}
 
-The results page is also inspired by Google's design, by always showing the search bar and the filters at the top of the page to 
+The results page is also inspired by Google's design, by always showing the search bar and the filters at the top of the page to
 allow the user to refine the query at any time. The search bar always has a reasonable size and shows the query to which the results correspond to.
 
 The results are shown as an ordered ranked list, where the charity which is more relevant to the query is shown first.
-The ranked list of charities is bounded at 1000 results, to avoid 
+The ranked list of charities is bounded at 1000 results, to avoid
 sending too much data to the frontend and ensure that the user is not scrolling forever.
 
 The result snippets contais information about the charity in a "Google Style" desing, showing the charity's logo and name clearly.
-Clicking on the result snippet will take the user to the official web page of the charity. 
-Each snippet also contains some lines of the document's text, showing the query terms highlighted. This allows the user to 
+Clicking on the result snippet will take the user to the official web page of the charity.
+Each snippet also contains some lines of the document's text, showing the query terms highlighted. This allows the user to
 get a feeling of the content of the document in relation to the query. This was part of the second required feature we implemented.
 The text content is kept short (2-3 lines) to avoid overwhelming the user and allowing each snippet to have a reasonable size.
 
@@ -121,19 +121,19 @@ Global Giving provides structured data on charitable organizations through its A
 \subsubsection{Data Retrieval}
 To gather data, we accessed the Global Giving API and downloaded XML files containing details of various organizations. The use of their API eliminated the need for web scraping, allowing us to work directly with structured data. The XML files provided the following information about each charity:
 \begin{itemize}
-\item Basic details such as the charity's name and location.
-\item Mission statements and website URLs.
-\item Themes representing the causes they work on.
-\item Countries where the organizations operate.
+    \item Basic details such as the charity's name and location.
+    \item Mission statements and website URLs.
+    \item Themes representing the causes they work on.
+    \item Countries where the organizations operate.
 \end{itemize}
 
 \subsubsection{Data Processing}
 
 After retrieving the data, we developed a parser using Python's \texttt{ElementTree} library to extract information from the XML format. To enhance the dataset:
 \begin{itemize}
-\item Geographical information was added using \texttt{pycountry} and \texttt{pycountry\_convert}, allowing us to classify organizations by continent based on their headquarters.
-\item Field names were standardized to align with the data structure of Charity Navigator, ensuring consistency across platforms.
-\item The final dataset was converted to JSON format for easier storage and readability.
+    \item Geographical information was added using \texttt{pycountry} and \texttt{pycountry\_convert}, allowing us to classify organizations by continent based on their headquarters.
+    \item Field names were standardized to align with the data structure of Charity Navigator, ensuring consistency across platforms.
+    \item The final dataset was converted to JSON format for easier storage and readability.
 \end{itemize}
 
 \subsection{Charity Navigator}
@@ -142,17 +142,17 @@ Charity Navigator offers data through its GraphQL API. Unlike Global Giving, Cha
 \subsubsection{Data Retrieval}
 Using the GraphQL API, we tailored queries to retrieve:
 \begin{itemize}
-\item Organization details, including names and locations.
-\item Causes, mission statements and website URLs.
+    \item Organization details, including names and locations.
+    \item Causes, mission statements and website URLs.
 \end{itemize}
 The GraphQL API's flexibility allowed us to avoid redundant data requests and efficiently handle nested data structures. 10,000 records were retrieved in batches of 10 to not flood the server.
 
 \subsubsection{Data Processing}
 The lack of logos in Charity Navigator's data required us to develop a custom solution for locating and extracting organization logos from their websites. This system:
 \begin{itemize}
-\item Parsed webpage structures using \texttt{BeautifulSoup} to identify elements marked as logos.
-\item Checked metadata and special tags (e.g., \texttt{svg}) for logo information.
-\item Scanned for images commonly used as logos, filtering out irrelevant elements like favicons or menu icons.
+    \item Parsed webpage structures using \texttt{BeautifulSoup} to identify elements marked as logos.
+    \item Checked metadata and special tags (e.g., \texttt{svg}) for logo information.
+    \item Scanned for images commonly used as logos, filtering out irrelevant elements like favicons or menu icons.
 \end{itemize}
 Standard Python libraries, including \texttt{requests}, \texttt{BeautifulSoup}, and \texttt{re}, facilitated these operations. Finally, the processed data was converted to JSON format to match the structure of Global Giving's dataset.
 
@@ -198,30 +198,30 @@ The retreival of the document and the indexing are performed only once, when the
 
 \begin{itemize}
     \item \texttt{GET /search?query=<query>\&session\_id=<session\_id>}: \newline
-    This route takes the following parameters:
-    \begin{itemize}
-        \item \texttt{query}: a string representing the query input by the user
-        \item \texttt{session\_id}: the id of the session. A session starts when a new query is inserted, and is used to keep track of the relevance feedback for a specific query.
-        \item \texttt{causes}: optional list of strings containing the filtering information of the cause attribute.
-        \item \texttt{continents}: optional list of strings containing the filtering information of the continent attribute.
-        \item \texttt{countries}: optional list of strings containing the filtering information of the country attribute.
-    \end{itemize}
-    This route takes the index and the documents initialized when the backend is run, and performs a retreival of the documents relevant to the query. Once the ranked list of results is obtained, it is mapped to a list of charity objects that are then filtered according to the filters specified in the request. The resulting list is returned as a response to the request.
-    The result is a list of objects with the following attributes:
-    \begin{itemize}
-        \item \texttt{score}: the score of the document.
-        \item \texttt{docid}: the id of the document in the index.
-        \item \texttt{charity}: a complex object containing all the information of the charity, like the name, logo, mission, coutnry, etc\dots .
-    \end{itemize}
+          This route takes the following parameters:
+          \begin{itemize}
+              \item \texttt{query}: a string representing the query input by the user
+              \item \texttt{session\_id}: the id of the session. A session starts when a new query is inserted, and is used to keep track of the relevance feedback for a specific query.
+              \item \texttt{causes}: optional list of strings containing the filtering information of the cause attribute.
+              \item \texttt{continents}: optional list of strings containing the filtering information of the continent attribute.
+              \item \texttt{countries}: optional list of strings containing the filtering information of the country attribute.
+          \end{itemize}
+          This route takes the index and the documents initialized when the backend is run, and performs a retreival of the documents relevant to the query. Once the ranked list of results is obtained, it is mapped to a list of charity objects that are then filtered according to the filters specified in the request. The resulting list is returned as a response to the request.
+          The result is a list of objects with the following attributes:
+          \begin{itemize}
+              \item \texttt{score}: the score of the document.
+              \item \texttt{docid}: the id of the document in the index.
+              \item \texttt{charity}: a complex object containing all the information of the charity, like the name, logo, mission, coutnry, etc\dots .
+          \end{itemize}
     \item \texttt{POST /feedback/<session\_id>/<docid>/<relevant>}:\newline
-    This route takes the following parameters:
-    \begin{itemize}
-        \item \texttt{session\_id}: the id of the session.
-        \item \texttt{docid}: the id of the document on which the feedback is expressed.
-        \item \texttt{relevant}: 1 if the user has identified the document as relevant to the query, 0 otherwise.
-    \end{itemize}
-    This route adds information about the feedback regarding the session specified. For each session there is a list of feedback entries for each \texttt{(docid, relevant)} pair.
-    After the feedback for the session has been updated, the query augmentation is performed using TF-IDF considering ALL the documents that the user has specified as being relevant or not relevant to the query.
+          This route takes the following parameters:
+          \begin{itemize}
+              \item \texttt{session\_id}: the id of the session.
+              \item \texttt{docid}: the id of the document on which the feedback is expressed.
+              \item \texttt{relevant}: 1 if the user has identified the document as relevant to the query, 0 otherwise.
+          \end{itemize}
+          This route adds information about the feedback regarding the session specified. For each session there is a list of feedback entries for each \texttt{(docid, relevant)} pair.
+          After the feedback for the session has been updated, the query augmentation is performed using TF-IDF considering ALL the documents that the user has specified as being relevant or not relevant to the query.
 \end{itemize}
 
 
@@ -250,22 +250,22 @@ Our hypotheses is that the users will be able to perform a series of tasks in th
 
 \begin{itemize}
     \item \textbf{Data}: the collection used in the experiment is the total set of charities collected during the scraping.
-    The data set is current, since the scraping was performed recently, but this does not have a big influence in the context of charities.
-    As we are using the whole data set obtained from the scraping, the data set should be large enough.
+          The data set is current, since the scraping was performed recently, but this does not have a big influence in the context of charities.
+          As we are using the whole data set obtained from the scraping, the data set should be large enough.
     \item \textbf{Experimental subjects}: the experiment will be conducted on 3 subjects taken from people attending the IR course this year. They are not expected to be experts in terms of charities, but they are expected to have familiarity with retrieval systems.
     \item \textbf{Search tasks}: the subjects will be asked to perform 4 given tasks. No help will be given to the subjects unless they raise questions. The need for help will be noted in the experiment. As the users are not expected to be familiar with charities, we do not provide them with real search tasks.
     \item \textbf{Criteria}: The performance of the subjects at each task will be measured in terms of:
-    \begin{itemize}
-        \item number of clicks
-        \item number of queries (when a user clicks on the search button)
-        \item whether they needed external help
-    \end{itemize}
-    The performance of the system at each task will be measured in terms of:
-    \begin{itemize}
-        \item whether the system raises any unexpected errors
-        \item how relevant the results are to the query
-    \end{itemize}
-    All the criteria are quantitative data, except for the relevance of the results, which is a form of qualitative data and will be measured by the user with a Likert scale
+          \begin{itemize}
+              \item number of clicks
+              \item number of queries (when a user clicks on the search button)
+              \item whether they needed external help
+          \end{itemize}
+          The performance of the system at each task will be measured in terms of:
+          \begin{itemize}
+              \item whether the system raises any unexpected errors
+              \item how relevant the results are to the query
+          \end{itemize}
+          All the criteria are quantitative data, except for the relevance of the results, which is a form of qualitative data and will be measured by the user with a Likert scale
 \end{itemize}
 
 \subsubsection{The Tasks}
@@ -275,21 +275,21 @@ We selected the following tasks:
 
 \begin{tabular}{c|c|l}
 
-    Task ID & Feature Tested & Task \\ \hline
-    T1 & Usability of User Interface & "Find a charity that provides shelters for dogs" \\ 
-    T2 & Filters & "Narrow results to North America" \\
-    T3 & Clarity of Result Snippets & "Find out more information about the first result" \\
-    T4 & Relevance Feedback & "Mark a charity as relevant and review updated recommendations." \\      
+    Task ID & Feature Tested              & Task                                                             \\ \hline
+    T1      & Usability of User Interface & "Find a charity that provides shelters for dogs"                 \\
+    T2      & Filters                     & "Narrow results to Africa"                                       \\
+    T3      & Clarity of Result Snippets  & "Find out more information about the first result"               \\
+    T4      & Relevance Feedback          & "Mark a charity as relevant and review updated recommendations." \\
 \end{tabular}
 
 \subsubsection{The Experimental Matrix}
 
 \begin{tabular}{c|c|c|c|c}
 
-    Subject & First Task & Second Task & Third Task & Last Task \\ \hline
-    Subject 1 & T1 & T2 & T3 & T4 \\
-    Subject 2 & T1 & T3 & T2 & T4 \\
-    Subject 3 & T1 & T2 & T4 & T3 \\
+    Subject   & First Task & Second Task & Third Task & Last Task \\ \hline
+    Subject 1 & T1         & T2          & T3         & T4        \\
+    Subject 2 & T1         & T3          & T2         & T4        \\
+    Subject 3 & T1         & T2          & T4         & T3        \\
 \end{tabular}
 
 \subsection{The Experiment}
@@ -308,40 +308,49 @@ The following table represents the measurements expected from the users.
 
 \begin{tabular}{c|c|c|c|c|c}
     Task ID & clicks & queries & need of external help & system raises errors & results are relevant \\ \hline
-    T1 & 2 & 1 & no & no & yes \\
-    T2 & 3 & 1 & no & no & yes \\
-    T3 & 1 & 0 & no & no & yes \\
-    T4 & 1 & 0 & no & no & yes \\
+    T1      & 2      & 1       & no                    & no                   & yes                  \\
+    T2      & 3      & 1       & no                    & no                   & yes                  \\
+    T3      & 1      & 0       & no                    & no                   & yes                  \\
+    T4      & 2      & 0       & no                    & no                   & yes                  \\
 \end{tabular}
 
 \subsubsection{Subject 1}
 
 \begin{tabular}{c|c|c|c|c|c}
     Task ID & clicks & queries & need of external help & system raises errors & results are relevant \\ \hline
-    T1 & x & x & x & x & x \\
-    T2 & x & x & x & x & x \\
-    T3 & x & x & x & x & x \\
-    T4 & x & x & x & x & x \\
+    T1      & 2      & 1       & no                    & no                   & yes                  \\
+    T2      & 3      & 1       & yes                   & no                   & yes                  \\
+    T3      & 1      & 0       & no                    & no                   & yes                  \\
+    T4      & 2      & 0       & no                    & no                   & yes                  \\
 \end{tabular}
+
+\vspace{0.2cm}
+
+\textbf{Note:} The user had issues filtering the results, after seeing that the results were not changing they asked for help to the observer, 
+who explained that they needed to click on the search button to apply the filters.
 
 \subsubsection{Subject 2}
 
 \begin{tabular}{c|c|c|c|c|c}
     Task ID & clicks & queries & need of external help & system raises errors & results are relevant \\ \hline
-    T1 & x & x & x & x & x \\
-    T2 & x & x & x & x & x \\
-    T3 & x & x & x & x & x \\
-    T4 & x & x & x & x & x \\
+    T1      & 2      & 1       & no                    & no                   & yes                  \\
+    T2      & 8      & 1       & yes                   & no                   & yes                  \\
+    T3      & 1      & 0       & no                    & no                   & yes                  \\
+    T4      & 2      & 0       & no                    & no                   & yes                  \\
 \end{tabular}
+
+\vspace{0.2cm}
+\textbf{Note:} The user had issues filtering the results, they tried to remove and re-apply the filter after seeing that the results were not changing.
+They ended up asking for help to the observer, who explained that they needed to click on the search button to apply the filters.
 
 \subsubsection{Subject 3}
 
 \begin{tabular}{c|c|c|c|c|c}
     Task ID & clicks & queries & need of external help & system raises errors & results are relevant \\ \hline
-    T1 & x & x & x & x & x \\
-    T2 & x & x & x & x & x \\
-    T3 & x & x & x & x & x \\
-    T4 & x & x & x & x & x \\
+    T1      & x      & x       & x                     & x                    & x                    \\
+    T2      & x      & x       & x                     & x                    & x                    \\
+    T3      & x      & x       & x                     & x                    & x                    \\
+    T4      & x      & x       & x                     & x                    & x                    \\
 \end{tabular}
 
 \subsection{Data Analysis}
